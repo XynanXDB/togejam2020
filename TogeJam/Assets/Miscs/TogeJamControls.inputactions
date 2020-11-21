@@ -1,0 +1,33 @@
+{
+    "name": "TogeJamControls",
+    "maps": [
+        {
+            "name": "Default",
+            "id": "ce077ca7-5011-4b01-82bd-23e10618ac33",
+            "actions": [
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "00c4226f-ecb8-4607-b138-a36cd4214095",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "635959b3-d225-4e7f-a0e7-d45525f85629",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
