@@ -59,6 +59,7 @@ namespace Game.Core
         [SerializeField] protected UObjectPooler BubblePooler;
         [SerializeField] protected UDialogueDataBase DialogueDB;
         [SerializeField] protected DialogueUI DialogueUI;
+        [SerializeField] protected UDialogueOptionGroup OptionGroup;
         private List<UDialogueBubble> AssignedBubbles = null;
         private OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
 
@@ -106,6 +107,12 @@ namespace Game.Core
             
             Bubble.AssignSpeaker(SpeakerInfo, DialogueUI);
             AssignedBubbles.Add(Bubble);
+        }
+
+        public void OnOptionsStart()
+        {
+            UGameInstance.GameInstance.ForceFocusGameObject(null);
+            OptionGroup.gameObject.SetActive(true);
         }
     }
 }

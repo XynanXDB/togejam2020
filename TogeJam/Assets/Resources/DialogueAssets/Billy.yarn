@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 1180,391
 ---
-<<SetSpeaker Billy Think Neutral>>
+<<SetSpeaker Billy Speak Neutral>>
 Hi Jimmy, how are you lately?
 -> Fantastic
     Oh wow, I wish was doing that good!
