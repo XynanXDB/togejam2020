@@ -1,0 +1,12 @@
+title: Billy.Start
+tags: 
+colorID: 0
+position: 1180,391
+---
+<<SetSpeaker Billy Think Neutral>>
+Hi Jimmy, how are you lately?
+-> Fantastic
+    Oh wow, I wish was doing that good!
+-> So, so...
+    I think I'll leave that alone.
+===
