@@ -15,6 +15,8 @@ namespace Game.Core
         public string Action;
         public string Animation;
 
+///////////////////////////////////////////////////////////////////////////////
+
         public YarnCommandPacket(string InName, string InAction, string InAnimation)
         {
             name = InName;
@@ -64,8 +66,7 @@ namespace Game.Core
         private OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
 
         [Header("Debug")]
-        [SerializeField] protected GameObject Player;
-
+        [SerializeField] protected UPlayerController Player;
 
 ///////////////////////////////////////////////////////////////////////
         
@@ -73,6 +74,8 @@ namespace Game.Core
         {
             DontDestroyOnLoad(this);
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
+            DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
+            
             AssignedBubbles = new List<UDialogueBubble>();
 
             BubblePooler.GetAllPooledObjects().ForEach( GO =>
@@ -90,6 +93,7 @@ namespace Game.Core
 
             DialogueRunner.Add(DialogueDB.GetYarnAssetByKey("Billy"));
             DialogueRunner.StartDialogue("Billy.Start");
+            Player.SetMovementMode(InputMode.UI);
         }
 
         // Name -> Think/Talk -> Animation
@@ -111,8 +115,17 @@ namespace Game.Core
 
         public void OnOptionsStart()
         {
-            UGameInstance.GameInstance.ForceFocusGameObject(null);
             OptionGroup.gameObject.SetActive(true);
+        }
+
+        void OnDialogueEnd()
+        {
+            AssignedBubbles.ForEach(B => {
+                B.UnassignSpeaker();
+            });
+
+            AssignedBubbles.Clear();
+            Player.SetMovementMode(InputMode.Game);
         }
     }
 }

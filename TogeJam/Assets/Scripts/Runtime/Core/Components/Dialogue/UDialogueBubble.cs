@@ -30,13 +30,16 @@ namespace Game.Core
 
         void Update()
         {
-            Vector3 Screenspace = UGameInstance.GameInstance.MainCam.WorldToScreenPoint(SpeakerTransform.position, Camera.MonoOrStereoscopicEye.Mono);
-            OwningRect.SetPositionAndRotation(Screenspace, Quaternion.identity);
+            if (SpeakerTransform != null)
+            {
+                Vector3 Screenspace = UGameInstance.GameInstance.MainCam.WorldToScreenPoint(SpeakerTransform.position, Camera.MonoOrStereoscopicEye.Mono);
+                OwningRect.SetPositionAndRotation(Screenspace, Quaternion.identity);
+            }
         }
 
         void OnEnable()
         {
-            AnimateScaleCoroutine = StartCoroutine(AnimateScale());
+            AnimateScaleCoroutine = StartCoroutine(AnimateScale(true));
         }
 
         void OnDisable()
@@ -47,14 +50,30 @@ namespace Game.Core
             gameObject.transform.localScale = Vector3.zero;
         }
 
-        IEnumerator AnimateScale()
+        IEnumerator AnimateScale(bool Activate)
         {
             Vector3 tempScale = gameObject.transform.localScale;
-            while(tempScale != Vector3.one)
+
+            if (Activate)
             {
-                tempScale += Vector3.one * PopupSpeed;
-                gameObject.transform.localScale = tempScale;
-                yield return null;
+                while(tempScale != Vector3.one)
+                {
+                    tempScale += Vector3.one * PopupSpeed;
+                    gameObject.transform.localScale = tempScale;
+                    yield return null;
+                }
+                AnimateScaleCoroutine = null;
+            }
+            else
+            {
+                while(tempScale != Vector3.zero)
+                {
+                    tempScale -= Vector3.one * PopupSpeed;
+                    gameObject.transform.localScale = tempScale;
+                    yield return null;
+                }
+
+                gameObject.SetActive(false);
             }
         }
 
@@ -76,6 +95,19 @@ namespace Game.Core
 
             Debug.Log(gameObject.name + " assigned to " + SpeakerName);
             gameObject.SetActive(true);
+        }
+
+        public void UnassignSpeaker()
+        {
+            DialogueUI.onLineUpdate.RemoveListener(SetDisplayText);
+            DialogueUI.onLineStart.RemoveListener(PlayBubbleAnim);
+
+            SpeakerName = null;
+            SpeakerTransform = null;
+            DialogueUI = null;
+
+            DisplayText.text = "";
+            AnimateScaleCoroutine = StartCoroutine(AnimateScale(false));
         }
 
         void PlayBubbleAnim()

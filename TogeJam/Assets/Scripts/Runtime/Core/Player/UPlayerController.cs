@@ -12,6 +12,7 @@ namespace Game.Core
         [SerializeField] protected Camera MainCam;
         [SerializeField] protected float AcceptanceRadiusPercentage = 0.9f;
         [SerializeField] protected FSpeakerInfo SpeakerInfo;
+        protected FInputHandler InputHandler;
 
  //////////////////////////////////////////////////////////////////////
 
@@ -21,8 +22,13 @@ namespace Game.Core
                 PlayerInput = gameObject.AddComponent<PlayerInput>();
         }
 
-        public virtual void OnInteract(InputAction.CallbackContext Context)
+        void Awake()
         {
+            InputHandler.TargetPlayerInput = PlayerInput;
+        }
+
+        public virtual void OnInteract(InputAction.CallbackContext Context)
+        {            
             RaycastHit Hit;
             if (InputUtils.RaycastBeneathMouseCursor(MainCam, out Hit))
             {
@@ -55,5 +61,7 @@ namespace Game.Core
 
             return SpeakerInfo;
         }
+
+        public void SetMovementMode(InputMode Mode) => InputHandler.SetMovementMode(Mode);
     }
 }

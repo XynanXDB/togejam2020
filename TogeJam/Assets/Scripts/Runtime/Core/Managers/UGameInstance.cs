@@ -33,7 +33,9 @@ namespace Game.Core
         public void ForceFocusGameObject(GameObject GO)
         {
             FocusedGO = GO;
-            EventSystem.current.SetSelectedGameObject(FocusedGO);
+
+            if (FocusedGO != null)
+                EventSystem.current.SetSelectedGameObject(FocusedGO);
         }
     }
 }
