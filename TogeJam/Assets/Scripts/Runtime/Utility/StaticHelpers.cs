@@ -104,4 +104,16 @@ namespace Game.Utility
             return Text;
         }
     }
+
+    public static class GenericHelpers
+    {
+        public static GameObject CreateManager(string ObjectName)
+        {
+            GameObject Prefab = Resources.Load("Prefabs/" + ObjectName) as GameObject;
+            GameObject Instance  = GameObject.Instantiate(Prefab, Vector3.zero, Quaternion.identity);
+            Instance.name = ObjectName;
+            
+            return (Prefab == null) ? null : Instance;
+        }
+    }
 }

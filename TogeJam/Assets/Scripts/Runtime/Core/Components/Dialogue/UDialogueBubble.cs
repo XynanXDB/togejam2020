@@ -18,7 +18,6 @@ namespace Game.Core
         private string SpeakerName;
         private Transform SpeakerTransform; 
         private YarnCommandPacket CacheYarnPacket;
-        private bool DontReplaySameAnim;
         private Coroutine AnimateScaleCoroutine;
         [SerializeField] protected RectTransform OwningRect;
         [SerializeField] protected Vector3 Offset;
@@ -40,6 +39,11 @@ namespace Game.Core
         void OnEnable()
         {
             AnimateScaleCoroutine = StartCoroutine(AnimateScale(true));
+        }
+
+        void Awake()
+        {
+            gameObject.transform.localScale = Vector3.zero;
         }
 
         void OnDisable()
@@ -90,11 +94,17 @@ namespace Game.Core
 
             DialogueUI.onLineUpdate.AddListener(SetDisplayText);
             DialogueUI.onLineStart.AddListener(PlayBubbleAnim);
+            DialogueUI.onLineFinishDisplaying.AddListener(ConditionalActivateDialogueAdvancer);
             
-            Advancer.SetDialogueUI(UI);
+            Advancer.AssignSpeaker(UI, SpeakerName);
 
             Debug.Log(gameObject.name + " assigned to " + SpeakerName);
-            gameObject.SetActive(true);
+        }
+
+        void ConditionalActivateDialogueAdvancer()
+        {
+            if (SpeakerName != CacheYarnPacket.name) return;
+                Advancer.gameObject.SetActive(true);
         }
 
         public void UnassignSpeaker()
@@ -102,17 +112,26 @@ namespace Game.Core
             DialogueUI.onLineUpdate.RemoveListener(SetDisplayText);
             DialogueUI.onLineStart.RemoveListener(PlayBubbleAnim);
 
-            SpeakerName = null;
-            SpeakerTransform = null;
-            DialogueUI = null;
+            DisableBubble();
+        }
 
-            DisplayText.text = "";
-            AnimateScaleCoroutine = StartCoroutine(AnimateScale(false));
+        void DisableBubble()
+        {
+            if (gameObject.activeSelf)
+            {
+                AnimateScaleCoroutine = StartCoroutine(AnimateScale(false));
+                SpeakerName = null;
+                SpeakerTransform = null;
+
+                DisplayText.text = "";
+            }
         }
 
         void PlayBubbleAnim()
         {
-            if (DontReplaySameAnim) return;
+            if (SpeakerName != CacheYarnPacket.name) return;
+            
+            gameObject.SetActive(true);
 
             string Clip = null;
 
@@ -120,19 +139,19 @@ namespace Game.Core
                 BGAnimate.Play(Clip);
             else
                 Debug.Log("Missing Clip");
+
         }
 
-        void SetDisplayText(string Text) => DisplayText.text = Text;
+        void SetDisplayText(string Text)
+        {
+            if (CacheYarnPacket.name == SpeakerName)
+                DisplayText.text = Text;
+        }
 
         public void OnSetSpeaker(YarnCommandPacket Packet) 
         {
-            if (CacheYarnPacket.name != null && CacheYarnPacket.name == Packet.name) return;
-
-            if (CacheYarnPacket.Action != null && CacheYarnPacket.Action == Packet.Action)
-                DontReplaySameAnim = true;
-            else
-                DontReplaySameAnim = false;
-
+            if (CacheYarnPacket.name != null && CacheYarnPacket.name != Packet.name)
+                DisableBubble();
             CacheYarnPacket = Packet;
         }
     }

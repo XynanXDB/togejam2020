@@ -18,7 +18,7 @@ namespace Game.Core
         void Awake()
         {
             //TODO Uncomment this
-            //PlayerController.OnInteractDelegate += OnClick;
+            PlayerController.OnInteractDelegate += OnClick;
         }
 
         void OnClick()
@@ -68,7 +68,7 @@ namespace Game.Core
         {
             if (CurrentFocusedInteractable == null) return;
 
-            CurrentFocusedInteractable.IExecuteInteract();
+            CurrentFocusedInteractable.IExecuteInteract(Interactor);
             CurrentFocusedInteractable = null;
         }
     }

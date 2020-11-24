@@ -55,6 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AdvanceButton: {fileID: 6864716317896102454}
   Animator: {fileID: 3959857573860007131}
+  ParentTransform: {fileID: 272959853795372517}
 --- !u!222 &8203982034082971163
 CanvasRenderer:
   m_ObjectHideFlags: 0

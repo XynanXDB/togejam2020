@@ -15,10 +15,6 @@ namespace Game.Systems
             GameObject obj = GameObject.FindWithTag("AudioManager");
             if (obj == null)
                 UMasterAudioManager.MasterAudioManager = CreateManager("AudioManager").GetComponent<UMasterAudioManager>();
-
-            obj = GameObject.FindWithTag("DialogueManager");
-            if (obj == null)
-                UDialogueManager.DialogueManager = CreateManager("DialogueManager").GetComponent<UDialogueManager>();
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

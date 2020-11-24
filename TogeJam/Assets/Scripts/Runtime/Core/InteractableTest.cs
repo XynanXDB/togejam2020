@@ -8,7 +8,7 @@ namespace Game.Core
     {
         public InteractionRange GetInteractionRange() { return InteractionRange.IgnoreRange; }
 
-        public void IExecuteInteract()
+        public void IExecuteInteract(GameObject GO)
         {
             Debug.Log("A");
         }

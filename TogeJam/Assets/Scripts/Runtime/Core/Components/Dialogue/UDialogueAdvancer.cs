@@ -9,37 +9,37 @@ namespace Game.Core
     {
         [SerializeField] protected Button AdvanceButton;
         [SerializeField] protected Animator Animator;
-        private DialogueUI DialogueUI;
+        [SerializeField] protected Transform ParentTransform;
         static readonly string Start = "Start";
+        private DialogueUI DialogueUI;
+        private string SpeakerName;
         
 //////////////////////////////////////////////////////////////////////////////////
 
-        public void SetDialogueUI(DialogueUI UI)
+        void OnEnable()
+        {
+            Animator.Play(Start);
+        }
+
+        public void AssignSpeaker(DialogueUI UI, string InSpeakerName)
         {
             DialogueUI = UI;
+            SpeakerName = InSpeakerName;
 
             if (DialogueUI != null)
             {
                 DialogueUI.onLineStart.AddListener(OnLineStart);
-                DialogueUI.onLineFinishDisplaying.AddListener(OnLineFinishDisplay);
                 DialogueUI.onOptionsStart.AddListener(OnOptionsStart);
                 DialogueUI.onOptionsEnd.AddListener(OnOptionsEnd);
             }
             else
             {
                 DialogueUI.onLineStart.RemoveListener(OnLineStart);
-                DialogueUI.onLineFinishDisplaying.RemoveListener(OnLineFinishDisplay);
                 DialogueUI.onOptionsStart.RemoveListener(OnOptionsStart);
                 DialogueUI.onOptionsEnd.RemoveListener(OnOptionsEnd);
             }
 
             OnOptionsStart();
-        }
-
-        void OnLineFinishDisplay()
-        {
-            gameObject.SetActive(true);
-            Animator.Play(Start);
         }
 
         void ForceFocusOnAdvancer() => UGameInstance.GameInstance.ForceFocusGameObject(gameObject);

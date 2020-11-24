@@ -6,7 +6,9 @@ position: 1180,391
 <<SetSpeaker Billy Speak Neutral>>
 Hi Jimmy, how are you lately?
 -> Fantastic
+    <<SetSpeaker Dog Speak Neutral>>
     Oh wow, I wish was doing that good!
 -> So, so...
+    <<SetSpeaker Dog Speak Neutral>>
     I think I'll leave that alone.
 ===

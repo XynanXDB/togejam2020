@@ -55,7 +55,19 @@ namespace Game.Core
 
     public class UDialogueManager : MonoBehaviour
     {
-        public static UDialogueManager DialogueManager { get; internal set; }
+        private static UDialogueManager _DialogueManager;
+        public static UDialogueManager DialogueManager
+        {
+            get
+            {
+                if (_DialogueManager == null)
+                    _DialogueManager = FindObjectOfType<UDialogueManager>();
+                else
+                    _DialogueManager = GenericHelpers.CreateManager("DialogueManager").GetComponent<UDialogueManager>();
+                
+                return _DialogueManager;
+            }
+        }
         
         [SerializeField] protected DialogueRunner DialogueRunner;
         [SerializeField] protected UObjectPooler BubblePooler;
@@ -63,10 +75,11 @@ namespace Game.Core
         [SerializeField] protected DialogueUI DialogueUI;
         [SerializeField] protected UDialogueOptionGroup OptionGroup;
         private List<UDialogueBubble> AssignedBubbles = null;
-        private OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
+        public OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
+        [SerializeField] protected UController Dog;
 
 ///////////////////////////////////////////////////////////////////////
         
@@ -77,7 +90,7 @@ namespace Game.Core
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
             AssignedBubbles = new List<UDialogueBubble>();
-
+            
             BubblePooler.GetAllPooledObjects().ForEach( GO =>
             {
                 UDialogueBubble B = GO.GetComponent<UDialogueBubble>();
@@ -85,14 +98,21 @@ namespace Game.Core
             });
         }
 
-        void Start()
+        public void InitiateDialogue(string YarnAssetName, List<ITalkable> InSpeakers, string StartNodeName = "Start")
         {
-            ITalkable I;
-            if((I = Player.GetComponent<ITalkable>()) != null)
+            foreach(ITalkable I in InSpeakers)
                 JoinConversation(I);
 
-            DialogueRunner.Add(DialogueDB.GetYarnAssetByKey("Billy"));
-            DialogueRunner.StartDialogue("Billy.Start");
+            YarnProgram YarnAsset = DialogueDB.GetYarnAssetByKey(YarnAssetName);
+            if (YarnAsset != null)
+                DialogueRunner.Add(YarnAsset);
+            else
+            {
+                Debug.LogError("YarnAsset not found.");
+                return;
+            }
+
+            DialogueRunner.StartDialogue(StartNodeName);
             Player.SetMovementMode(InputMode.UI);
         }
 
@@ -126,6 +146,8 @@ namespace Game.Core
 
             AssignedBubbles.Clear();
             Player.SetMovementMode(InputMode.Game);
+
+            DialogueRunner.Clear();
         }
     }
 }

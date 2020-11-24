@@ -14,7 +14,7 @@ namespace Game.Core
     {
         void IOnFocus(GameObject GO);
         void IOnUnfocus(GameObject GO);
-        void IExecuteInteract();
+        void IExecuteInteract(GameObject GO);
         InteractionRange GetInteractionRange();
     }
 }
