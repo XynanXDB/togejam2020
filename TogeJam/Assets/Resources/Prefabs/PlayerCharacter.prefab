@@ -46,9 +46,7 @@ GameObject:
   - component: {fileID: 8254455883217261477}
   - component: {fileID: 8254455883217261481}
   - component: {fileID: 8254455883217261474}
-  - component: {fileID: 3193441838281657606}
   - component: {fileID: 7011353665698849365}
-  - component: {fileID: 8499940152905726959}
   - component: {fileID: 8204334654661428824}
   m_Layer: 0
   m_Name: PlayerCharacter
@@ -126,7 +124,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0.34
+  m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &8254455883217261476
@@ -236,14 +234,6 @@ MonoBehaviour:
   m_DefaultActionMap: Default
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!33 &3193441838281657606
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8254455883217261473}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &7011353665698849365
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -285,20 +275,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8499940152905726959
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8254455883217261473}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.50000006
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &8204334654661428824
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -310,9 +286,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 2.0153117
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.007655859, z: 0}
 --- !u!1 &8254455883809904241
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: c169b91c6469e544097660757a7d1d3d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: en-US
+  stringIDs:
+  - Starting-Transient-0
+  - Starting-Transient-1
+  - Starting-Transient-2
+  - Starting-Transient-3
+  - Starting-Transient-4
+  - Starting-Transient-5
+  - Starting-Transient-6
+  - Starting-Transient-7
+  - Starting-Transient-8
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: c169b91c6469e544097660757a7d1d3d, type: 3}
+  localizations: []
