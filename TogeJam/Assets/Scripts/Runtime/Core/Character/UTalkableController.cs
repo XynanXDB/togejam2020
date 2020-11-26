@@ -37,5 +37,10 @@ namespace Game.Core
         {
             
         }
+
+        public void SetAnimation(string Animation) //TODO Implement Animation
+        {
+            Debug.Log(Animation);
+        }
     }
 }

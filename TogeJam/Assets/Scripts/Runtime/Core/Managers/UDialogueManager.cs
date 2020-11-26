@@ -78,6 +78,7 @@ namespace Game.Core
         [SerializeField] protected UDialogueOptionGroup OptionGroup;
         [SerializeField] protected UTransientDialogueBox TransientDialogueBox;
         private List<UDialogueBubble> AssignedBubbles = null;
+        private List<ITalkable> JoinedSpeakers;
         public OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
 
         [Header("Debug")]
@@ -90,10 +91,12 @@ namespace Game.Core
         {
             DontDestroyOnLoad(this);
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
+            DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
 
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
             AssignedBubbles = new List<UDialogueBubble>();
+            JoinedSpeakers = new List<ITalkable>();
             
             BubblePooler.GetAllPooledObjects().ForEach( GO =>
             {
@@ -102,27 +105,23 @@ namespace Game.Core
             });
         }
 
+        void SetAnimation(string[] Data)
+        {
+            string[] Segments = Data[0].Split('.');
+            
+            ITalkable Target = JoinedSpeakers.Find( I => I.GetSpeakerInfo().Name == Segments[0]);
+            if (Target != null)
+                Target.SetAnimation(Segments[1]);
+        }
+
         void Start()
         {
-            YarnProgram YarnAsset = DialogueDB.GetYarnAssetByKey("Starting");
-            if (YarnAsset != null)
-                DialogueRunner.Add(YarnAsset);
-            else
-            {
-                Debug.LogError("YarnAsset not found");
-                return;
-            }
-
-            DialogueRunner.StartDialogue();
-            Player.SetMovementMode(InputMode.UI);
+            StartDialogue("Starting");
             TransientDialogueBox.Init(DialogueUI);
         }
 
-        public void InitiateDialogue(string YarnAssetName, List<ITalkable> InSpeakers, string StartNodeName = "Start")
+        void StartDialogue(string YarnAssetName, string StartNodeName = "Start")
         {
-            foreach(ITalkable I in InSpeakers)
-                JoinConversation(I);
-
             YarnProgram YarnAsset = DialogueDB.GetYarnAssetByKey(YarnAssetName);
             if (YarnAsset != null)
             {
@@ -132,9 +131,19 @@ namespace Game.Core
             }
             else
             {
-                Debug.LogError("YarnAsset not found.");
+                Debug.LogError("YarnAsset not found");
                 return;
             }
+        }
+
+        public void InitiateDialogue(string YarnAssetName, List<ITalkable> InSpeakers, string StartNodeName = "Start")
+        {
+            JoinedSpeakers = InSpeakers;
+
+            foreach(ITalkable I in InSpeakers)
+                JoinConversation(I);
+
+            StartDialogue(YarnAssetName, StartNodeName);
         }
 
         // Name -> Think/Talk -> Animation
@@ -171,6 +180,7 @@ namespace Game.Core
             TransientDialogueBox.Disable();
 
             AssignedBubbles.Clear();
+            JoinedSpeakers.Clear();
             Player.SetMovementMode(InputMode.Game);
 
             DialogueRunner.Clear();

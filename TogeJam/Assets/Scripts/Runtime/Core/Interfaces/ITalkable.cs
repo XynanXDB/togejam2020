@@ -12,5 +12,6 @@ namespace Game.Core
     public interface ITalkable 
     {
         FSpeakerInfo GetSpeakerInfo();
+        void SetAnimation(string Animation);
     }
 }
