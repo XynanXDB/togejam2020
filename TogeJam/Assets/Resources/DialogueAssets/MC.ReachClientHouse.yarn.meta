@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: e8d4772a40c50414fa143122e595c411
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - MC.ReachClientHouse-Start-0
+  - MC.ReachClientHouse-Start-1
+  - MC.ReachClientHouse-Start-2
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
