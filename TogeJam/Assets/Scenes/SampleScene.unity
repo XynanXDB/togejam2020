@@ -1533,7 +1533,7 @@ Transform:
   m_Children:
   - {fileID: 1758098705}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 24.34, y: 0, z: 0}
 --- !u!114 &1211711910
 MonoBehaviour:
@@ -1710,7 +1710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 952188007710854671, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 952188007710854671, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
