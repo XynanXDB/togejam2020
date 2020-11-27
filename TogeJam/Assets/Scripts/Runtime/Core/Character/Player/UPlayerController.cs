@@ -63,5 +63,10 @@ namespace Game.Core
         }
 
         public void SetMovementMode(InputMode Mode) => InputHandler.SetMovementMode(Mode);
+
+        public void SetAnimation(string Animation) //TODO Implement Animation
+        {
+            Debug.Log(Animation);
+        }
     }
 }
