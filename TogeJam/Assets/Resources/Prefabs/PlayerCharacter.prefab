@@ -167,6 +167,8 @@ MonoBehaviour:
       - {fileID: 2100000, guid: f3fee716de91d8a44b6bbc035d8df45e, type: 2}
       - {fileID: 2100000, guid: 93af874ec5de53e43a4853e57e4dfacb, type: 2}
       - {fileID: 2100000, guid: 891a41a217076c040834a21d574097a0, type: 2}
+  Dog: {fileID: 0}
+  MovementSpeed: 5
 --- !u!195 &8254455883217261479
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -391,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8254455883809904241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.733, z: 0.085}
+  m_LocalPosition: {x: 0, y: 0.588, z: 0.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8254455883217261472}

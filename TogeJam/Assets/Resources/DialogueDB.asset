@@ -40,13 +40,16 @@ MonoBehaviour:
     - Starting
     - MC.ReachClientHouse
     - MC.GotDog
+    - Beat2.Street
     _keys:
     - Billy
     - Starting
     - MC.ReachClientHouse
     - MC.GotDog
+    - Beat2.Street
     _values:
     - {fileID: 2480198943629176163, guid: 345133e4096e6c4478779349c6fc39ab, type: 3}
     - {fileID: 2480198943629176163, guid: c169b91c6469e544097660757a7d1d3d, type: 3}
     - {fileID: 2480198943629176163, guid: e8d4772a40c50414fa143122e595c411, type: 3}
     - {fileID: 2480198943629176163, guid: 938ed2dccb2990646b302cd8bc35eb3f, type: 3}
+    - {fileID: 2480198943629176163, guid: 815988c13f00ed24394a9c649eec52c1, type: 3}
