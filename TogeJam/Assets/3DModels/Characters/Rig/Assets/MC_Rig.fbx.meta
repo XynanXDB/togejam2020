@@ -3,7 +3,27 @@ guid: 7a08499fc0a8d9e42b0c1f990296e840
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_MC_model_M_FemC_Hair
+    second: {fileID: 2100000, guid: 2e88f2527fb9bc64a965988e23c2f8e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_model_M_FemC_Body
+    second: {fileID: 2100000, guid: 9a31181127af1e048ba25fd5b8a0f6d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_model_M_FemC_Eyes
+    second: {fileID: 2100000, guid: 891a41a217076c040834a21d574097a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_model_M_FemC_Head
+    second: {fileID: 2100000, guid: d4be79c05c3ea3440a4ac33fcea82ff7, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
