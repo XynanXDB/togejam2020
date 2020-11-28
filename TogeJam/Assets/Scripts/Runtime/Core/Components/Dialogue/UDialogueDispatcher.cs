@@ -33,12 +33,13 @@ namespace Game.Core
         public void Beat1_ReachClientHome()
         {
             DialogueManager.OnCustomDialogueEnd = 
-                () => UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_GetDog", 
-                    () => DialogueManager.InitiateDialogue("MC.GetDog", new List<ITalkable>(){Player, Dog}
-                    )
-                );
+                () => UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_GetDog", Beat1_GotDog);
 
             DialogueManager.InitiateDialogue("MC.ReachClientHouse", new List<ITalkable>(){Player});
+        }
+        public void Beat1_GotDog()
+        {
+            DialogueManager.InitiateDialogue("MC.GotDog", new List<ITalkable>(){Player, Dog});
         }
     }
 }

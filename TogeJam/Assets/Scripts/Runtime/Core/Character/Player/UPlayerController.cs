@@ -12,6 +12,7 @@ namespace Game.Core
         [SerializeField] protected Camera MainCam;
         [SerializeField] protected float AcceptanceRadiusPercentage = 0.9f;
         [SerializeField] protected FSpeakerInfo SpeakerInfo;
+        [SerializeField] protected UPlayerCharacter PlayerCharacter;
         protected FInputHandler InputHandler;
 
  //////////////////////////////////////////////////////////////////////
@@ -66,7 +67,13 @@ namespace Game.Core
 
         public void SetAnimation(string Animation) //TODO Implement Animation
         {
-            Debug.Log(Animation);
+            if (Animation == "Walk")
+                PlayerCharacter.SetAnimation(Animation);
+        }
+
+        public void SendNativeCommand(string Data)
+        {
+            
         }
     }
 }

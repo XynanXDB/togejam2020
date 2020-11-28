@@ -10,7 +10,11 @@ public class UStreetLoopManager : MonoBehaviour
     [SerializeField] protected NavMeshSurface NavSurface;
     [SerializeField] protected UStreetBlock ParkBlock;
 
-    
+    void Awake()
+    {
+        ParkBlock.gameObject.SetActive(false);
+    }
+
     public void SetPastBlock(UStreetBlock StreetBlock)
     {
         if (PastBlock == null)
@@ -22,7 +26,7 @@ public class UStreetLoopManager : MonoBehaviour
         {
             PastBlock.TriggerLoop(StreetBlock);
             PastBlock = StreetBlock;
-            NavSurface.BuildNavMesh();
+            //NavSurface.BuildNavMesh();
         }
     }
 }

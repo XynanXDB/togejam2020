@@ -8,13 +8,14 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-US
   stringIDs:
   - MC.ReachClientHouse-Start-0
   - MC.ReachClientHouse-Start-1
   - MC.ReachClientHouse-Start-2
+  - MC.ReachClientHouse-Start-3
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: e8d4772a40c50414fa143122e595c411, type: 3}
   localizations: []

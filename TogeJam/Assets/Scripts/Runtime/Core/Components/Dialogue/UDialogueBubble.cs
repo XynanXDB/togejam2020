@@ -26,6 +26,7 @@ namespace Game.Core
         [SerializeField] protected float PopupSpeed = 0.05f;
         [SerializeField] protected UDialogueAdvancer Advancer;
         [SerializeField] protected DialogueBubbleDictionary DialogueBubbleDictionary;
+        public string GetSpeakerName { get { return SpeakerName; }}
 
         void Update()
         {
@@ -112,17 +113,18 @@ namespace Game.Core
             DialogueUI.onLineUpdate.RemoveListener(SetDisplayText);
             DialogueUI.onLineStart.RemoveListener(PlayBubbleAnim);
 
+            SpeakerName = null;
+            SpeakerTransform = null;
+            DialogueUI = null;
+
             DisableBubble();
         }
 
-        void DisableBubble()
+        public void DisableBubble()
         {
             if (gameObject.activeSelf)
             {
                 AnimateScaleCoroutine = StartCoroutine(AnimateScale(false));
-                SpeakerName = null;
-                SpeakerTransform = null;
-
                 DisplayText.text = "";
             }
         }
@@ -150,8 +152,16 @@ namespace Game.Core
 
         public void OnSetSpeaker(YarnCommandPacket Packet) 
         {
-            if (CacheYarnPacket.name != null && CacheYarnPacket.name != Packet.name)
-                DisableBubble();
+            if (CacheYarnPacket.name != null)
+            {
+                if (CacheYarnPacket.name != Packet.name)
+                    DisableBubble();
+                else
+                {
+                    if (!gameObject.activeSelf)
+                        PlayBubbleAnim();
+                }
+            }
             CacheYarnPacket = Packet;
         }
     }
