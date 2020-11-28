@@ -1,0 +1,84 @@
+title: Start
+tags: 
+colorID: 0
+position: 494,-498
+---
+<wait 5>
+<<SetAnimation Dog.Walk>>
+<<SetSpeaker MC Think>>
+It's definitely not something I want to talk about.
+<<SetSpeaker MC Speak>>
+. . .
+<<SetSpeaker MC Think>>
+This park is surprisingly far.
+<<SetSpeaker Dog Speak>>
+. . . !
+<<SetSpeaker Dog Think>>
+I see the park coming up!
+<<SetSpeaker MC Speak>>
+Finally.
+<<SetSpeaker Dog Think>>
+It feels good to finally walk around like this.
+I've been stuck at home for so long, this is nice.
+<<SetSpeaker MC Speak>>
+Don't you go out to the backyard at home or something?
+<<SetSpeaker Dog Think>>
+Hmm. . .
+No not really. I used to.
+But only with my master playing with me, or at least watching over me.
+So not anytime recently.
+<<SetSpeaker MC Speak>>
+I see.
+Well you're out and about now I guess.
+<<SetSpeaker Dog Think>>
+Yes!
+Thank you for bringing me out. . . Uh. . .
+Hmm. . .
+What's your name?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+You don't need to know my name.
+<<SetSpeaker Dog Think>>
+Why not?
+<<SetSpeaker MC Speak>>
+Because it's not important.
+<<SetSpeaker Dog Think>>
+It's important to me!
+<<SetSpeaker MC Speak>>
+No, it really isn't.
+<<SetSpeaker Dog Think>>
+What's your name?
+<<SetSpeaker MC Speak>>
+Stop being anonying.
+<<SetSpeaker Dog Think>>
+Tell meeeeee!
+I can't thank you properly if I don't know your name!
+<<SetSpeaker MC Speak>>
+Save the thanking 'til when I get paid.
+<<SetSpeaker Dog Think>>
+Ok sure!
+But what's your name?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Closed>>
+. . .
+<<SetSpeaker Dog Think>>
+Is your name Strawberry?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>>
+What? Why Strawberry?
+<<SetSpeaker Dog Think>>
+Because your sweater is the same colour of a strawberry!
+<<SetSpeaker MC Think>>
+<<SetAnimation MC.Squint>>
+Does this dog think humans are born with their clothes?
+And then subsequently named after it's colour?
+Plus, I'm wearing mustard.
+<<SetAnimation MC.LookDown>>
+<<SetSpeaker Dog Think>>
+Thanks for bringing me out, Strawberry!
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+My name isn't Strawberry!
+<<SetSpeaker Dog Think>>
+Hey, the park is just right ahead!
+===

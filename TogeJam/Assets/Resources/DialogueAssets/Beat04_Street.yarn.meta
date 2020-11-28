@@ -1,0 +1,59 @@
+fileFormatVersion: 2
+guid: e2cf3eea009b3724894b46c645e74c89
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Beat04_Street-Start-0
+  - Beat04_Street-Start-1
+  - Beat04_Street-Start-2
+  - Beat04_Street-Start-3
+  - Beat04_Street-Start-4
+  - Beat04_Street-Start-5
+  - Beat04_Street-Start-6
+  - Beat04_Street-Start-7
+  - Beat04_Street-Start-8
+  - Beat04_Street-Start-9
+  - Beat04_Street-Start-10
+  - Beat04_Street-Start-11
+  - Beat04_Street-Start-12
+  - Beat04_Street-Start-13
+  - Beat04_Street-Start-14
+  - Beat04_Street-Start-15
+  - Beat04_Street-Start-16
+  - Beat04_Street-Start-17
+  - Beat04_Street-Start-18
+  - Beat04_Street-Start-19
+  - Beat04_Street-Start-20
+  - Beat04_Street-Start-21
+  - Beat04_Street-Start-22
+  - Beat04_Street-Start-23
+  - Beat04_Street-Start-24
+  - Beat04_Street-Start-25
+  - Beat04_Street-Start-26
+  - Beat04_Street-Start-27
+  - Beat04_Street-Start-28
+  - Beat04_Street-Start-29
+  - Beat04_Street-Start-30
+  - Beat04_Street-Start-31
+  - Beat04_Street-Start-32
+  - Beat04_Street-Start-33
+  - Beat04_Street-Start-34
+  - Beat04_Street-Start-35
+  - Beat04_Street-Start-36
+  - Beat04_Street-Start-37
+  - Beat04_Street-Start-38
+  - Beat04_Street-Start-39
+  - Beat04_Street-Start-40
+  - Beat04_Street-Start-41
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {fileID: 7128917941130120860, guid: e2cf3eea009b3724894b46c645e74c89, type: 3}
+  localizations: []

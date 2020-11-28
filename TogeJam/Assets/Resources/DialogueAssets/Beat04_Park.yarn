@@ -1,0 +1,222 @@
+title: Start
+tags: 
+colorID: 0
+position: 404,-658
+---
+<<SetSpeaker MC Speak>>
+Here we are, the park.
+Go crazy.
+<<SetSpeaker MC Think>>
+<<SetAnimation MC.Closed>>
+Just a few minutes here and I'll be home free.
+Maybe I'll take a quick stop at the bakery.
+They basically give away their leftovers by the time I'm done.
+Or maybe I should treat myself today.
+I could use some free flow BBQ. I've been craving for it for weeks!
+<<SetSpeaker Dog Think>>
+Aww.
+No one's here.
+<<SetSpeaker Dog Speak>>
+. . .
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+Oh noooooo, now you have the entire park to yourself.
+What an absolute nightmare.
+Isn't that every furball's dream?
+<<SetSpeaker Dog Think>>
+Not really.
+I would prefer having my master and friends around me.
+<<SetSpeaker MC Speak>>
+The sooner you appreciate your alone time, the happier you'll be.
+<<SetAnimation MC.Neutral>>
+No one's here more important than 'Number 1, the Alpha.'
+<<SetSpeaker Dog Think>>
+My master is the alpha, not me.
+<<SetSpeaker MC Speak>>
+No, I mean-
+I mean no one's more important than yourself.
+<<SetSpeaker Dog Think>>
+I'm pretty sure my master is more important than me.
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Closed>>
+What I'm saying is maybe you need to appreciate yourself more.
+<<SetAnimation MC.Neutral>>
+You don't exist solely for your master.
+<<SetSpeaker Dog Think>>
+I can't imagine a life without my master.
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+Then think harder, dogbrain.
+It's not even that hard.
+<<SetSpeaker Dog Think>>
+Well I don't wanna. That sounds boring!
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC. Closed>>
+True happiness can only come from yourself.
+You need to be content with whatever that's been dealt to you.
+Good or bad.
+<<SetSpeaker MC Think>>
+Not like a dog would understand.
+<<SetSpeaker Dog Speak>>
+. . .
+<<SetSpeaker Dog Think>>
+Is that why you're so grumpy?
+
+[[Because I value myself? Yes|Yes]]
+[[I'm happy. I never needed anyone,|No]]
+===
+title: Yes
+tags: 
+colorID: 0
+position: 768,-866
+---
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+In a way, yes.
+We can only control so much in this life.
+None of which involves other beings.
+You, yourself, and probably the only real constant in your life.
+Independence is one of the greatest things one can achieve.
+I don't mind being a satellite.
+Orbiting alone around this crazy world.
+Looking forward to the next sunset.
+Complete liberation.
+<<SetSpeaker Dog Speak>>
+. . .
+<<SetSpeaker Dog Think>>
+But doesn't that get lonely?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>>
+. . .
+There's a difference between being lonely and being alone.
+But yes, you get used to being alone.
+<<SetSpeaker Dog Think>>
+I don't think you'd have to get used to it.
+<<SetSpeaker MC Speak>>
+Well I did. And it did me wonders.
+<<SetSpeaker Dog Think>>
+<<SetAnimation MC.Neutral>>
+But you don't really have to be alone.
+There's always an option to make friends.
+<<SetSpeaker MC Speak>>
+I know it's an option. I specifically choose not to.
+It's a conscious decision.
+Friends can be more trouble than they're worth.
+<<SetSpeaker Dog Think>>
+But that's the thing right? They 'can' be?
+I'm sure that there are humans out there that want to do bad things to me.
+But I don't think everyone will want to do that, to me, or you.
+Friends can be a great source of joy.
+But only if we give out ourselves as much as we take from them.
+And I think sometimes we give ourselves to the wrong people.
+Maybe not even the wrong people, maybe just at the wrong time.
+<<SetSpeaker Dog Speak>>
+. . .
+<<SetSpeaker Dog Think>>
+If I were to treat everyone as an enemy, everyone would be my enemy.
+I would be missing out on all the joy I could be having.
+And sometimes not even for any good reason.
+All that happiness, wasted because you were afraid of a small chance of pain.
+<<SetSpeaker MC Speak>>
+But is it ever a 'small chance' of pain?
+<<SetSpeaker Dog Think>>
+I don't think you're gullible, you wouldn't want to be friends with anyone.
+You would know who you click with and who you don't, it just happens.
+But it sounds like. . .
+It sounds like even if you clicked, you'd reject them.
+You would go against your gut feeling.
+Even when you know it wouldn't hurt to try.
+To the point you wouldn't even tell a dog your name.
+<<SetSpeaker MC Speak>>
+. . .
+
+[[FunnelD]]
+===
+title: No
+tags: 
+colorID: 0
+position: 794,-468
+---
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+I've never needed anyone.
+<<SetAnimation MC.Closed>>
+And I'm more than happy about it.
+<<SetAnimation MC.Neutral>>
+Not everyone can live like me.
+It takes personal strength, persistence.
+And the mental fortitude that you could never understand.
+<<SetSpeaker Dog Speak>>
+. . .
+<<SetSpeaker Dog Think>>
+Sounds lonely.
+<<SetSpeaker MC Speak>>
+You won't get lonely if your best friend is yourself.
+Who else has your best interest at heart?
+You get used to it, and move on.
+I've learned that the long and hard way.
+And I've never been stronger.
+It's like a satellite, drifting alone in space.
+Looking forward to the next sunset.
+Out of reach from anyone, so they have to fix themselves.
+The only thing they could is hope not to crash into the atmosphere.
+<<SetSpeaker Dog Think>>
+So you're saying you do get lonely?
+<<SetSpeaker MC Speak>>
+That's not the point.
+There's nothing wrong with being alone.
+<<SetSpeaker Dog Think>>
+But you don't really have to be alone.
+There's always an option to make friends.
+<<SetSpeaker MC Speak>>
+But why would I ever?
+Bringing someone close is never worth the devastating damage it can cause.
+It's when your guard is lowered where they can push the dagger in the deepest.
+<<SetSpeaker Dog Think>>
+But not everyone is out to get you.
+It's crazy to think that.
+<<SetSpeaker MC Speak>>
+But how would we ever know?
+<<SetAnimation MC.Closed>>
+It's only when it's too late or in retrospect where we ever see it for what it is.
+The fact of the matter is everyone COULD be.
+<<SetSpeaker Dog Think>>
+But that just means you're blocking out anyone who could ever be a friend.
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+Then I've also blocked out all the idiots from screwing with me.
+I can always deal with myself.
+I'm the easiest friend to please, the nicest to me too.
+All these, complications; the drama and the backstabbing.
+The rumours whispered from one kid to the next.
+And the obscenities said straight to my face.
+Why in the hell would I ever want to go through that again?
+And it only ever takes one person to start it all.
+<<SetAnimation MC.Closed>>
+. . .
+
+[[FunnelD]]
+===
+title: FunnelD
+tags: 
+colorID: 0
+position: 1079,-694
+---
+<<SetSpeaker MC Think>>
+<<SetAnimation MC.Neutral>>
+This was a surprisingly tiring walk.
+Mentally exhausting, if anything.
+<<SetSpeaker MC Speak>>
+Sigh.
+<<SetSpeaker Dog Speak>>
+. . .
+<<SetSpeaker MC Speak>>
+Well, time's up.
+Time to head back to your master.
+<<SetSpeaker Dog Speak>>
+. . .
+<<SetSpeaker Dog Think>>
+Sure.
+<<SetSpeaker MC Speak>>
+. . .
+===
