@@ -1,0 +1,278 @@
+title: Start
+tags: 
+colorID: 0
+position: 387,-85
+---
+<<SetSpeaker MC Think>>
+<<SetAnimation MC.Neutral>> 
+I really can't have this mutt looking this depressed when I bring him back home.
+<<SetSpeaker MC Speak>>
+. . .
+<<SetSpeaker MC Think>>
+Hmm but thinking back, he already looked pretty down when I came over.
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>>
+Well if anything. . .
+Your coat looks pretty good.
+<<SetSpeaker MC Think>>
+That sounded dumb as heck.
+<<SetSpeaker Dog Speak>> 
+<<SetAnimation Dog.Stand>>
+. . .
+<<SetSpeaker Dog Think>>
+You really think so?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>>
+No.
+But hey good news is, my opinion doesn't really mean anything.
+Or at least it shouldn't.
+<<SetSpeaker Dog Think>>
+<<SetAnimation Dog.Walk>>
+I think it does!
+Friends care about what other friends think of them.
+It is how it is.
+<<SetSpeaker MC Think>>
+<<SetAnimation MC.Closed>>
+Here we go again
+<<SetSpeaker MC Speak>> 
+<<SetAnimation MC.Neutral>>
+We should be reaching the park in awhile!
+<<SetSpeaker Dog Think>>
+Oh I hope to see a lot of my friends there!
+<<SetSpeaker MC Speak>>
+Well I don't, not a fan of crowds.
+<<SetSpeaker Dog Think>>
+Master used to bring me here all the time, it was such a long time ago.
+He hasn't done that in a awhile. Now we almost never leave the house.
+I need to stretch my legs!
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>>
+Boo hoo, such a hard life you live, being fed and cared for.
+Running around knocking over shit, shredding sofas, and rolling in your bed.
+Real hard life. You have my thoughts and prayers.
+<<SetSpeaker Dog Think>>
+<<SetAnimation Dog.Stand>> 
+I'll have you know that I'm a very good boy.
+If I weren't, my master wouldn't have said it so many times.
+<<SetSpeaker MC Speak>> 
+<<SetAnimation MC.Closed>>
+Do you believe every single word that comes out of your master's mouth?
+You know, humans almost never say what they really mean.
+Always have, always will, and last I checked your master's a human.
+<<SetSpeaker Dog Think>> 
+Master wouldn't lie to me. He has no reason to.
+And if all humans lie, are you a liar too then?
+<<SetSpeaker Dog Speak>>
+Are you a liar too then?
+[[It doesn't matter.|ItDoesntMatter]]
+[[Everybody lies.|EverybodyLies]]
+===
+title: ItDoesntMatter
+tags: 
+colorID: 0
+position: 743,-307
+---
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+It doesn't matter.
+I've literally just lied to you earlier. About your coat looking good.
+Does that make me a bad person?
+<<SetSpeaker Dog Think>>
+No. . .
+<<SetSpeaker MC Speak>> 
+Lying is just how we humans do things.
+<<SetSpeaker Dog Think>>
+So what you're saying is. . .
+Either way my master is a good person?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+No, I- Ugh.
+<<SetAnimation Dog.Walk>> 
+Why am I discussing basic ethics with a dog?
+<<SetSpeaker Dog Think>>
+But why did you lie?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>> 
+Why did I lie?
+<<SetSpeaker Dog Think>>
+Yeah. There has to be a reason right?
+<<SetSpeaker MC Speak>>
+Well I mean. . .
+I guess you looked a bit down, so I thought I could cheer you up a bit.
+<<SetSpeaker Dog Think>>
+See, there is good in humans. You're good to me.
+A bit grumpy though.
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+I'm hardly a good person for, lying by the way, about how good your coat looks.
+<<SetSpeaker Dog Think>>
+Yeah but you cared about me feeling sad!
+You cared about a stranger's dog's feelings enough to lie!
+You're good!
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Closed>>
+. . .
+<wait 2>
+<<SetAnimation MC.Squint>>
+Whatever.
+
+[[FunnelB]]
+===
+title: EverybodyLies
+tags: 
+colorID: 0
+position: 752,141
+---
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>>
+Everybody lies, that's what humans are best at.
+Yeah sure, sometimes we lie for a good reason.
+<<SetAnimation MC.Closed>>
+But most of the time, it's just because we can, for the liar's benefit.
+. . .
+<<SetAnimation MC.Neutral>>
+Sorry to break it to you, but humans kinda suck.
+<<SetSpeaker Dog Speak>>
+That's not true!
+There may be bad people out there, but master's not one of them!
+I don't know about humans, but we pride ourselves in our trust to our masters.
+We are proud to be their friends, their protectors.
+For good or bad, we know our master aren't bad people, not to us.
+I can put myself in their hands and not worry, they are provider and companion.
+<<SetSpeaker MC Speak>>
+. . .
+You've only seen their good side.
+<<SetAnimation Dog.Walk>> 
+And from what you've been saying, it sounds like you've begun seeing the other.
+<<SetAnimation MC.Closed>>
+. . .
+All I'm saying is don't be surprised when you realise your master isn't perfect.
+It's when we put them up high where they can kick us to our lowest.
+<<SetSpeaker Dog Think>> 
+I trust my master.
+<<SetSpeaker MC Speak>>
+I know.
+<<SetSpeaker MC Think>>
+That's what worries me.
+
+[[FunnelB]]
+===
+title: FunnelB
+tags: 
+colorID: 0
+position: 1096,-133
+---
+<<SetSpeaker MC Speak>> 
+<<SetAnimation MC.Neutral>>
+. . .
+<<SetSpeaker MC Think>>
+Hmm I never got to know why he was feeling down.
+I don't know if I should even poke my head into this.
+<<SetSpeaker Dog Speak>> 
+<wait 5>
+<<SetSpeaker MC Think>>
+I'm bored though.
+<<SetSpeaker MC Speak>> 
+So what's got you down?
+<<SetSpeaker Dog Think>> 
+Hm?
+<<SetSpeaker MC Speak>> 
+You mentioned it earlier, about if your master was alright.
+<<SetSpeaker Dog Think>>
+Oh right.
+<<SetSpeaker MC Speak>> 
+Yeah, you seemed concerned.
+<<SetSpeaker Dog Speak>> 
+. . .
+<<SetSpeaker Dog Think>> 
+Well master has been inside the house for awhile. He always looked so sad.
+He seemed stressed, always rushing about and stuff.
+But inside. Always inside.
+<<SetSpeaker MC Speak>> 
+. . .
+<<SetSpeaker Dog Think>> 
+Wait, actually he did. He actually played with me a lot at first.
+And then not at all.
+<<SetSpeaker MC Speak>> 
+Hmm, I see.
+I think I know what's going on.
+<<SetSpeaker Dog Think>>
+<<SetAnimation Dog.Stand>>
+You do!?
+<<SetSpeaker MC Speak>> 
+I mean, I could be wrong, but maybe he's in a similar position as me.
+<<SetSpeaker Dog Think>>
+What is it?
+<<SetSpeaker MC Speak>> 
+Well, it's hard to explain.
+But people are inside for a reason. Basically there's a disease out and about.
+So people are kinda asked to stay home.
+<<SetSpeaker Dog Think>>
+<<SetAnimation Dog.Walk>>
+Why?
+<<SetSpeaker MC Speak>> 
+Hmm, well, it's harder to get the disease when you're at home.
+That's basically why. That's why we're wearing these masks too.
+<<SetSpeaker Dog Think>>
+Oh I see. I thought you were hiding your pimples.
+<<SetSpeaker MC Speak>> 
+<<SetAnimation MC.Squint>>
+How are you so annoying?
+Are you testing me if I'd eat dog meat if you annoyed me enough?
+<<SetSpeaker Dog Think>>
+We can tell if a human ever ate dog meat.
+Anyways, why would my master be so upset about all of that?
+<<SetSpeaker MC Speak>> 
+<<SetAnimation MC.Neutral>> 
+. . .
+Well, maybe the situation with the disease cost him his job.
+<<SetSpeaker Dog Think>> 
+Huh why?
+<<SetSpeaker MC Speak>> 
+It's. . . complicated. You wouldn't really understand.
+But I'm getting the impression that's the case.
+If that's true, then your master's probably in the same boat as me.
+<<SetSpeaker Dog Think>> 
+You have a boat!?
+<<SetSpeaker MC Speak>> 
+No, I mean your master is probably unemployed, like me.
+<<SetSpeaker Dog Think>>
+<<SetAnimation Dog.Stand>>
+Ah so that's why you're grumpy.
+<<SetSpeaker MC Speak>> 
+No, I've always been like this.
+Since I was a kid anyways.
+<<SetSpeaker Dog Think>> 
+<<SetAnimation Dog.Walk>>
+But isn't a job how you humans get money? To buy food and such?
+<<SetSpeaker MC Speak>> 
+Ah so you're not as dumb as you look.
+<<SetSpeaker Dog Think>> 
+I'm a smart boy!
+<<SetSpeaker MC Speak>> 
+Sure you are.
+<<SetSpeaker Dog Think>> 
+But how are you getting oney if you don't have a job?
+<<SetSpeaker MC Speak>> 
+That's why I'm here, walking your butt.
+Your master is paying me to walk you, basically.
+<<SetSpeaker Dog Think>>
+Oh I see!
+<<SetSpeaker MC Speak>> 
+Yep, me walking you is going to feed me for a week!
+<<SetSpeaker Dog Think>> 
+I see I see!
+<<SetSpeaker MC Think>> 
+Hmm thinking about it. . .
+If he's got money to pay me this much, it's not likely that he's out of a job.
+<<SetSpeaker MC Speak>> 
+Actually. . . 
+I think your master's doing fine.
+He's probably just stressed from the whole 'work from home' situation.
+Staying at home for too long does weird stuff to humans.
+<<SetSpeaker Dog Think>> 
+Wow you are so knowledgable!
+Are you a smart boy too?
+<<SetSpeaker MC Speak>> 
+Not a boy. But thanks.
+===
