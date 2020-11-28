@@ -20,6 +20,8 @@ namespace Game.Core
         private DialogueUI DialogueUI;
         [SerializeField] protected Animator BoxAnimate;
 
+/////////////////////////////////////////////////////////////////////////////////
+
         void OnEnable()
         {
            BoxAnimate.Play("FadeIn");
@@ -27,11 +29,6 @@ namespace Game.Core
 
         void CleanUp()
         {
-            DialogueUI.onLineUpdate.RemoveListener(SetDisplayText);
-            DialogueUI.onLineStart.RemoveListener(SetEnable);
-            DialogueUI.onLineFinishDisplaying.RemoveListener(ConditionalActivateDialogueAdvancer);
-            
-            DialogueUI = null;
             gameObject.SetActive(false);
         }
 
@@ -48,17 +45,20 @@ namespace Game.Core
             {
                 BoxAnimate.Play("FadeOut");
                 SpeakerName = null;
-
                 DisplayText.text = "";
+                DialogueUI.onLineUpdate.RemoveListener(SetDisplayText);
+                DialogueUI.onLineStart.RemoveListener(SetEnable);
+                DialogueUI.onLineFinishDisplaying.RemoveListener(ConditionalActivateDialogueAdvancer);
+                
+                DialogueUI = null;
             }
         }
 
         public void Init(DialogueUI UI)
         {
             DialogueUI = UI;
-
             DialogueUI.onLineUpdate.AddListener(SetDisplayText);
-            DialogueUI.onLineStart.AddListener(() => { gameObject.SetActive(true); });
+            DialogueUI.onLineStart.AddListener(SetEnable);
 
             DialogueUI.onLineFinishDisplaying.AddListener(ConditionalActivateDialogueAdvancer);
             

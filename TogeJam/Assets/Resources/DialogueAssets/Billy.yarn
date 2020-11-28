@@ -3,12 +3,12 @@ tags:
 colorID: 0
 position: 1180,391
 ---
-<<SetSpeaker Billy Speak Neutral>>
+<<SetSpeaker Billy Speak>>
 Hi Jimmy, how are you lately?
 -> Fantastic
-    <<SetSpeaker Dog Speak Neutral>>
+    <<SetSpeaker Dog Speak>>
     Oh wow, I wish was doing that good!
 -> So, so...
-    <<SetSpeaker Dog Speak Neutral>>
+    <<SetSpeaker Dog Speak>>
     I think I'll leave that alone.
 ===

@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7529412, g: 0.4923056, b: 0.4, a: 0.5803922}
+  m_Color: {r: 0.7529412, g: 0.4923056, b: 0.4, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 952188007710854665}
   - component: {fileID: 952188007710854666}
   - component: {fileID: -1091845388076163808}
+  - component: {fileID: 8483065915076613035}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: DialogueManager
@@ -366,6 +367,20 @@ MonoBehaviour:
   TransientDialogueBox: {fileID: 1815799168264542185}
   Player: {fileID: 0}
   Dog: {fileID: 0}
+--- !u!114 &8483065915076613035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952188007710854670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67ec2921a65fab34a80518596643ad46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueManager: {fileID: -1091845388076163808}
+  Player: {fileID: 0}
 --- !u!1 &3523864485693360357
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,7 +725,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -728,14 +743,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 32
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1403,11 +1418,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
---- !u!1 &7038746176353313898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2246170036451403349, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
-  m_PrefabInstance: {fileID: 9116791863286841919}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &8708624770986106024 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 458832744892931735, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
@@ -1422,5 +1432,10 @@ MonoBehaviour:
 --- !u!224 &3054241589747333646 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6118000930961979441, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
+  m_PrefabInstance: {fileID: 9116791863286841919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7038746176353313898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2246170036451403349, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
   m_PrefabInstance: {fileID: 9116791863286841919}
   m_PrefabAsset: {fileID: 0}

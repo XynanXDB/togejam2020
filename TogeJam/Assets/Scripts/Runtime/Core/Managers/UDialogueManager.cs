@@ -15,23 +15,20 @@ namespace Game.Core
     {
         public string name;
         public string Action;
-        public string Animation;
 
 ///////////////////////////////////////////////////////////////////////////////
 
-        public YarnCommandPacket(string InName, string InAction, string InAnimation)
+        public YarnCommandPacket(string InName, string InAction)
         {
             name = InName;
             Action = InAction;
-            Animation = InAnimation;
         }
 
         public override bool Equals(object obj)
         {
             return obj is YarnCommandPacket packet &&
                    name == packet.name &&
-                   Action == packet.Action &&
-                   Animation == packet.Animation;
+                   Action == packet.Action;
         }
 
         public override int GetHashCode()
@@ -46,7 +43,7 @@ namespace Game.Core
 
         public static bool operator==(YarnCommandPacket Self, YarnCommandPacket Other)
         {
-            return (Self.name == Other.name && Self.Action == Other.Action && Self.Animation == Other.Animation);
+            return (Self.name == Other.name && Self.Action == Other.Action);
         }
 
         public static bool operator!=(YarnCommandPacket Self, YarnCommandPacket Other)
@@ -80,6 +77,7 @@ namespace Game.Core
         private List<UDialogueBubble> AssignedBubbles = null;
         private List<ITalkable> JoinedSpeakers;
         public OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
+        public VoidSignature OnCustomDialogueEnd = null;
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
@@ -105,19 +103,21 @@ namespace Game.Core
             });
         }
 
-        void SetAnimation(string[] Data)
+        void Start() //TODO Use GameMode to control this
         {
-            string[] Segments = Data[0].Split('.');
-            
-            ITalkable Target = JoinedSpeakers.Find( I => I.GetSpeakerInfo().Name == Segments[0]);
-            if (Target != null)
-                Target.SetAnimation(Segments[1]);
+            UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_Start");
         }
 
-        void Start()
+        void SetAnimation(string[] Data)
         {
-            StartDialogue("Starting");
-            TransientDialogueBox.Init(DialogueUI);
+            foreach (string Command in Data)
+            {
+                string[] Segments = Command.Split('.');
+                
+                ITalkable Target = JoinedSpeakers.Find( I => I.GetSpeakerInfo().Name == Segments[0]);
+                if (Target != null)
+                    Target.SetAnimation(Segments[1]);
+            }
         }
 
         void StartDialogue(string YarnAssetName, string StartNodeName = "Start")
@@ -128,6 +128,9 @@ namespace Game.Core
                 DialogueRunner.Add(YarnAsset);
                 DialogueRunner.StartDialogue(StartNodeName);
                 Player.SetMovementMode(InputMode.UI);
+
+                if (YarnAssetName == "Starting")
+                    TransientDialogueBox.Init(DialogueUI);
             }
             else
             {
@@ -136,20 +139,28 @@ namespace Game.Core
             }
         }
 
-        public void InitiateDialogue(string YarnAssetName, List<ITalkable> InSpeakers, string StartNodeName = "Start")
+        public void InitiateDialogue(string YarnAssetName, List<ITalkable> InSpeakers = null, string StartNodeName = "Start")
         {
             JoinedSpeakers = InSpeakers;
-
-            foreach(ITalkable I in InSpeakers)
-                JoinConversation(I);
+            
+            if (InSpeakers != null)
+            {
+                foreach(ITalkable I in InSpeakers)
+                    JoinConversation(I);
+            }
 
             StartDialogue(YarnAssetName, StartNodeName);
         }
 
-        // Name -> Think/Talk -> Animation
+        // Name -> Think/Talk
         void SetSpeaker(string[] Data)
         {
-            OnReceiveSetSpeaker?.Invoke(new YarnCommandPacket(Data[0], Data[1], Data[2]));
+            List<string> Commands = new List<string>() { null, null };
+
+            for(int i = 0; i < Data.Length; i++)
+                Commands[i] = Data[i];
+            
+           OnReceiveSetSpeaker?.Invoke(new YarnCommandPacket(Commands[0], Commands[1]));
         }
 
         void OnDestroy()
@@ -173,15 +184,18 @@ namespace Game.Core
 
         void OnDialogueEnd()
         {
+            OnCustomDialogueEnd?.Invoke();
+            OnCustomDialogueEnd = null;
+
             AssignedBubbles.ForEach(B => {
                 B.UnassignSpeaker();
             });
 
             TransientDialogueBox.Disable();
-
             AssignedBubbles.Clear();
-            JoinedSpeakers.Clear();
-            Player.SetMovementMode(InputMode.Game);
+
+            if (JoinedSpeakers != null)
+                JoinedSpeakers.Clear();
 
             DialogueRunner.Clear();
         }

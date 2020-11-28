@@ -7,7 +7,7 @@ namespace Game.Core
     public class UTalkableController : UController, ITalkable, IInteractable
     {
         [SerializeField] protected FSpeakerInfo SpeakerInfo;
-        [SerializeField] protected GameObject Interactor;
+        [HideInInspector] public GameObject Interactor;
 
         public InteractionRange GetInteractionRange() => InteractionRange.CloseRange;
 
@@ -21,11 +21,11 @@ namespace Game.Core
 
         public void IExecuteInteract(GameObject GO)
         {
-            List<ITalkable> Speakers = new List<ITalkable>();
-            Speakers.Add(GO.GetComponent<ITalkable>());
-            Speakers.Add(GetComponent<ITalkable>());
-
-            UDialogueManager.DialogueManager.InitiateDialogue("Billy", Speakers, "Billy.Start");
+            UDialogueManager.DialogueManager.InitiateDialogue("Billy", new List<ITalkable>()
+            {
+                GO.GetComponent<ITalkable>(),
+                GetComponent<ITalkable>()
+            }, "Billy.Start");
         }
 
         public void IOnFocus(GameObject GO)

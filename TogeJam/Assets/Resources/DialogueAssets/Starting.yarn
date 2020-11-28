@@ -3,8 +3,8 @@ tags:
 colorID: 0
 position: 1080,211
 ---
-<<SetAnimation FeMC.Squint>>
-It's an easy rig. Potentially messy and annoying; but an easy gig nonetheless.
+<<SetSpeaker Transient>>
+It's an easy gig. Potentially messy and annoying; but an easy gig nonetheless.
 These days, all you need is an app and some time.
 Of course, the more effort it takes, the more they pay you out for it.
 Could be come handiwork, babysitting, maybe just running down to the store.
