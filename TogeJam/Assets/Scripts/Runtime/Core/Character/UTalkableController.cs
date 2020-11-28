@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,22 @@ namespace Game.Core
     {
         [SerializeField] protected FSpeakerInfo SpeakerInfo;
         [HideInInspector] public GameObject Interactor;
+        [SerializeField] protected Animator DogAnimate;
+        private bool bTurnDog = false;
+
+///////////////////////////////////////////////////////////////////////////////
+
+        void Update()
+        {
+            if (bTurnDog)
+            {
+                Quaternion currentRotation = transform.rotation;
+                transform.rotation = Quaternion.RotateTowards(currentRotation, Quaternion.Euler(0.0f, 90.0f, 0.0f), 85.0f * Time.deltaTime);
+
+                if (Quaternion.Dot(currentRotation, Quaternion.Euler(0.0f, 90.0f, 0.0f)) >= 1.0f)
+                    bTurnDog = false;
+            }
+        }
 
         public InteractionRange GetInteractionRange() => InteractionRange.CloseRange;
 
@@ -40,7 +57,19 @@ namespace Game.Core
 
         public void SetAnimation(string Animation) //TODO Implement Animation
         {
-            Debug.Log(Animation);
+            if (Animation == "Walk")
+                DogAnimate.Play(Animation);      
+        }
+
+        public void TurnDog()
+        {
+            bTurnDog = true;
+        }
+
+        public void SendNativeCommand(string Data)
+        {
+            if (Data == "TurnDog")
+                bTurnDog = true;
         }
     }
 }

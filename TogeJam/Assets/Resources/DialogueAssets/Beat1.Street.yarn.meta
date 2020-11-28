@@ -1,0 +1,100 @@
+fileFormatVersion: 2
+guid: a5d51cbde7568c940b5ef8e41eb9e878
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Beat1.Street-Start-0
+  - Beat1.Street-Start-1
+  - Beat1.Street-Start-2
+  - Beat1.Street-Start-3
+  - Beat1.Street-Start-4
+  - Beat1.Street-Start-5
+  - Beat1.Street-Start-6
+  - Beat1.Street-Start-7
+  - Beat1.Street-Start-8
+  - Beat1.Street-Start-9
+  - Beat1.Street-Start-10
+  - Beat1.Street-Start-11
+  - Beat1.Street-Start-12
+  - Beat1.Street-Start-13
+  - Beat1.Street-Start-14
+  - Beat1.Street-Start-15
+  - Beat1.Street-Start-16
+  - Beat1.Street-Start-17
+  - Beat1.Street-Start-18
+  - Beat1.Street-Start-19
+  - Beat1.Street-Start-20
+  - Beat1.Street-Start-21
+  - Beat1.Street-Start-22
+  - Beat1.Street-Start-23
+  - Beat1.Street-Start-24
+  - Beat1.Street-Start-25
+  - Beat1.Street-Start-26
+  - Beat1.Street-Start-27
+  - Beat1.Street-Start-28
+  - Beat1.Street-Start-29
+  - Beat1.Street-Start-30
+  - Beat1.Street-Start-31
+  - Beat1.Street-Start-32
+  - Beat1.Street-Start-33
+  - Beat1.Street-Start-34
+  - Beat1.Street-Start-35
+  - Beat1.Street-Interested-36
+  - Beat1.Street-Interested-37
+  - Beat1.Street-Interested-38
+  - Beat1.Street-Interested-39
+  - Beat1.Street-Interested-40
+  - Beat1.Street-Interested-41
+  - Beat1.Street-Interested-42
+  - Beat1.Street-Interested-43
+  - Beat1.Street-Interested-44
+  - Beat1.Street-Interested-45
+  - Beat1.Street-Interested-46
+  - Beat1.Street-Interested-47
+  - Beat1.Street-Interested-48
+  - Beat1.Street-Interested-49
+  - Beat1.Street-Interested-50
+  - Beat1.Street-Interested-51
+  - Beat1.Street-Interested-52
+  - Beat1.Street-ShrugOff-53
+  - Beat1.Street-ShrugOff-54
+  - Beat1.Street-ShrugOff-55
+  - Beat1.Street-ShrugOff-56
+  - Beat1.Street-ShrugOff-57
+  - Beat1.Street-ShrugOff-58
+  - Beat1.Street-ShrugOff-59
+  - Beat1.Street-ShrugOff-60
+  - Beat1.Street-ShrugOff-61
+  - Beat1.Street-ShrugOff-62
+  - Beat1.Street-ShrugOff-63
+  - Beat1.Street-ShrugOff-64
+  - Beat1.Street-ShrugOff-65
+  - Beat1.Street-ShrugOff-66
+  - Beat1.Street-Funnel-67
+  - Beat1.Street-Funnel-68
+  - Beat1.Street-Funnel-69
+  - Beat1.Street-Funnel-70
+  - Beat1.Street-Funnel-71
+  - Beat1.Street-Funnel-72
+  - Beat1.Street-Funnel-73
+  - Beat1.Street-Funnel-74
+  - Beat1.Street-Funnel-75
+  - Beat1.Street-Funnel-76
+  - Beat1.Street-Funnel-77
+  - Beat1.Street-Funnel-78
+  - Beat1.Street-Funnel-79
+  - Beat1.Street-Funnel-80
+  - Beat1.Street-Funnel-81
+  - Beat1.Street-Funnel-82
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
