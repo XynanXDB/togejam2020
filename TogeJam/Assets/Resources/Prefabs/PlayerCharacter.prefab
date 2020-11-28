@@ -111,6 +111,7 @@ MonoBehaviour:
   SpeakerInfo:
     Name: MC
     SpeechTransform: {fileID: 8254455883809904240}
+  PlayerCharacter: {fileID: 8254455883217261475}
 --- !u!114 &8254455883217261475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +126,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerController: {fileID: 8254455883217261478}
   InteractComponent: {fileID: 8254455883217261481}
+  PlayerCharAnimate: {fileID: 5055068442740439232}
+  EyeAnimController:
+    MeshRenderer: {fileID: 3700587944826807939}
+    EyeMatchup:
+      reorderableList:
+        canAdd: 1
+        canRemove: 1
+        draggable: 1
+        expandable: 1
+        multipleSelection: 1
+        isExpanded: 1
+        label:
+          m_Text: Keys
+          m_Image: {fileID: 0}
+          m_Tooltip: 
+        headerHeight: 18
+        footerHeight: 13
+        slideEasing: 0.15
+        verticalSpacing: 2
+        showDefaultBackground: 1
+        elementDisplayType: 0
+        elementNameProperty: 
+        elementNameOverride: 
+        elementIcon: {fileID: 0}
+      reqReferences: {fileID: 0}
+      isExpanded: 1
+      _keyValues:
+      - Neutral
+      - Closed
+      - LookDown
+      - Squint
+      _keys:
+      - Neutral
+      - Closed
+      - LookDown
+      - Squint
+      _values:
+      - {fileID: 2100000, guid: 5cab177e45762a74482a4485ca312b75, type: 2}
+      - {fileID: 2100000, guid: f3fee716de91d8a44b6bbc035d8df45e, type: 2}
+      - {fileID: 2100000, guid: 93af874ec5de53e43a4853e57e4dfacb, type: 2}
+      - {fileID: 2100000, guid: 891a41a217076c040834a21d574097a0, type: 2}
+  Dog: {fileID: 0}
+  MovementSpeed: 5
 --- !u!195 &8254455883217261479
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -349,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8254455883809904241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.733, z: 0.085}
+  m_LocalPosition: {x: 0, y: 0.588, z: 0.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8254455883217261472}
@@ -362,6 +406,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8254455883217261472}
     m_Modifications:
+    - target: {fileID: -8733208686693916608, guid: 7a08499fc0a8d9e42b0c1f990296e840, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8733208686693916608, guid: 7a08499fc0a8d9e42b0c1f990296e840, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cab177e45762a74482a4485ca312b75, type: 2}
+    - target: {fileID: -8733208686693916608, guid: 7a08499fc0a8d9e42b0c1f990296e840, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3fee716de91d8a44b6bbc035d8df45e, type: 2}
+    - target: {fileID: -8733208686693916608, guid: 7a08499fc0a8d9e42b0c1f990296e840, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 93af874ec5de53e43a4853e57e4dfacb, type: 2}
+    - target: {fileID: -8733208686693916608, guid: 7a08499fc0a8d9e42b0c1f990296e840, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cab177e45762a74482a4485ca312b75, type: 2}
     - target: {fileID: -8679921383154817045, guid: 7a08499fc0a8d9e42b0c1f990296e840, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -420,5 +484,10 @@ GameObject:
 --- !u!4 &3611025589374492968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7a08499fc0a8d9e42b0c1f990296e840, type: 3}
+  m_PrefabInstance: {fileID: 3861354928068773571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &3700587944826807939 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -8733208686693916608, guid: 7a08499fc0a8d9e42b0c1f990296e840, type: 3}
   m_PrefabInstance: {fileID: 3861354928068773571}
   m_PrefabAsset: {fileID: 0}

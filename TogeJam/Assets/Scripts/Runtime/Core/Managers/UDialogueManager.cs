@@ -81,7 +81,8 @@ namespace Game.Core
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
-        [SerializeField] protected UController Dog;
+        [SerializeField] protected UTalkableController Dog;
+        
 
 ///////////////////////////////////////////////////////////////////////
         
@@ -90,6 +91,8 @@ namespace Game.Core
             DontDestroyOnLoad(this);
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
             DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
+            DialogueRunner.AddCommandHandler("OffBubble", OffBubble);
+            DialogueRunner.AddCommandHandler("TurnDog", TurnDog);
 
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
@@ -103,9 +106,22 @@ namespace Game.Core
             });
         }
 
+        void TurnDog(string[] Data)
+        {
+            ITalkable I = JoinedSpeakers.Find(S => S.GetSpeakerInfo().Name == "Dog");
+            I?.SendNativeCommand("TurnDog");
+        }
+
         void Start() //TODO Use GameMode to control this
         {
             UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_Start");
+        }
+
+        void OffBubble(string[] Data)
+        {
+            UDialogueBubble Bubble = AssignedBubbles.Find( B => B.GetSpeakerName == Data[0]);
+            if (Bubble != null)
+                Bubble.DisableBubble();
         }
 
         void SetAnimation(string[] Data)
@@ -184,8 +200,7 @@ namespace Game.Core
 
         void OnDialogueEnd()
         {
-            OnCustomDialogueEnd?.Invoke();
-            OnCustomDialogueEnd = null;
+            DialogueRunner.Clear();
 
             AssignedBubbles.ForEach(B => {
                 B.UnassignSpeaker();
@@ -197,7 +212,8 @@ namespace Game.Core
             if (JoinedSpeakers != null)
                 JoinedSpeakers.Clear();
 
-            DialogueRunner.Clear();
+            OnCustomDialogueEnd?.Invoke();
+            OnCustomDialogueEnd = null;
         }
     }
 }

@@ -13,5 +13,6 @@ namespace Game.Core
     {
         FSpeakerInfo GetSpeakerInfo();
         void SetAnimation(string Animation);
+        void SendNativeCommand(string Data);
     }
 }
