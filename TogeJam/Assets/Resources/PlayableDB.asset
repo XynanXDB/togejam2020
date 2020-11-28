@@ -38,9 +38,12 @@ MonoBehaviour:
     _keyValues:
     - Beat1_Start
     - Beat1_ReachClientHouse
+    - Beat1_GetDog
     _keys:
     - Beat1_Start
     - Beat1_ReachClientHouse
+    - Beat1_GetDog
     _values:
     - {fileID: 11400000, guid: 569c53d3e53773841b478fdc117539c6, type: 2}
     - {fileID: 11400000, guid: 3260df429400d4d40aac31ad4062e020, type: 2}
+    - {fileID: 11400000, guid: c61a24097283fc5428f93a07d80c3b4e, type: 2}

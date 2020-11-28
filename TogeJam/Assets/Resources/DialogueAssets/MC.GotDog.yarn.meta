@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 938ed2dccb2990646b302cd8bc35eb3f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - MC.GotDog-Start-0
+  - MC.GotDog-Start-1
+  - MC.GotDog-Start-2
+  - MC.GotDog-Start-3
+  - MC.GotDog-Start-4
+  - MC.GotDog-Start-5
+  - MC.GotDog-Start-6
+  - MC.GotDog-Start-7
+  - MC.GotDog-Start-8
+  - MC.GotDog-Start-9
+  - MC.GotDog-Start-10
+  - MC.GotDog-Start-11
+  - MC.GotDog-Start-12
+  - MC.GotDog-Start-13
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

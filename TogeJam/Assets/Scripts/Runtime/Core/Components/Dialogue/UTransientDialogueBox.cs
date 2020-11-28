@@ -20,6 +20,8 @@ namespace Game.Core
         private DialogueUI DialogueUI;
         [SerializeField] protected Animator BoxAnimate;
 
+/////////////////////////////////////////////////////////////////////////////////
+
         void OnEnable()
         {
            BoxAnimate.Play("FadeIn");
@@ -27,7 +29,6 @@ namespace Game.Core
 
         void CleanUp()
         {
-            UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_ReachClientHouse");
             gameObject.SetActive(false);
         }
 

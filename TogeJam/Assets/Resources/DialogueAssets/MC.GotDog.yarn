@@ -1,0 +1,42 @@
+title: Start
+tags: 
+colorID: 0
+position: 930,-136
+---
+<<SetSpeaker MC Think>>
+<<SetAnimation MC.Closed>>
+Well, the guy seemed nice enough.
+Although I think it would have been nice to have been invited in.
+He just basically strode out and just passed me the dog outside.
+And the dog...
+<<SetSpeaker Dog Speak>>
+<<SetAnimation Dog.Sit>>
+...
+<<SetSpeaker MC Speak>> 
+...
+<<SetSpeaker Dog Speak Dog_Sit>>
+...
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+...
+<<SetSpeaker MC Think>>
+The gig listing didn't mention he was a Doberman...
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Closed>>
+Sigh...
+<<SetSpeaker MC Think>>
+Let's just get this over and done with, hopefully without incident.
+<<SetSpeaker Dog Speak>>
+<<SetAnimation Dog.Sit>>
+...
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>>
+Alright let's go uhh... Pat.
+<<SetSpeaker Dog Speak>>
+<<SetAnimation MC.Neutral>>
+...
+<<SetAnimation Dog.Stand>>
+<wait 2>
+<<SetAnimation MC.Walk Dog.Walk>>
+<wait 5>
+===

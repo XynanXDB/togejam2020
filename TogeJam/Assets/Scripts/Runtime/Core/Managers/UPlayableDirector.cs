@@ -1,7 +1,9 @@
 ﻿
 using UnityEngine;
 using UnityEngine.Playables;
-using Game.Utility;
+using UnityEngine.Events;
+using Game.Library.Delegate;
+using System;
 
 namespace Game.Core
 {
@@ -9,6 +11,8 @@ namespace Game.Core
     {
         [SerializeField] protected UPlayableDataBase PlayableDB;
         [SerializeField] protected PlayableDirector Director;
+        public VoidSignature OnStop;
+
         private static UPlayableDirector _PlayableDirector;
         public static UPlayableDirector  PlayableDirector
         {
@@ -21,11 +25,24 @@ namespace Game.Core
             }
         }
 
-        public void PlayCinematic(string Name)
+        void Awake() => Director.stopped += OnPlayableStop;
+        void OnDestroy() => Director.stopped -= OnPlayableStop;
+        void OnPlayableStop(PlayableDirector InDirector)
+        {
+            OnStop?.Invoke();
+            OnStop = null;
+        }
+
+        public void PlayCinematic(string Name, VoidSignature OnStopCallback = null)
         {
             PlayableAsset Asset = PlayableDB.GetPlayableAssetByKey(Name);
             if (Asset != null)
+            {
+                if (OnStopCallback != null)
+                    OnStop = OnStopCallback;
+
                 Director.Play(Asset);
+            }
         }
     }
 }

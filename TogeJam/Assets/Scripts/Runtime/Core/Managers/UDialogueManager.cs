@@ -77,6 +77,7 @@ namespace Game.Core
         private List<UDialogueBubble> AssignedBubbles = null;
         private List<ITalkable> JoinedSpeakers;
         public OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
+        public VoidSignature OnCustomDialogueEnd = null;
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
@@ -109,11 +110,14 @@ namespace Game.Core
 
         void SetAnimation(string[] Data)
         {
-            string[] Segments = Data[0].Split('.');
-            
-            ITalkable Target = JoinedSpeakers.Find( I => I.GetSpeakerInfo().Name == Segments[0]);
-            if (Target != null)
-                Target.SetAnimation(Segments[1]);
+            foreach (string Command in Data)
+            {
+                string[] Segments = Command.Split('.');
+                
+                ITalkable Target = JoinedSpeakers.Find( I => I.GetSpeakerInfo().Name == Segments[0]);
+                if (Target != null)
+                    Target.SetAnimation(Segments[1]);
+            }
         }
 
         void StartDialogue(string YarnAssetName, string StartNodeName = "Start")
@@ -180,6 +184,9 @@ namespace Game.Core
 
         void OnDialogueEnd()
         {
+            OnCustomDialogueEnd?.Invoke();
+            OnCustomDialogueEnd = null;
+
             AssignedBubbles.ForEach(B => {
                 B.UnassignSpeaker();
             });
@@ -189,8 +196,6 @@ namespace Game.Core
 
             if (JoinedSpeakers != null)
                 JoinedSpeakers.Clear();
-
-            Player.SetMovementMode(InputMode.Game);
 
             DialogueRunner.Clear();
         }
