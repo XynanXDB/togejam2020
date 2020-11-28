@@ -1,0 +1,249 @@
+title: Start
+tags: 
+colorID: 0
+position: 436,-364
+---
+<wait 5>
+
+<<SetSpeaker Dog Think>>
+<<SetAnimation Dog.Walk>> 
+I really can't wait to see all my friends at the park!
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>> 
+Don't get your hopes up.
+Not a lot of people will be bringing their dogs out during a pandemic.
+. . .
+<<SetSpeaker MC Think>>
+Except for me I guess.
+But I'm doing it for the money though.
+<<SetSpeaker Dog Think>>
+That's alright, I have many friends.
+There's bound to be some of them there.
+Just thinking about it is getting me all excited.
+<<SetSpeaker MC Speak>> 
+<<SetAnimation MC.LookDown>>
+Yeah I can see you wagging your tail.
+<<SetSpeaker Dog Think>>
+Ah I hope to see that one friend I have at the park!
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+So you can sniff their butts?
+<<SetSpeaker Dog Think>>
+Yeah!?
+Sometimes we just chase our tails together.
+But I have one friend that doesn't have a tail! It's very funny!
+<<SetSpeaker MC Speak>>
+Ah. . .
+<<SetSpeaker MC Think>> 
+<<SetAnimation MC.LookDown>>
+Right, he has his tail.
+I know some people would cut them off, I think it's called docking?
+<<SetAnimation MC.Neutral>> 
+Or was it bobbing?
+Either way, not something I'd ever do to a dog.
+Glad he's still got his tail.
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.LookDown>>
+. . .
+<<SetSpeaker MC Think>>
+His ears are cropped though.
+How peculiar, usually you'd get the ears cropped AND the tailed docked.
+Not one or the other, since then you're likely to just do neither.
+As far as I know, these are painsful procedures for the dogs.
+Very common in Dobermanns due to the commonly known look it provides.
+But looks are really only what they're for.
+<<SetAnimation MC.Neutral>> 
+A cruel mutilation of their ears and tails for their owner's vanity.
+But why only do one of the two?
+<<SetSpeaker MC Speak>>
+. . .
+<<SetSpeaker MC Think>>
+Oh god this is gonna bug me.
+<<SetSpeaker MC Speak>>
+Hey, Pat?
+<<SetSpeaker Dog Think>>
+Yes?
+Wow, you sounded almost gentle there.
+<<SetAnimation MC.Squint>>
+You wanna know what my angry sounds like?
+<<SetSpeaker Dog Think>>
+No thank you!
+Anyways, what's up?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+Do you remember when they did your ears up?
+<<SetSpeaker Dog Speak>>
+. . . 
+<<SetSpeaker Dog Think>>
+Yes, why?
+<<SetSpeaker MC Speak>>
+Just wondering. I assumed you would've have been too young to remember
+<<SetSpeaker Dog Think>>
+I remember it, it wasn't long after getting close with my master.
+He took me somewhere, it smelled like blood.
+Then my ears hurt a lot after that.
+<<SetSpeaker MC Speak>>
+You remember it hurting?
+<<SetSpeaker Dog Think>> 
+Yeah, but my master gave me a lot of attention at the time!
+It hurt a lot but my master was very happy!
+And I think that's all that matters!
+<<SetSpeaker MC Speak>>
+You'd submit yourself to pain just to make yhour master happy?
+<<SetSpeaker Dog Think>>
+I mean. . . 
+I would definitely prefer to not have to go through any pain.
+But if it makes my master happy, I'll bear the pain!
+<<SetSpeaker MC Speak>>
+[[Do you think he'd do the same for you?|DoYouThinkHedDoTheSameForYou]]
+[[His happiness was temporary.|HisHappinessWasTemporary]]
+===
+title: DoYouThinkHedDoTheSameForYou
+tags: 
+colorID: 0
+position: 833,-526
+---
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC_LookDown>>
+Do you think he'd do the same for you?
+<<SetSpeaker Dog Think>>
+Hmm. . .
+Well, let me ask you this, would you consider walking me a pain?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+Yes.
+I'm just doing it for the money so I can eat.
+<<SetAnimation MC.LookDown>>
+<<SetSpeaker Dog Think>>
+Exactly, right.
+<<SetAnimation Dog.Stand>>
+So imagine that my master had to care and feed me since I was a puppy.
+Play with me, give me treats, give me attention. Deal with my poop.
+<<SetAnimation Dog.Sit>>
+He did all of that for years.
+And he did it with his own money too.
+You're doing this one job to feed yourself.
+I bear with a little pain and I get a lifetime of shelter and food.
+I love my master.
+He has done more than bear with a little pain for my happiness.
+I'm just gladly repaying him in kind.
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Closed>> 
+. . .
+<<SetAnimation MC.Neutral>>
+I see.
+At least see where you're coming from. Sorry if I sounded kinda mean.
+<<SetSpeaker Dog Think>>
+It's ok!
+<<SetAnimation Dog.Stand>>
+You're just grumpy!
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+Am I actually just grumpy?
+Has my past decade just been one long grumpy phase?
+<<SetSpeaker MC Speak>>
+Urk. . .
+
+[[FunnelC]]
+===
+title: HisHappinessWasTemporary
+tags: 
+colorID: 0
+position: 841,-240
+---
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+His happiness was temporary.
+You suffered through pain needlessly, all so you'd just to make you look a specific way.
+Do you really think he would've been less happy with you if he'd kept your ears?
+<<SetSpeaker Dog Think>>
+No. . .
+<<SetSpeaker MC Speak>>
+No animal lover would subject their pets to pain just so they'd look different.
+And you call him your friend?
+Be glad he didn't take your tail too.
+<<SetSpeaker Dog Think>>
+He wouldn't take my tail!
+<<SetSpeaker MC Speak>>
+If he took your ears, he could've easily taken your tail too.
+That's what other people do to Dobermanns. Ears and tails.
+<<SetSpeaker Dog Think>>
+Master wouldn't take my tail!
+Look! My tail is right there, he didn't and he wouldn't!
+<<SetSpeaker MC Speak>>
+That's the weird part, I have no idea why didn't he take your tail.
+He probably knew because it would've caused you pain.
+But then he cropped your ears up anyways, knowing that would hurt too.
+I don't know. You know your master better than I do, you tell me.
+<<SetSpeaker Dog Think>>
+Well, you didn't really know my master.
+He wouldn't just cause me pain for no reason.
+<<SetSpeaker MC Speak>>
+Yeah I don't think he does it intentionally.
+He just might not even realise he's even causing you pain.
+<<SetSpeaker Dog Think>>
+It doesn't matter. If he's happy, I'll bear all the pain in the world!
+<<SetSpeaker MC Think>>
+But should you though?
+
+[[FunnelC]]
+===
+title: FunnelC
+tags: 
+colorID: 0
+position: 1112,-434
+---
+<<SetSpeaker MC Think>>
+<<SetAnimation Dog.Walk>>
+My brain's exhausted talking to this dog.
+<<SetAnimation MC.Neutral>>
+This is why I don't like dealing with animals.
+But for a week's worth of meals, I'll bear with it.
+<<SetSpeaker MC Speak>>
+At least talking keeps me from being too bored I guess.
+<<SetSpeaker Dog Think>>
+Are you bored?
+<<SetSpeaker MC Speak>>
+Huh?
+Oh did I say that out loud?
+<<SetSpeaker Dog Think>>
+Yes you did.
+What do you do when you're bored?
+<<SetSpeaker MC Speak>>
+When I'm bored?
+Hmm. . .
+It depends I guess.
+Most of the time I'm doing odd jobs like this to get some cash.
+If I have some free time. . . Hmm. . .
+I'd probably be watching a movie or something.
+<<SetSpeaker Dog Think>>
+What's that? Is it a moving picture?
+<<SetSpeaker MC Speak>>
+Yes it's a long moving picture with sounds.
+<<SetSpeaker Dog Think>>
+My master also watches the moving pictures too!
+I always accompany him but I ended up falling asleep most of the time.
+You have so much in common!
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Squint>>
+Uh, sure. . .
+<<SetSpeaker Dog Think>>
+Did you ever have a friend like what my master is to me?
+<<SetSpeaker MC Speak>>
+<<SetAnimation MC.Neutral>>
+. . .
+<<SetSpeaker MC Think>>
+That was an awafully sudden question.
+<<SetSpeaker Dog Think>>
+Did you?
+<<SetSpeaker MC Speak>>
+. . .
+Sure.
+Around 10 years ago, maybe.
+<<SetSpeaker Dog Think>>
+Oh, did something happen?
+<<SetSpeaker MC Speak>>
+Don't worry about it.
+<<SetSpeaker Dog Speak>>
+. . . ?
+===
