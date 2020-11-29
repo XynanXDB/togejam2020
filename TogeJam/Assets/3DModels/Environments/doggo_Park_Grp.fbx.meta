@@ -3,7 +3,57 @@ guid: 427827968216ab547b8d858c0b64ecc6
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Park_Building_corner_shd
+    second: {fileID: 2100000, guid: b09ef221810403142971c30f51dfe48f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Park_shd
+    second: {fileID: 2100000, guid: 071177ed6c2ddc14ea3c3b0bff289e62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Park_trees_shd
+    second: {fileID: 2100000, guid: 4107c521b0cff3b4788333afef7cf333, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street_Building_cafe_B_shd
+    second: {fileID: 2100000, guid: ee7f8df6a64713840a19a9b2283df21d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street_Building_shop_AE_shd
+    second: {fileID: 2100000, guid: 43bc7b6768bb3b74b9972240602132f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street_Building_shop_B_shd
+    second: {fileID: 2100000, guid: 3d6094adcbd33754095c328c553ed844, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street_Building_shop_C_shd
+    second: {fileID: 2100000, guid: 1790a13cd01707044b945cd5f66a26cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street_Building_shop_D_shd
+    second: {fileID: 2100000, guid: 7ab7e7ab5d1e1c44ca2bbe41ac1385e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street_Building_shop_F_shd
+    second: {fileID: 2100000, guid: e5f1f9052cf462e43b1ff2ec7be29dbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street_shd
+    second: {fileID: 2100000, guid: 8a75bd0eefcdccc41bd1e8bf486c650f, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

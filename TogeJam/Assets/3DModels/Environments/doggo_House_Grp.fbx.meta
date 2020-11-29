@@ -3,7 +3,37 @@ guid: ae42a6dd966c0cc49a951b092f245b9f
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: House_building_A01_shd
+    second: {fileID: 2100000, guid: 2eb5434efc5abbd4a9429271668a2baa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: House_building_A03_shd
+    second: {fileID: 2100000, guid: 2eb5434efc5abbd4a9429271668a2baa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: House_building_B01_shd
+    second: {fileID: 2100000, guid: 26914fcf7ed8b794988d2309ee7fccad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: House_building_B02_shd
+    second: {fileID: 2100000, guid: 26914fcf7ed8b794988d2309ee7fccad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: House_shd
+    second: {fileID: 2100000, guid: 8e82cbe228ec1044bacab45f66a8593f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: House_trees_shd
+    second: {fileID: 2100000, guid: 4107c521b0cff3b4788333afef7cf333, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
