@@ -61,8 +61,9 @@ You know, humans almost never say what they really mean.
 Always have, always will, and last I checked your master's a human.
 <<SetSpeaker Dog Think>> 
 Master wouldn't lie to me. He has no reason to.
-And if all humans lie. . .
-Are you a liar too then?
+And if all humans lie, are you a liar too then?
+<<SetSpeaker MC Think>>
+Am I a liar too then?
 [[It doesn't matter.|ItDoesntMatter]]
 [[Everybody lies.|EverybodyLies]]
 ===
@@ -103,7 +104,7 @@ See, there is good in humans. You're good to me.
 A bit grumpy though.
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Squint>>
-I'm hardly a good person for, lying by the way, about how good your coat looks.
+I'm hardly a good person for lying by the way, about how good your coat looks.
 <<SetSpeaker Dog Think>>
 Yeah but you cared about me feeling sad!
 You cared about a stranger's dog's feelings enough to lie!

@@ -26,7 +26,7 @@ Yeah I can see you wagging your tail.
 Ah I hope to see that one friend I have at the park!
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Neutral>>
-So you can sniff their butts?
+So you can sniff their butt?
 <<SetSpeaker Dog Think>>
 Yeah!?
 Sometimes we just chase our tails together.
@@ -94,9 +94,9 @@ You'd submit yourself to pain just to make your master happy?
 I mean. . . 
 I would definitely prefer to not have to go through any pain.
 But if it makes my master happy, I'll bear the pain!
-<<SetSpeaker MC Speak>>
-. . .
-[[Do you think he'd do the same for you?|DoYouThinkHedDoTheSameForYou]]
+<<SetSpeaker MC Think>>
+He'll bear the pain?
+[[Think he'd do the same for you?|DoYouThinkHedDoTheSameForYou]]
 [[His happiness was temporary.|HisHappinessWasTemporary]]
 ===
 title: DoYouThinkHedDoTheSameForYou
