@@ -90,7 +90,7 @@ namespace Game.Core
         
         void Awake()
         {
-            Time.timeScale = 3.0f;
+           // Time.timeScale = 3.0f;
             DontDestroyOnLoad(this);
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
             DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
