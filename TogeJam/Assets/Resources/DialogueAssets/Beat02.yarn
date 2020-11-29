@@ -61,8 +61,7 @@ You know, humans almost never say what they really mean.
 Always have, always will, and last I checked your master's a human.
 <<SetSpeaker Dog Think>> 
 Master wouldn't lie to me. He has no reason to.
-And if all humans lie, are you a liar too then?
-<<SetSpeaker Dog Speak>>
+And if all humans lie. . .
 Are you a liar too then?
 [[It doesn't matter.|ItDoesntMatter]]
 [[Everybody lies.|EverybodyLies]]
