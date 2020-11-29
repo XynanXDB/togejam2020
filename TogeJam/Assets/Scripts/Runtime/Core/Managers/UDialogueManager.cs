@@ -75,6 +75,8 @@ namespace Game.Core
         [SerializeField] protected DialogueUI DialogueUI;
         [SerializeField] protected UDialogueOptionGroup OptionGroup;
         [SerializeField] protected UTransientDialogueBox TransientDialogueBox;
+        [SerializeField] protected UStreetLoopManager StreetLoopManager;
+        [SerializeField] protected UDialogueDispatcher DialogueDispatcher;
         private List<UDialogueBubble> AssignedBubbles = null;
         private List<ITalkable> JoinedSpeakers;
         public OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
@@ -88,12 +90,15 @@ namespace Game.Core
         
         void Awake()
         {
+            Time.timeScale = 3.0f;
             DontDestroyOnLoad(this);
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
             DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
             DialogueRunner.AddCommandHandler("OffBubble", OffBubble);
             DialogueRunner.AddCommandHandler("TurnDog", TurnDog);
             DialogueRunner.AddCommandHandler("Play", PlayYarn);
+            DialogueRunner.AddCommandHandler("StopStreetLoop", StopStreetLoop);
+            DialogueRunner.AddCommandHandler("PlayScene", PlayCinematic);
             
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
@@ -106,6 +111,23 @@ namespace Game.Core
                 UDialogueBubble B = GO.GetComponent<UDialogueBubble>();
                 OnReceiveSetSpeaker += B.OnSetSpeaker;
             });
+        }
+
+        void StopStreetLoop(string[] Data)
+        {
+            StreetLoopManager.StopLoop();
+        }
+
+        void PlayCinematic(string[] Data)
+        {
+            if (Data[0] == "Beat5")
+            {
+                UPlayableDirector.PlayableDirector.OnStop = ()=>
+                {
+                    InitiateDialogue("Beat5", new List<ITalkable>(){Player, Dog});
+                };
+                UPlayableDirector.PlayableDirector.PlayCinematic("Beat5");
+            }
         }
 
         void PlayYarn(string[] Data)
@@ -136,6 +158,7 @@ namespace Game.Core
         void Start() //TODO Use GameMode to control this
         {
             UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_Start");
+            //UPlayableDirector.PlayableDirector.PlayCinematic("Beat3_Street");
         }
 
         void OffBubble(string[] Data)
@@ -145,7 +168,7 @@ namespace Game.Core
                 Bubble.DisableBubble();
         }
 
-        void SetAnimation(string[] Data)
+        public void SetAnimation(string[] Data)
         {
             foreach (string Command in Data)
             {

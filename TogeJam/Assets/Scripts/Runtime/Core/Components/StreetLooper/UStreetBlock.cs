@@ -8,7 +8,8 @@ namespace Game.Core
     {
         public void TriggerLoop(UStreetBlock AfterBlock)
         {
-            transform.position = AfterBlock.transform.position + Vector3.right * 48.9f;
+            if (gameObject.activeSelf)
+                transform.position = AfterBlock.transform.position + Vector3.right * 48.9f;
         }
     }
 }

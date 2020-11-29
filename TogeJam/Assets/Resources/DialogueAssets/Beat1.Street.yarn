@@ -76,6 +76,7 @@ tags:
 colorID: 0
 position: 73,444
 ---
+<<set $KarmaPoint to $KarmaPoint + 1>>
 <<SetAnimation MC.Squint>> 
 <<SetSpeaker MC Speak>>
 Why would I want to make more friends?
@@ -153,7 +154,7 @@ You're grumpy, maybe you need someone like me to help!
 Master's almost always busy, especially recently.
 Usually staring hard at the glowing box with the moving pictures.
 And sometimes, people come and he shows them around our house.
-Maybe he can call you again when he's too busy, and I can be you friend!
+Maybe he can call you again when he's too busy, and I can be your friend!
 <<SetAnimation MC.Neutral>>
 <<SetSpeaker MC Speak>>
 I highly doubt a dog would make me any less grumpy, of all things.

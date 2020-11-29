@@ -39,7 +39,7 @@ namespace Game.Core
         }
         public void Beat1_GotDog()
         {
-            DialogueManager.InitiateDialogue("MC.GotDog", new List<ITalkable>(){Player, Dog});
+           DialogueManager.InitiateDialogue("MC.GotDog", new List<ITalkable>(){Player, Dog});
         }
     }
 }

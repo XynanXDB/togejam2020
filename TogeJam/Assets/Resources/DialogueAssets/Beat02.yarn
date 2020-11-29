@@ -33,7 +33,7 @@ Friends care about what other friends think of them.
 It is how it is.
 <<SetSpeaker MC Think>>
 <<SetAnimation MC.Closed>>
-Here we go again
+Here we go again.
 <<SetSpeaker MC Speak>> 
 <<SetAnimation MC.Neutral>>
 We should be reaching the park in awhile!
@@ -72,6 +72,7 @@ tags:
 colorID: 0
 position: 743,-307
 ---
+<<set $KarmaPoint to $KarmaPoint + 1>>
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Neutral>>
 It doesn't matter.

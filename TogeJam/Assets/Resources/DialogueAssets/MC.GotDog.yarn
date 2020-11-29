@@ -41,5 +41,5 @@ Alright let's go uhh... Pat.
 <<wait 2>>
 <<SetAnimation MC.Walk Dog.Walk>>
 <<wait 5>>
-<<Play Beat1.Street>>
+<<Play Beat4.Street>>
 ===

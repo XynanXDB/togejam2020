@@ -7,8 +7,10 @@ using Game.Core;
 public class UStreetLoopManager : MonoBehaviour
 {
     private UStreetBlock PastBlock;
-    [SerializeField] protected NavMeshSurface NavSurface;
+    private UStreetBlock NextBlock;
     [SerializeField] protected UStreetBlock ParkBlock;
+    private bool bLoopStreet = true;
+    public bool bParkPlaced = false;
 
     void Awake()
     {
@@ -16,7 +18,7 @@ public class UStreetLoopManager : MonoBehaviour
     }
 
     public void SetPastBlock(UStreetBlock StreetBlock)
-    {
+    {        
         if (PastBlock == null)
         {
             PastBlock = StreetBlock;
@@ -24,10 +26,23 @@ public class UStreetLoopManager : MonoBehaviour
         }
         else
         {
-            PastBlock.TriggerLoop(StreetBlock);
-            PastBlock = StreetBlock;
-            //NavSurface.BuildNavMesh();
+            if (!bLoopStreet)
+            {
+                ParkBlock.TriggerLoop(StreetBlock);
+                bParkPlaced = true;
+                return;
+            }
+            {
+                PastBlock.TriggerLoop(StreetBlock);
+                PastBlock = StreetBlock;
+            }
         }
+    }
+
+    public void StopLoop()
+    {
+        bLoopStreet = false;
+        ParkBlock.gameObject.SetActive(true);
     }
 }
 

@@ -12,7 +12,7 @@ namespace Game.Core
 
         void OnTriggerEnter(Collider Other)
         {
-            if (Other.gameObject.CompareTag("Player"))
+            if (Other.gameObject.CompareTag("Player") && !LoopManager.bParkPlaced)
                 LoopManager.SetPastBlock(OwnerBlock);
         }
     }

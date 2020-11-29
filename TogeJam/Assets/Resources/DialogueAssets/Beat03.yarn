@@ -77,7 +77,7 @@ Do you remember when they did your ears up?
 <<SetSpeaker Dog Think>>
 Yes, why?
 <<SetSpeaker MC Speak>>
-Just wondering. I assumed you would've have been too young to remember
+Just wondering. I assumed you would've have been too young to remember.
 <<SetSpeaker Dog Think>>
 I remember it, it wasn't long after getting close with my master.
 He took me somewhere, it smelled like blood.
@@ -104,6 +104,7 @@ tags:
 colorID: 0
 position: 833,-526
 ---
+<<set $KarmaPoint to $KarmaPoint + 1>>
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC_LookDown>>
 Do you think he'd do the same for you?

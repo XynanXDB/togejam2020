@@ -91,5 +91,11 @@ namespace Game.Core
                     MovementType = EMovementType.Stop;
             }
         }
+
+        public void ParkStop()
+        {
+            SetAnimation("Stand");
+            Dog.SetAnimation("Stand");
+        }
     }
 }

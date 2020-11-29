@@ -345,7 +345,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultVariables: []
+  defaultVariables:
+  - name: KarmaPoint
+    value: 0
+    type: 0
   debugTextView: {fileID: 0}
 --- !u!114 &-1091845388076163808
 MonoBehaviour:
@@ -366,7 +369,6 @@ MonoBehaviour:
   OptionGroup: {fileID: 5605202250671149720}
   TransientDialogueBox: {fileID: 1815799168264542185}
   Player: {fileID: 0}
-  Dog: {fileID: 0}
 --- !u!114 &8483065915076613035
 MonoBehaviour:
   m_ObjectHideFlags: 0

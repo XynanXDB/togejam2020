@@ -158,7 +158,7 @@ He's got no choice anyways.
 <<endif>>
 
 << if $KarmaPoint < 2>>
-<<PlayScene 0>>
+<<PlayScene NeutralCredits>>
 <<endif>>
 ===
 title: GoodEnding
@@ -217,5 +217,5 @@ No one knows that better than me I guess.
 Let's see if we can do a few months together.
 
 //Ending Conditions
-<<PlayScene 1>>
+<<PlayScene GoodCredits>>
 ===

@@ -3,7 +3,7 @@ tags:
 colorID: 0
 position: 494,-498
 ---
-<wait 5>
+<<wait 5>>
 //<<SetAnimation Dog.Walk>>
 <<SetSpeaker MC Think>>
 It's definitely not something I want to talk about.
@@ -38,6 +38,7 @@ What's your name?
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Squint>>
 You don't need to know my name.
+<<StopStreetLoop>>
 <<SetSpeaker Dog Think>>
 Why not?
 <<SetSpeaker MC Speak>>
