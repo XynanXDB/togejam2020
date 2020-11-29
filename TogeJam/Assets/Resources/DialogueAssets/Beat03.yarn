@@ -236,7 +236,7 @@ Did you ever have a friend like what my master is to me?
 <<SetAnimation MC.Neutral>>
 . . .
 <<SetSpeaker MC Think>>
-That was an awafully sudden question.
+That was an awfully sudden question.
 <<SetSpeaker Dog Think>>
 Did you?
 <<SetSpeaker MC Speak>>
