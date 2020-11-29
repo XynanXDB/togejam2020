@@ -119,11 +119,11 @@ namespace Game.Core
         {
             yield return new WaitForSeconds(1.0f);
 
-            if (Data == "Beat1.Street")
-                InitiateDialogue(Data, new List<ITalkable>(){Player, Dog}, "Funnel");
-            else if (Data == "Beat2.Street")
-                InitiateDialogue(Data, new List<ITalkable>(){Player, Dog}, "FunnelB");
-            else
+            // if (Data == "Beat1.Street")
+            //     InitiateDialogue(Data, new List<ITalkable>(){Player, Dog}, "Funnel");
+            // else if (Data == "Beat2.Street")
+            //     InitiateDialogue(Data, new List<ITalkable>(){Player, Dog}, "FunnelB");
+            // else
                 InitiateDialogue(Data, new List<ITalkable>(){Player, Dog});
         }
 
