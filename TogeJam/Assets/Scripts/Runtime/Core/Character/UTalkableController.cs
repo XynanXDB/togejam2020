@@ -35,8 +35,8 @@ namespace Game.Core
 
         public void StartGoodCredits()
         {
+            transform.SetPositionAndRotation(new Vector3(-172.44f, -0.03f, -135.48f), Quaternion.Euler(0.0f, 90.0f, 0.0f));
             DogAnimate.Play("PreCredits");
-            transform.SetPositionAndRotation(new Vector3(-175.793f, -0.03f, -135.48f), Quaternion.Euler(0.0f, 90.0f, 0.0f));
         }
 
         public InteractionRange GetInteractionRange() => InteractionRange.CloseRange;
@@ -65,6 +65,9 @@ namespace Game.Core
 
         public void SetAnimation(string Animation) //TODO Implement Animation
         {
+            if (Animation == "GoodCredits")
+                transform.position = new Vector3(-172.055f, -0.03f, -135.414f);
+
             DogAnimate.Play(Animation);
         }
 

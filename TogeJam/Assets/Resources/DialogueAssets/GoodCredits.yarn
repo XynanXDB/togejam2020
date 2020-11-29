@@ -42,7 +42,7 @@ Because I know what it's like to be in your shoes.
 <<SetSpeaker Dog Think>>
 I don't wear shoes.
 <<SetSpeaker MC Speak>>
-Keep quiest, I'm being nice.
+Keep quiet, I'm being nice.
 <<SetSpeaker Dog Think>>
 That isn't going to happen a lot, is it?
 <<SetSpeaker MC Speak>>
@@ -79,4 +79,7 @@ Well, we're going to be friends, right?
 <<SetSpeaker MC Speak>>
 Well then.
 Don't mind if I do.
+<<SetAnimation MC.GoodCredits Dog.GoodCredits>>
+<<wait 2>>
+<<ShowCredits>>
 ===

@@ -44,7 +44,7 @@ namespace Game.Core
 
         public void GoodEnding()
         {
-           DialogueManager.InitiateDialogue("GoodEnding", new List<ITalkable>(){Player, Dog});
+           DialogueManager.InitiateDialogue("GoodCredits", new List<ITalkable>(){Player, Dog});
         }
     }
 }

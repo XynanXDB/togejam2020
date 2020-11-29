@@ -16,7 +16,7 @@ MonoBehaviour:
   - Key: Billy
     YarnAsset: {fileID: 2480198943629176163, guid: 345133e4096e6c4478779349c6fc39ab, type: 3}
   - Key: Starting
-    YarnAsset: {fileID: 2480198943629176163, guid: 345133e4096e6c4478779349c6fc39ab, type: 3}
+    YarnAsset: {fileID: 2480198943629176163, guid: c169b91c6469e544097660757a7d1d3d, type: 3}
   - Key: GoodCredits
     YarnAsset: {fileID: 2480198943629176163, guid: 919b0db75fdbdc54aa2cf32040d259d2, type: 3}
   - Key: MC.ReachClientHouse

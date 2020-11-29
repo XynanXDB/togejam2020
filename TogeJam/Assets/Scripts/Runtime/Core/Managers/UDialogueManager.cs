@@ -85,7 +85,7 @@ namespace Game.Core
         [SerializeField] protected AudioClip Doorbell;//Should make a database for this
         [SerializeField] protected AudioClip SS_Main;
         [SerializeField] protected AudioClip WalkTheDog;
-
+        [SerializeField] protected GameObject Credits = null;
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
@@ -95,7 +95,7 @@ namespace Game.Core
         
         void Awake()
         {
-            Time.timeScale = 3.0f;
+            //Time.timeScale = 3.0f;
             DontDestroyOnLoad(this);
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
             DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
@@ -107,6 +107,7 @@ namespace Game.Core
             DialogueRunner.AddCommandHandler("IncrementStartBeat4Park", IncrementStartBeat4Park);
             DialogueRunner.AddCommandHandler("PlaySound", PlaySound);
             DialogueRunner.AddCommandHandler("PlayMusic", PlayMusic);
+            DialogueRunner.AddCommandHandler("ShowCredits", ShowCredits);
             
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
@@ -119,6 +120,11 @@ namespace Game.Core
                 UDialogueBubble B = GO.GetComponent<UDialogueBubble>();
                 OnReceiveSetSpeaker += B.OnSetSpeaker;
             });
+        }
+
+        void ShowCredits(string[] Data)
+        {
+            Credits.SetActive(true);
         }
 
         void PlayMusic(string[] Data)
