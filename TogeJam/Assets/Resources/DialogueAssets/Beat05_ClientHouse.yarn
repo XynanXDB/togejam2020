@@ -155,7 +155,7 @@ He's got no choice anyways.
 . . .
 
 //Ending Conditions
-<<set $KarmaPoint to 2>>
+//<<set $KarmaPoint to 2>>
 <<if $KarmaPoint >= 2>> 
 [[GoodEnding]]
 <<endif>>
