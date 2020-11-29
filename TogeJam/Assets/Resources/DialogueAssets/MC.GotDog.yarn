@@ -39,6 +39,7 @@ Alright let's go uhh... Pat.
 <<SetAnimation Dog.Stand>>
 <<TurnDog Right>>
 <<wait 2>>
+<<PlayMusic WTD>>
 <<SetAnimation MC.Walk Dog.Walk>>
 <<wait 5>>
 <<PlayScene Beat5.ClientHouse>>

@@ -13,7 +13,7 @@ namespace Game.Core
     [CreateAssetMenu(fileName = "DialogueDB", menuName = "ScriptableObjects/Create Dialogue DB", order = 1)]
     public class UDialogueDataBase : ScriptableObject
     {
-        [SerializeField] List<DialogueDBStruct> DialogueDB;
+        [SerializeField] List<DialogueDBStruct> DialogueDB = null;
 
         public YarnProgram GetYarnAssetByKey(string Key)
         {

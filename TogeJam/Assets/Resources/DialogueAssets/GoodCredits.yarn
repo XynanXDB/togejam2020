@@ -3,8 +3,9 @@ tags:
 colorID: 0
 position: 865,-668
 ---
+<<PlayMusic SS_Main>>
 <<SetSpeaker MC Speak>>
-Hey, um, Pat
+Hey, um, Pat.
 Let's go get some food.
 <<SetSpeaker Dog Think>>
 Yeah, sure.

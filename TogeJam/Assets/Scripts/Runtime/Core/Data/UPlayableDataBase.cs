@@ -13,7 +13,7 @@ namespace Game.Core
     [CreateAssetMenu(fileName = "PlayableDB", menuName = "ScriptableObjects/Create Playable DB", order = 1)]
     public class UPlayableDataBase : ScriptableObject
     {
-        [SerializeField] List<PlayableDBStruct> PlayableDB;
+        [SerializeField] List<PlayableDBStruct> PlayableDB = null;
 
         public PlayableAsset GetPlayableAssetByKey(string Key)
         {

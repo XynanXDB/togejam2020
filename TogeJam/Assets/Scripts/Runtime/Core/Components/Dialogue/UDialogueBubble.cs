@@ -1,4 +1,5 @@
-﻿using Yarn.Unity;
+﻿using System.Collections.Generic;
+using Yarn.Unity;
 using TMPro;
 using UnityEngine;
 using System;
@@ -7,6 +8,13 @@ using UnityEngine.UI;
 
 namespace Game.Core
 {
+    [System.Serializable]
+    public struct DialogueBubbleDBStruct
+    {
+        public string Key;
+        public string Action;
+    }
+
     public class UDialogueBubble : MonoBehaviour
     {
         private DialogueUI DialogueUI;
@@ -20,6 +28,8 @@ namespace Game.Core
         [SerializeField] protected Animator BGAnimate;
         [SerializeField] protected float PopupSpeed = 0.05f;
         [SerializeField] protected UDialogueAdvancer Advancer;
+        [SerializeField] protected List<DialogueBubbleDBStruct> DialogueBubbleDB = null;
+
         public string GetSpeakerName { get { return SpeakerName; }}
 
         void Update()
@@ -130,12 +140,12 @@ namespace Game.Core
             
             gameObject.SetActive(true);
 
-            string Clip = null;
+            string Clip = DialogueBubbleDB.Find(Item => Item.Key == CacheYarnPacket.Action).Action;
 
-            // if (DialogueBubbleDictionary.TryGetValue(CacheYarnPacket.Action, out Clip))
-            //     BGAnimate.Play(Clip);
-            // else
-            //     Debug.Log(CacheYarnPacket.Action + " Missing Clip");
+            if (Clip != null)
+                BGAnimate.Play(Clip);
+            else
+                Debug.Log(CacheYarnPacket.Action + " Missing Clip");
 
         }
 

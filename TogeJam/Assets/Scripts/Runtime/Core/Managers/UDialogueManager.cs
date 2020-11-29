@@ -83,6 +83,9 @@ namespace Game.Core
         public VoidSignature OnCustomDialogueEnd = null;
         private int TwoToStartBeat4Park = 0;
         [SerializeField] protected AudioClip Doorbell;//Should make a database for this
+        [SerializeField] protected AudioClip SS_Main;
+        [SerializeField] protected AudioClip WalkTheDog;
+
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
@@ -103,6 +106,7 @@ namespace Game.Core
             DialogueRunner.AddCommandHandler("PlayScene", PlayCinematic);
             DialogueRunner.AddCommandHandler("IncrementStartBeat4Park", IncrementStartBeat4Park);
             DialogueRunner.AddCommandHandler("PlaySound", PlaySound);
+            DialogueRunner.AddCommandHandler("PlayMusic", PlayMusic);
             
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
@@ -115,6 +119,14 @@ namespace Game.Core
                 UDialogueBubble B = GO.GetComponent<UDialogueBubble>();
                 OnReceiveSetSpeaker += B.OnSetSpeaker;
             });
+        }
+
+        void PlayMusic(string[] Data)
+        {
+            if (Data[0] == "SS_Main")
+                UMasterAudioManager.MasterAudioManager.PlayBGM(SS_Main, true);
+            else if (Data[0] == "WTD")
+                UMasterAudioManager.MasterAudioManager.PlayBGM(WalkTheDog, true);
         }
 
         void PlaySound(string[] Data)

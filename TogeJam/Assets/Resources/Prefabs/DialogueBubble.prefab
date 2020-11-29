@@ -399,38 +399,11 @@ MonoBehaviour:
   BGAnimate: {fileID: 8502311872919557926}
   PopupSpeed: 0.05
   Advancer: {fileID: 3319424430362480431}
-  DialogueBubbleDictionary:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 0
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 0
-    _keyValues:
-    - Think
-    - Speak
-    _keys:
-    - Think
-    - Speak
-    _values:
-    - ThoughtBubbleLoop
-    - SpeechBubbleLoop
+  DialogueBubbleDB:
+  - Key: Think
+    Action: ThoughtBubbleLoop
+  - Key: Speak
+    Action: SpeechBubbleLoop
 --- !u!1 &7789802005914199144
 GameObject:
   m_ObjectHideFlags: 0
