@@ -8,7 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-MY
   stringIDs:
   - Beat1.Street-Start-0
   - Beat1.Street-Start-1
@@ -45,7 +45,7 @@ ScriptedImporter:
   - Beat1.Street-Start-32
   - Beat1.Street-Start-33
   - Beat1.Street-Start-34
-  - Beat1.Street-Start-35
+  - Beat1.Street-Interested-35
   - Beat1.Street-Interested-36
   - Beat1.Street-Interested-37
   - Beat1.Street-Interested-38
@@ -62,7 +62,7 @@ ScriptedImporter:
   - Beat1.Street-Interested-49
   - Beat1.Street-Interested-50
   - Beat1.Street-Interested-51
-  - Beat1.Street-Interested-52
+  - Beat1.Street-ShrugOff-52
   - Beat1.Street-ShrugOff-53
   - Beat1.Street-ShrugOff-54
   - Beat1.Street-ShrugOff-55
@@ -76,7 +76,7 @@ ScriptedImporter:
   - Beat1.Street-ShrugOff-63
   - Beat1.Street-ShrugOff-64
   - Beat1.Street-ShrugOff-65
-  - Beat1.Street-ShrugOff-66
+  - Beat1.Street-Funnel-66
   - Beat1.Street-Funnel-67
   - Beat1.Street-Funnel-68
   - Beat1.Street-Funnel-69
@@ -92,9 +92,8 @@ ScriptedImporter:
   - Beat1.Street-Funnel-79
   - Beat1.Street-Funnel-80
   - Beat1.Street-Funnel-81
-  - Beat1.Street-Funnel-82
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: a5d51cbde7568c940b5ef8e41eb9e878, type: 3}
   localizations: []
