@@ -45,6 +45,7 @@ MonoBehaviour:
     - Beat3.Street
     - Beat4.Street
     - Beat4.Park
+    - Beat5.ClientHouse
     _keys:
     - Billy
     - Starting
@@ -55,6 +56,7 @@ MonoBehaviour:
     - Beat3.Street
     - Beat4.Street
     - Beat4.Park
+    - Beat5.ClientHouse
     _values:
     - {fileID: 2480198943629176163, guid: 345133e4096e6c4478779349c6fc39ab, type: 3}
     - {fileID: 2480198943629176163, guid: c169b91c6469e544097660757a7d1d3d, type: 3}
@@ -65,3 +67,4 @@ MonoBehaviour:
     - {fileID: 2480198943629176163, guid: c36723af9ba9b1045b2b528687d4110e, type: 3}
     - {fileID: 2480198943629176163, guid: e2cf3eea009b3724894b46c645e74c89, type: 3}
     - {fileID: 2480198943629176163, guid: ee044e83d9e0c2a4ba87ec327f43683f, type: 3}
+    - {fileID: 2480198943629176163, guid: 0ce84c760ba6132448cfb9c8a4530fc3, type: 3}

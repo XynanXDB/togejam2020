@@ -81,6 +81,7 @@ namespace Game.Core
         private List<ITalkable> JoinedSpeakers;
         public OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
         public VoidSignature OnCustomDialogueEnd = null;
+        private int TwoToStartBeat4Park = 0;
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
@@ -90,7 +91,7 @@ namespace Game.Core
         
         void Awake()
         {
-           // Time.timeScale = 3.0f;
+            //Time.timeScale = 3.0f;
             DontDestroyOnLoad(this);
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
             DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
@@ -99,6 +100,7 @@ namespace Game.Core
             DialogueRunner.AddCommandHandler("Play", PlayYarn);
             DialogueRunner.AddCommandHandler("StopStreetLoop", StopStreetLoop);
             DialogueRunner.AddCommandHandler("PlayScene", PlayCinematic);
+            DialogueRunner.AddCommandHandler("IncrementStartBeat4Park", IncrementStartBeat4Park);
             
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
@@ -117,14 +119,23 @@ namespace Game.Core
         {
             StreetLoopManager.StopLoop();
         }
+        public void IncrementStartBeat4Park(string[] Data = null)
+        {
+            TwoToStartBeat4Park ++;
+
+            if (TwoToStartBeat4Park == 2)
+                PlayYarn(new string[1]{"Beat4.Park"});
+        }
 
         void PlayCinematic(string[] Data)
         {
-            if (Data[0] == "Beat5")
+            Debug.Log("PlayScene" + " " + Data[0]);
+
+            if (Data[0] == "Beat5.ClientHouse")
             {
                 UPlayableDirector.PlayableDirector.OnStop = ()=>
                 {
-                    InitiateDialogue("Beat5", new List<ITalkable>(){Player, Dog});
+                    InitiateDialogue("Beat5.ClientHouse", new List<ITalkable>(){Player, Dog});
                 };
                 UPlayableDirector.PlayableDirector.PlayCinematic("Beat5");
             }
@@ -152,13 +163,12 @@ namespace Game.Core
         void TurnDog(string[] Data)
         {
             ITalkable I = JoinedSpeakers.Find(S => S.GetSpeakerInfo().Name == "Dog");
-            I?.SendNativeCommand("TurnDog");
+            I?.SendNativeCommand("TurnDog." + Data[0]);
         }
 
         void Start() //TODO Use GameMode to control this
         {
             UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_Start");
-            //UPlayableDirector.PlayableDirector.PlayCinematic("Beat3_Street");
         }
 
         void OffBubble(string[] Data)

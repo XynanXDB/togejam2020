@@ -10,19 +10,26 @@ namespace Game.Core
         [SerializeField] protected FSpeakerInfo SpeakerInfo;
         [HideInInspector] public GameObject Interactor;
         [SerializeField] protected Animator DogAnimate;
-        private bool bTurnDog = false;
+        private int bTurnDog = 0;
 
 ///////////////////////////////////////////////////////////////////////////////
 
         void Update()
         {
-            if (bTurnDog)
+            if (bTurnDog == 1)
             {
                 Quaternion currentRotation = transform.rotation;
                 transform.rotation = Quaternion.RotateTowards(currentRotation, Quaternion.Euler(0.0f, 90.0f, 0.0f), 85.0f * Time.deltaTime);
 
                 if (Quaternion.Dot(currentRotation, Quaternion.Euler(0.0f, 90.0f, 0.0f)) >= 1.0f)
-                    bTurnDog = false;
+                    bTurnDog = 0;
+            } else if (bTurnDog == 2)
+            {
+                Quaternion currentRotation = transform.rotation;
+                transform.rotation = Quaternion.RotateTowards(currentRotation, Quaternion.Euler(0.0f, -90.0f, 0.0f), 95.0f * Time.deltaTime);
+
+                if (Quaternion.Dot(currentRotation, Quaternion.Euler(0.0f, -90.0f, 0.0f)) >= 1.0f)
+                    bTurnDog = 0;
             }
         }
 
@@ -55,15 +62,12 @@ namespace Game.Core
             DogAnimate.Play(Animation);
         }
 
-        public void TurnDog()
-        {
-            bTurnDog = true;
-        }
-
         public void SendNativeCommand(string Data)
         {
-            if (Data == "TurnDog")
-                bTurnDog = true;
+            if (Data == "TurnDog.Right")
+                bTurnDog = 1;
+            else if (Data == "TurnDog.Left")
+                bTurnDog = 2;
         }
     }
 }

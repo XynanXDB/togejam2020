@@ -11,6 +11,7 @@ namespace Game.Core
             if (Other.gameObject.CompareTag("Player"))
             {
                 Other.gameObject.GetComponent<UPlayerCharacter>().ParkStop();
+                UDialogueManager.DialogueManager.IncrementStartBeat4Park();
             }
         }
     }

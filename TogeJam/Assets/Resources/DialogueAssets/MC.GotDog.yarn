@@ -37,7 +37,7 @@ Alright let's go uhh... Pat.
 ...
 <<OffBubble Dog>>
 <<SetAnimation Dog.Stand>>
-<<TurnDog>>
+<<TurnDog Right>>
 <<wait 2>>
 <<SetAnimation MC.Walk Dog.Walk>>
 <<wait 5>>

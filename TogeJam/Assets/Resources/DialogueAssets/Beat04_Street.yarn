@@ -82,4 +82,5 @@ Thanks for bringing me out, Strawberry!
 My name isn't Strawberry!
 <<SetSpeaker Dog Think>>
 Hey, the park is just right ahead!
+<<IncrementStartBeat4Park>>
 ===
