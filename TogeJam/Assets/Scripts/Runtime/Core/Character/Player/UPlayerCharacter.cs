@@ -76,6 +76,13 @@ namespace Game.Core
             }
         }
 
+        public void StartGoodEnding()
+        {
+            MovementType = EMovementType.Stop;
+            transform.SetPositionAndRotation(new Vector3(-174.9f, 0.982f, -135.4f), Quaternion.Euler(0.0f, 180.0f, 0.0f));
+            SetAnimation("PreCredits");
+        }
+
         public void OnInteract()
         {
             InteractComponent.HandleExecuteInteract();

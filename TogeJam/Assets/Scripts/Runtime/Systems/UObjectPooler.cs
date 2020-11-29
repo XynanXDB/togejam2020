@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
 using UnityEditor;
-#endif
+//#endif
 
 namespace Game.Utility
 {
@@ -16,7 +16,7 @@ namespace Game.Utility
 
 ///////////////////////////////////////////////////////////////////////
 
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
         void ClearPool()
         {
             foreach(Transform T in PoolHolder)
@@ -36,7 +36,7 @@ namespace Game.Utility
 
             Debug.Log(ObjectPrefab.name + "-PoolCount: " + PoolHolder.childCount);
         }
-#endif
+//#endif
 
         public virtual GameObject GetTopObject() 
         {

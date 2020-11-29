@@ -33,6 +33,12 @@ namespace Game.Core
             }
         }
 
+        public void StartGoodCredits()
+        {
+            DogAnimate.Play("PreCredits");
+            transform.SetPositionAndRotation(new Vector3(-175.793f, -0.03f, -135.48f), Quaternion.Euler(0.0f, 90.0f, 0.0f));
+        }
+
         public InteractionRange GetInteractionRange() => InteractionRange.CloseRange;
 
         public FSpeakerInfo GetSpeakerInfo()

@@ -43,119 +43,119 @@ My name ain't Strawberry!
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.LookDown>>
 Thanks Pat.
-. . .
-<<SetSpeaker Dog Speak>>
-. . .
-<<OffBubble Dog>>
-<<wait 5>>
-<<SetSpeaker MC Speak>>
-Your master's taking a while.
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker MC Speak>>
-Did I come back at a bad time?
-Can you use your dog nose and tell if your master is taking a shit or something?
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker Dog Think>>
-I don't think he's home.
-<<SetSpeaker MC Speak>>
-What? Did he go out to the store or something?
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker MC Speak>>
-How annoying. Let me call him-
-<<SetSpeaker MC Think>>
-Huh?
-The app says I've already been paid?
-. . . 30 minutes ago?
-<<SetSpeaker MC Speak>>
-. . . ?
-<<SetSpeaker MC Think>>
-Huh, the cash's already banked into my account.
-It says here I've been paid. . .
-Double?!
-<<SetSpeaker MC Speak>>
-What. . .
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker MC Think>>
-There has to be some sort of error.
-<<SetSpeaker MC Speak>>
-Give me a second Pat, I'm trying to figure out what's happening.
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker Dog Think>>
-The house has been fairly empty recently.
-<<SetSpeaker MC Speak>>
-. . . ?
-What're you talking about?
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker Dog Think>>
-I guess maybe I didn't want to believe it.
-My master wouldn't ever do something like this.
-Right?
-<<SetSpeaker MC Think>>
-He can't be suggesting what I think he's suggesting right?
-<<SetSpeaker MC Speak>>
-Don't bullshit me mutt.
-It isn't funny.
-<<SetSpeaker MC Think>>
-C'mon, why won't the call go through?
-<<SetSpeaker MC Speak>>
-Just give me a second to get a hold of your master.
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker MC Speak>>
-He's probably out to get dinner or something.
-Or maybe he went out to buy some groceries or something.
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker Dog Think>>
-I don't sense him anywhere nearby.
-<<SetSpeaker MC Speak>>
-Try harder!
-Argh, this is immeasurably annoying!
-<<SetSpeaker Dog Think>>
-I think you were right.
-About what you said earlier.
-<<SetSpeaker MC Speak>>
-Shut up dogbrain.
-I didn't know what I was talking about.
-Whatever's going through your head right now ain't true.
-<<SetSpeaker Dog Think>>
-You sounded pretty sure.
-<<SetSpeaker MC Speak>>
-That's something completely different, shut up.
-<<SetSpeaker MC Think>>
-This can't really be happening.
-This is such bullshit!
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker Dog Think>>
-Is this what I looked like?
-10 years ago?
-<<SetSpeaker MC Speak>>
-<<SetAnimation MC.Closed>>
-. . .
-<<SetSpeaker MC Think>>
-<<SetAnimation MC.Neutral>> 
-This isn't my problem.
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker MC Think>>
-This isn't my damn problem.
-He'll learn like I did.
-<<SetSpeaker Dog Speak>>
-. . .
-<<SetSpeaker MC Think>>
-He's got no choice anyways.
-<<SetSpeaker MC Speak>>
-. . .
+// . . .
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<OffBubble Dog>>
+// <<wait 5>>
+// <<SetSpeaker MC Speak>>
+// Your master's taking a while.
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker MC Speak>>
+// Did I come back at a bad time?
+// Can you use your dog nose and tell if your master is taking a shit or something?
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker Dog Think>>
+// I don't think he's home.
+// <<SetSpeaker MC Speak>>
+// What? Did he go out to the store or something?
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker MC Speak>>
+// How annoying. Let me call him-
+// <<SetSpeaker MC Think>>
+// Huh?
+// The app says I've already been paid?
+// . . . 30 minutes ago?
+// <<SetSpeaker MC Speak>>
+// . . . ?
+// <<SetSpeaker MC Think>>
+// Huh, the cash's already banked into my account.
+// It says here I've been paid. . .
+// Double?!
+// <<SetSpeaker MC Speak>>
+// What. . .
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker MC Think>>
+// There has to be some sort of error.
+// <<SetSpeaker MC Speak>>
+// Give me a second Pat, I'm trying to figure out what's happening.
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker Dog Think>>
+// The house has been fairly empty recently.
+// <<SetSpeaker MC Speak>>
+// . . . ?
+// What're you talking about?
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker Dog Think>>
+// I guess maybe I didn't want to believe it.
+// My master wouldn't ever do something like this.
+// Right?
+// <<SetSpeaker MC Think>>
+// He can't be suggesting what I think he's suggesting right?
+// <<SetSpeaker MC Speak>>
+// Don't bullshit me mutt.
+// It isn't funny.
+// <<SetSpeaker MC Think>>
+// C'mon, why won't the call go through?
+// <<SetSpeaker MC Speak>>
+// Just give me a second to get a hold of your master.
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker MC Speak>>
+// He's probably out to get dinner or something.
+// Or maybe he went out to buy some groceries or something.
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker Dog Think>>
+// I don't sense him anywhere nearby.
+// <<SetSpeaker MC Speak>>
+// Try harder!
+// Argh, this is immeasurably annoying!
+// <<SetSpeaker Dog Think>>
+// I think you were right.
+// About what you said earlier.
+// <<SetSpeaker MC Speak>>
+// Shut up dogbrain.
+// I didn't know what I was talking about.
+// Whatever's going through your head right now ain't true.
+// <<SetSpeaker Dog Think>>
+// You sounded pretty sure.
+// <<SetSpeaker MC Speak>>
+// That's something completely different, shut up.
+// <<SetSpeaker MC Think>>
+// This can't really be happening.
+// This is such bullshit!
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker Dog Think>>
+// Is this what I looked like?
+// 10 years ago?
+// <<SetSpeaker MC Speak>>
+// <<SetAnimation MC.Closed>>
+// . . .
+// <<SetSpeaker MC Think>>
+// <<SetAnimation MC.Neutral>> 
+// This isn't my problem.
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker MC Think>>
+// This isn't my damn problem.
+// He'll learn like I did.
+// <<SetSpeaker Dog Speak>>
+// . . .
+// <<SetSpeaker MC Think>>
+// He's got no choice anyways.
+// <<SetSpeaker MC Speak>>
+// . . .
 
 //Ending Conditions
-//<<set $KarmaPoint to 2>>
+<<set $KarmaPoint to 2>>
 <<if $KarmaPoint >= 2>> 
 [[GoodEnding]]
 <<endif>>
@@ -170,48 +170,48 @@ tags:
 colorID: 0
 position: 853,-697
 ---
-<<SetSpeaker Dog Speak>>
-<<SetAnimation MC.Closed>>
-. . .
-<<SetSpeaker MC Think>>
-<<SetAnimation MC.Neutral>>
-But I do.
-<<SetSpeaker MC Speak>>
-<<SetAnimation MC.LookDown>>
-Alright.
-Let's go Pat.
-<<SetSpeaker Dog Think>>
-. . . ?
-It's okay.
-I don't want to impose.
-I'll just stay here and wait.
-Maybe the car was full.
-I'm sure my master will come back for me.
-<<SetSpeaker MC Speak>>
-Unfortunately for me, it seems that you'll be stuck with me for a while.
-Your master isn't coming back.
-<<SetSpeaker Dog Think>>
-You're taking me in?
-Don't you hate dogs?
-<<SetSpeaker MC Speak>>
-I guess I'll bear the pain for you.
-<<SetSpeaker Dog Speak>>
-. . . !
-<<SetSpeaker Dog Think>>
-Sure.
-<<SetSpeaker MC Speak>>
-Oh don't be like that, now you sound like me!
-<<SetAnimation MC.Closed>>
-We wouldn't want that now, would we?
-<<SetSpeaker Dog Think>>
-I suppose not.
-<<SetSpeaker MC Speak>>
-<<SetAnimation MC.Neutral>>
-C'mon, let's go Pat.
-<<SetSpeaker Dog Think>>
-Okay.
-<<SetSpeaker MC Speak>>
-. . .
+// <<SetSpeaker Dog Speak>>
+// <<SetAnimation MC.Closed>>
+// . . .
+// <<SetSpeaker MC Think>>
+// <<SetAnimation MC.Neutral>>
+// But I do.
+// <<SetSpeaker MC Speak>>
+// <<SetAnimation MC.LookDown>>
+// Alright.
+// Let's go Pat.
+// <<SetSpeaker Dog Think>>
+// . . . ?
+// It's okay.
+// I don't want to impose.
+// I'll just stay here and wait.
+// Maybe the car was full.
+// I'm sure my master will come back for me.
+// <<SetSpeaker MC Speak>>
+// Unfortunately for me, it seems that you'll be stuck with me for a while.
+// Your master isn't coming back.
+// <<SetSpeaker Dog Think>>
+// You're taking me in?
+// Don't you hate dogs?
+// <<SetSpeaker MC Speak>>
+// I guess I'll bear the pain for you.
+// <<SetSpeaker Dog Speak>>
+// . . . !
+// <<SetSpeaker Dog Think>>
+// Sure.
+// <<SetSpeaker MC Speak>>
+// Oh don't be like that, now you sound like me!
+// <<SetAnimation MC.Closed>>
+// We wouldn't want that now, would we?
+// <<SetSpeaker Dog Think>>
+// I suppose not.
+// <<SetSpeaker MC Speak>>
+// <<SetAnimation MC.Neutral>>
+// C'mon, let's go Pat.
+// <<SetSpeaker Dog Think>>
+// Okay.
+// <<SetSpeaker MC Speak>>
+// . . .
 <<SetSpeaker MC Think>>
 <<SetAnimation MC.Closed>> 
 It'll take some time.
@@ -220,5 +220,5 @@ No one knows that better than me I guess.
 <<SetAnimation MC.Neutral>>
 Let's see if we can do a few months together.
 //Ending Conditions
-<<Play GoodCredits>>
+<<PlayScene GoodCredits>>
 ===

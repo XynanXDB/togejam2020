@@ -21,7 +21,7 @@ MonoBehaviour:
     PlayableAsset: {fileID: 11400000, guid: c61a24097283fc5428f93a07d80c3b4e, type: 2}
   - Key: Beat5
     PlayableAsset: {fileID: 11400000, guid: f1f9000b831858540922d3e645b6443b, type: 2}
-  - Key: GoodEnding
+  - Key: GoodCredits
     PlayableAsset: {fileID: 11400000, guid: 27883951467109f4ea4e4dd8531abefa, type: 2}
   - Key: NeutralEnding
     PlayableAsset: {fileID: 11400000, guid: faebdbb5cbcaa2f4d951de728f9d27b7, type: 2}
