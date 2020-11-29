@@ -112,6 +112,7 @@ namespace Game.Core
         {
             DialogueUI.onLineUpdate.RemoveListener(SetDisplayText);
             DialogueUI.onLineStart.RemoveListener(PlayBubbleAnim);
+            DialogueUI.onLineFinishDisplaying.RemoveListener(ConditionalActivateDialogueAdvancer);
 
             SpeakerName = null;
             SpeakerTransform = null;
@@ -140,7 +141,7 @@ namespace Game.Core
             if (DialogueBubbleDictionary.TryGetValue(CacheYarnPacket.Action, out Clip))
                 BGAnimate.Play(Clip);
             else
-                Debug.Log("Missing Clip");
+                Debug.Log(CacheYarnPacket.Action + " Missing Clip");
 
         }
 

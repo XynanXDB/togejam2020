@@ -1,4 +1,5 @@
-﻿using System.Net.Mime;
+﻿using System.Collections;
+using System.Net.Mime;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
@@ -81,8 +82,7 @@ namespace Game.Core
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
-        [SerializeField] protected UTalkableController Dog;
-        
+        private ITalkable Dog;
 
 ///////////////////////////////////////////////////////////////////////
         
@@ -93,17 +93,36 @@ namespace Game.Core
             DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
             DialogueRunner.AddCommandHandler("OffBubble", OffBubble);
             DialogueRunner.AddCommandHandler("TurnDog", TurnDog);
-
+            DialogueRunner.AddCommandHandler("Play", PlayYarn);
+            
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
             AssignedBubbles = new List<UDialogueBubble>();
             JoinedSpeakers = new List<ITalkable>();
+            Dog = GameObject.FindGameObjectWithTag("Dog").GetComponent<ITalkable>();
             
             BubblePooler.GetAllPooledObjects().ForEach( GO =>
             {
                 UDialogueBubble B = GO.GetComponent<UDialogueBubble>();
                 OnReceiveSetSpeaker += B.OnSetSpeaker;
             });
+        }
+
+        void PlayYarn(string[] Data)
+        {
+            DialogueRunner.Stop();
+            OnDialogueEnd();
+
+            StartCoroutine(WaitThenPlayYarn(Data[0]));
+        }
+        IEnumerator WaitThenPlayYarn(string Data)
+        {
+            yield return new WaitForSeconds(1.0f);
+
+            if (Data == "Beat1.Street")
+                InitiateDialogue(Data, new List<ITalkable>(){Player, Dog}, "Funnel");
+            else if (Data == "Beat2.Street")
+                InitiateDialogue(Data, new List<ITalkable>(){Player, Dog}, "FunnelB");
         }
 
         void TurnDog(string[] Data)

@@ -24,10 +24,7 @@ namespace Game.Core
         void Update()
         {
             if (FocusedGO != null && EventSystem.current.currentSelectedGameObject != FocusedGO)
-            {
                 EventSystem.current.SetSelectedGameObject(FocusedGO);
-                Debug.Log("Refocus on " + FocusedGO);
-            }
         }
 
         public void ForceFocusGameObject(GameObject GO)

@@ -38,11 +38,6 @@ namespace Game.Core
 
         public void IExecuteInteract(GameObject GO)
         {
-            UDialogueManager.DialogueManager.InitiateDialogue("Billy", new List<ITalkable>()
-            {
-                GO.GetComponent<ITalkable>(),
-                GetComponent<ITalkable>()
-            }, "Billy.Start");
         }
 
         public void IOnFocus(GameObject GO)
@@ -57,8 +52,7 @@ namespace Game.Core
 
         public void SetAnimation(string Animation) //TODO Implement Animation
         {
-            if (Animation == "Walk")
-                DogAnimate.Play(Animation);      
+            DogAnimate.Play(Animation);
         }
 
         public void TurnDog()

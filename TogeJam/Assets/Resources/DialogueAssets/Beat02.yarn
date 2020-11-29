@@ -17,7 +17,7 @@ Your coat looks pretty good.
 <<SetSpeaker MC Think>>
 That sounded dumb as heck.
 <<SetSpeaker Dog Speak>> 
-<<SetAnimation Dog.Stand>>
+<<SetAnimation MC.Stand Dog.Shocked>>
 . . .
 <<SetSpeaker Dog Think>>
 You really think so?
@@ -27,7 +27,7 @@ No.
 But hey good news is, my opinion doesn't really mean anything.
 Or at least it shouldn't.
 <<SetSpeaker Dog Think>>
-<<SetAnimation Dog.Walk>>
+<<SetAnimation MC.Walk Dog.Walk>>
 I think it does!
 Friends care about what other friends think of them.
 It is how it is.
@@ -51,7 +51,7 @@ Boo hoo, such a hard life you live, being fed and cared for.
 Running around knocking over shit, shredding sofas, and rolling in your bed.
 Real hard life. You have my thoughts and prayers.
 <<SetSpeaker Dog Think>>
-<<SetAnimation Dog.Stand>> 
+//<<SetAnimation Dog.Stand>> 
 I'll have you know that I'm a very good boy.
 If I weren't, my master wouldn't have said it so many times.
 <<SetSpeaker MC Speak>> 
@@ -112,7 +112,7 @@ You're good!
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Closed>>
 . . .
-<wait 2>
+<<wait 2>>
 <<SetAnimation MC.Squint>>
 Whatever.
 
@@ -169,7 +169,7 @@ position: 1096,-133
 Hmm I never got to know why he was feeling down.
 I don't know if I should even poke my head into this.
 <<SetSpeaker Dog Speak>> 
-<wait 5>
+<<wait 5>>
 <<SetSpeaker MC Think>>
 I'm bored though.
 <<SetSpeaker MC Speak>> 
@@ -197,7 +197,7 @@ And then not at all.
 Hmm, I see.
 I think I know what's going on.
 <<SetSpeaker Dog Think>>
-<<SetAnimation Dog.Stand>>
+<<SetAnimation MC.Stand Dog.Shocked>>
 You do!?
 <<SetSpeaker MC Speak>> 
 I mean, I could be wrong, but maybe he's in a similar position as me.
@@ -208,7 +208,7 @@ Well, it's hard to explain.
 But people are inside for a reason. Basically there's a disease out and about.
 So people are kinda asked to stay home.
 <<SetSpeaker Dog Think>>
-<<SetAnimation Dog.Walk>>
+<<SetAnimation MC.Walk Dog.Walk>>
 Why?
 <<SetSpeaker MC Speak>> 
 Hmm, well, it's harder to get the disease when you're at home.
@@ -237,13 +237,13 @@ You have a boat!?
 <<SetSpeaker MC Speak>> 
 No, I mean your master is probably unemployed, like me.
 <<SetSpeaker Dog Think>>
-<<SetAnimation Dog.Stand>>
+<<SetAnimation MC.Stand Dog.Shocked>>
 Ah so that's why you're grumpy.
 <<SetSpeaker MC Speak>> 
 No, I've always been like this.
 Since I was a kid anyways.
 <<SetSpeaker Dog Think>> 
-<<SetAnimation Dog.Walk>>
+<<SetAnimation MC.Walk Dog.Walk>>
 But isn't a job how you humans get money? To buy food and such?
 <<SetSpeaker MC Speak>> 
 Ah so you're not as dumb as you look.
@@ -252,7 +252,7 @@ I'm a smart boy!
 <<SetSpeaker MC Speak>> 
 Sure you are.
 <<SetSpeaker Dog Think>> 
-But how are you getting oney if you don't have a job?
+But how are you getting money if you don't have a job?
 <<SetSpeaker MC Speak>> 
 That's why I'm here, walking your butt.
 Your master is paying me to walk you, basically.
@@ -275,4 +275,5 @@ Wow you are so knowledgable!
 Are you a smart boy too?
 <<SetSpeaker MC Speak>> 
 Not a boy. But thanks.
+<<Play Beat3.Street>>
 ===

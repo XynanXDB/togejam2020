@@ -4,7 +4,7 @@ colorID: 0
 position: 494,-498
 ---
 <wait 5>
-<<SetAnimation Dog.Walk>>
+//<<SetAnimation Dog.Walk>>
 <<SetSpeaker MC Think>>
 It's definitely not something I want to talk about.
 <<SetSpeaker MC Speak>>

@@ -3,10 +3,9 @@ tags:
 colorID: 0
 position: 436,-364
 ---
-<wait 5>
-
+<<wait 5>>
 <<SetSpeaker Dog Think>>
-<<SetAnimation Dog.Walk>> 
+//<<SetAnimation Dog.Walk>> 
 I really can't wait to see all my friends at the park!
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Neutral>> 
@@ -116,15 +115,16 @@ I'm just doing it for the money so I can eat.
 <<SetAnimation MC.LookDown>>
 <<SetSpeaker Dog Think>>
 Exactly, right.
-<<SetAnimation Dog.Stand>>
+<<SetAnimation MC.Stand Dog.Shocked>>
 So imagine that my master had to care and feed me since I was a puppy.
 Play with me, give me treats, give me attention. Deal with my poop.
-<<SetAnimation Dog.Sit>>
+//<<SetAnimation Dog.Sit>>
 He did all of that for years.
 And he did it with his own money too.
 You're doing this one job to feed yourself.
 I bear with a little pain and I get a lifetime of shelter and food.
 I love my master.
+<<SetAnimation MC.Walk Dog.Walk>>
 He has done more than bear with a little pain for my happiness.
 I'm just gladly repaying him in kind.
 <<SetSpeaker MC Speak>>
@@ -135,9 +135,9 @@ I see.
 At least see where you're coming from. Sorry if I sounded kinda mean.
 <<SetSpeaker Dog Think>>
 It's ok!
-<<SetAnimation Dog.Stand>>
+<<SetAnimation MC.Stand Dog.Shocked>>
 You're just grumpy!
-<<SetSpeaker MC Speak>>
+<<SetSpeaker MC Think>>
 <<SetAnimation MC.Squint>>
 Am I actually just grumpy?
 Has my past decade just been one long grumpy phase?
@@ -194,7 +194,7 @@ colorID: 0
 position: 1112,-434
 ---
 <<SetSpeaker MC Think>>
-<<SetAnimation Dog.Walk>>
+<<SetAnimation MC.Walk Dog.Walk>>
 My brain's exhausted talking to this dog.
 <<SetAnimation MC.Neutral>>
 This is why I don't like dealing with animals.
@@ -246,4 +246,5 @@ Oh, did something happen?
 Don't worry about it.
 <<SetSpeaker Dog Speak>>
 . . . ?
+<<Play Beat4.Street>>
 ===

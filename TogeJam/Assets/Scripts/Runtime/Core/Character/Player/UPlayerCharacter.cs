@@ -82,11 +82,14 @@ namespace Game.Core
         public void SetAnimation(string Animation)
         {
             if (!EyeAnimController.TrySetEyeAnim(Animation))
+            {
+                PlayerCharAnimate.Play(Animation);
+
                 if (Animation == "Walk")
-                {
-                    PlayerCharAnimate.Play(Animation);
                     MovementType = EMovementType.Right;
-                }
+                else if (Animation == "Stand")
+                    MovementType = EMovementType.Stop;
+            }
         }
     }
 }

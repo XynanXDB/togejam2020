@@ -67,8 +67,7 @@ namespace Game.Core
 
         public void SetAnimation(string Animation) //TODO Implement Animation
         {
-            if (Animation == "Walk")
-                PlayerCharacter.SetAnimation(Animation);
+            PlayerCharacter.SetAnimation(Animation);
         }
 
         public void SendNativeCommand(string Data)

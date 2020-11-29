@@ -18,22 +18,24 @@ But I'm OK with that, not many people like me anyways.
 ...
 Well you are a Dobermann...
 <<SetSpeaker Dog Think>>
-But I;m sure this weirdo would know what that feels like.
+But I'm sure this weirdo would know what that feels like.
 With an outfit like that.
 <<SetAnimation MC.Squint>> 
 <<SetSpeaker MC Think>> 
 !?
-<<SetSpeaker MC Speaker>>
+<<SetSpeaker MC Speak>>
 What's wrong with my outfit?
-<<SetAnimation MC.Stand Dog.Stand>>
+<<SetAnimation MC.Stand Dog.Shocked>>
 <<SetSpeaker Dog Think>>
 !!
 <<SetSpeaker Dog Speak>>
 ...
 <<SetSpeaker Dog Think>>
+<<SetAnimation Dog.Stand>>
 Is this weirdo responding to me?
 <<SetSpeaker MC Speak>>
 Yeah I am. What's wrong with my outfit?
+<<SetAnimation Dog.Shocked>>
 <<SetSpeaker Dog Think>>
 !?
 You can understand me, human?
@@ -57,7 +59,7 @@ So what's wrong with my outfit?
 How are you talking to me?
 Are you special?
 <<SetSpeaker MC Speak>>
-I'm gonna assume you didn't man that as an insult, mutt.
+I'm gonna assume you didn't mean that as an insult, mutt.
 <<SetAnimation MC.Closed>> 
 ...
 <<SetAnimation MC.Neutral>>
@@ -68,9 +70,6 @@ Why not? Wouldn't you be able to make more friends?
 Wouldn't I be able to make more friends?
 [[Why would I want more?|Interested]]
 [[Friends are overrated.|ShrugOff]]
-
-
-[[ Friends are overrated. |ShrugOff]]
 ===
 title: Interested
 tags: 
@@ -81,7 +80,7 @@ position: 73,444
 <<SetSpeaker MC Speak>>
 Why would I want to make more friends?
 <<SetSpeaker Dog Think>>
-Oh,so you must already have plenty of friends!
+Oh, so you must already have plenty of friends!
 That's great!
 <<SetSpeaker MC Speak>>
 ...No, not really. I don't have many friends.
@@ -143,14 +142,14 @@ position: 276,695
 ---
 <<SetSpeaker Dog Think>>
 ...
-<<SetAnimation Dog.Stand>>
+<<SetAnimation MC.Stand Dog.Shocked>>
 Well, I could be you friend!
 <<SetAnimation MC.LookDown>>
 <<SetSpeaker MC Speak>>
 Huh?
 <<SetSpeaker Dog Think>>
 You're grumpy, maybe you need someone like me to help!
-<<SetAnimation Dog.Walk>>
+<<SetAnimation MC.Walk Dog.Walk>>
 Master's almost always busy, especially recently.
 Usually staring hard at the glowing box with the moving pictures.
 And sometimes, people come and he shows them around our house.
@@ -168,4 +167,5 @@ Master hasn't had the time to groom me lately.
 <<SetAnimation MC.LookDown>>
 <<SetSpeaker MC Think>>
 Hmm, he sounded a bit sad with that last part.
+<<Play Beat2.Street>>
 ===
