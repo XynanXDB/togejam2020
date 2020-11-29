@@ -22,6 +22,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Shop_F_signBoard
+    second: {fileID: 2100000, guid: 5c306b580338a324f9a6c4e92e0dd52d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Sky_shd
     second: {fileID: 2100000, guid: 03642143be5a42b4880cd4e87c729e13, type: 2}
   - first:
@@ -99,6 +104,31 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: backDrop_shd
     second: {fileID: 2100000, guid: c70791fb3397a294698a46ecda2141bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cafe_B_signBoard_shd
+    second: {fileID: 2100000, guid: d0b5eb1a7939b104bbde6c1eeae785a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shop_B_signBoard_shd
+    second: {fileID: 2100000, guid: 73530725e5c85a043bf7f1e8304859ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shop_C_signBoard_shd
+    second: {fileID: 2100000, guid: 53e95f702c9c09e44886d9882bfe3574, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shop_D_signBoard_shd
+    second: {fileID: 2100000, guid: 5ae0055a2fc8d66449ebf8061a461981, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shop_E_signBoard_shd
+    second: {fileID: 2100000, guid: 7bfb9370edcafff45ab1f6d90e987543, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
