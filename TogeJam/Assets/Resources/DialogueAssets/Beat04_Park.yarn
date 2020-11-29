@@ -59,8 +59,8 @@ Good or bad.
 Not like a dog would understand.
 <<SetSpeaker Dog Speak>>
 . . .
-<<SetSpeaker Dog Think>>
-Is that why you're so grumpy?
+<<SetSpeaker MC Think>>
+Is that why I'm so grumpy?
 
 [[Because I value myself? Yes|Yes]]
 [[I'm happy. I never needed anyone,|No]]

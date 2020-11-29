@@ -26,7 +26,7 @@ Yeah I can see you wagging your tail.
 Ah I hope to see that one friend I have at the park!
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Neutral>>
-So you can sniff their butts?
+So you can sniff their butt?
 <<SetSpeaker Dog Think>>
 Yeah!?
 Sometimes we just chase our tails together.
@@ -48,7 +48,7 @@ Glad he's still got his tail.
 His ears are cropped though.
 How peculiar, usually you'd get the ears cropped AND the tailed docked.
 Not one or the other, since then you're likely to just do neither.
-As far as I know, these are painsful procedures for the dogs.
+As far as I know, these are painful procedures for the dogs.
 Very common in Dobermanns due to the commonly known look it provides.
 But looks are really only what they're for.
 <<SetAnimation MC.Neutral>> 
@@ -63,6 +63,7 @@ Hey, Pat?
 <<SetSpeaker Dog Think>>
 Yes?
 Wow, you sounded almost gentle there.
+<<SetSpeaker MC Speak>>
 <<SetAnimation MC.Squint>>
 You wanna know what my angry sounds like?
 <<SetSpeaker Dog Think>>
@@ -88,13 +89,14 @@ Yeah, but my master gave me a lot of attention at the time!
 It hurt a lot but my master was very happy!
 And I think that's all that matters!
 <<SetSpeaker MC Speak>>
-You'd submit yourself to pain just to make yhour master happy?
+You'd submit yourself to pain just to make your master happy?
 <<SetSpeaker Dog Think>>
 I mean. . . 
 I would definitely prefer to not have to go through any pain.
 But if it makes my master happy, I'll bear the pain!
-<<SetSpeaker MC Speak>>
-[[Do you think he'd do the same for you?|DoYouThinkHedDoTheSameForYou]]
+<<SetSpeaker MC Think>>
+He'll bear the pain?
+[[Think he'd do the same for you?|DoYouThinkHedDoTheSameForYou]]
 [[His happiness was temporary.|HisHappinessWasTemporary]]
 ===
 title: DoYouThinkHedDoTheSameForYou
