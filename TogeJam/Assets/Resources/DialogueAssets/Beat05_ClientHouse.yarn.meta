@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 0ce84c760ba6132448cfb9c8a4530fc3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - Beat05_ClientHouse-Start-0
+  - Beat05_ClientHouse-Start-1
+  - Beat05_ClientHouse-Start-2
+  - Beat05_ClientHouse-Start-3
+  - Beat05_ClientHouse-Start-4
+  - Beat05_ClientHouse-Start-5
+  - Beat05_ClientHouse-Start-6
+  - Beat05_ClientHouse-Start-7
+  - Beat05_ClientHouse-Start-8
+  - Beat05_ClientHouse-Start-9
+  - Beat05_ClientHouse-Start-10
+  - Beat05_ClientHouse-Start-11
+  - Beat05_ClientHouse-Start-12
+  - Beat05_ClientHouse-Start-13
+  - Beat05_ClientHouse-Start-14
+  - Beat05_ClientHouse-Start-15
+  - Beat05_ClientHouse-Start-16
+  - Beat05_ClientHouse-Start-17
+  - Beat05_ClientHouse-Start-18
+  - Beat05_ClientHouse-Start-19
+  - Beat05_ClientHouse-Start-20
+  - Beat05_ClientHouse-Start-21
+  - Beat05_ClientHouse-Start-22
+  - Beat05_ClientHouse-Start-23
+  - Beat05_ClientHouse-Start-24
+  - Beat05_ClientHouse-Start-25
+  - Beat05_ClientHouse-Start-26
+  - Beat05_ClientHouse-Start-27
+  - Beat05_ClientHouse-Start-28
+  - Beat05_ClientHouse-Start-29
+  - Beat05_ClientHouse-Start-30
+  - Beat05_ClientHouse-Start-31
+  - Beat05_ClientHouse-Start-32
+  - Beat05_ClientHouse-Start-33
+  - Beat05_ClientHouse-Start-34
+  - Beat05_ClientHouse-Start-35
+  - Beat05_ClientHouse-Start-36
+  - Beat05_ClientHouse-Start-37
+  - Beat05_ClientHouse-Start-38
+  - Beat05_ClientHouse-Start-39
+  - Beat05_ClientHouse-Start-40
+  - Beat05_ClientHouse-Start-41
+  - Beat05_ClientHouse-Start-42
+  - Beat05_ClientHouse-Start-43
+  - Beat05_ClientHouse-Start-44
+  - Beat05_ClientHouse-Start-45
+  - Beat05_ClientHouse-Start-46
+  - Beat05_ClientHouse-Start-47
+  - Beat05_ClientHouse-Start-48
+  - Beat05_ClientHouse-Start-49
+  - Beat05_ClientHouse-Start-50
+  - Beat05_ClientHouse-Start-51
+  - Beat05_ClientHouse-Start-52
+  - Beat05_ClientHouse-Start-53
+  - Beat05_ClientHouse-Start-54
+  - Beat05_ClientHouse-Start-55
+  - Beat05_ClientHouse-Start-56
+  - Beat05_ClientHouse-Start-57
+  - Beat05_ClientHouse-Start-58
+  - Beat05_ClientHouse-Start-59
+  - Beat05_ClientHouse-Start-60
+  - Beat05_ClientHouse-Start-61
+  - Beat05_ClientHouse-Start-62
+  - Beat05_ClientHouse-Start-63
+  - Beat05_ClientHouse-Start-64
+  - Beat05_ClientHouse-Start-65
+  - Beat05_ClientHouse-Start-66
+  - Beat05_ClientHouse-Start-67
+  - Beat05_ClientHouse-Start-68
+  - Beat05_ClientHouse-Start-69
+  - Beat05_ClientHouse-Start-70
+  - Beat05_ClientHouse-Start-71
+  - Beat05_ClientHouse-Start-72
+  - Beat05_ClientHouse-Start-73
+  - Beat05_ClientHouse-Start-74
+  - Beat05_ClientHouse-Start-75
+  - Beat05_ClientHouse-Start-76
+  - Beat05_ClientHouse-Start-77
+  - Beat05_ClientHouse-Start-78
+  - Beat05_ClientHouse-Start-79
+  - Beat05_ClientHouse-Start-80
+  - Beat05_ClientHouse-Start-81
+  - Beat05_ClientHouse-GoodEnding-82
+  - Beat05_ClientHouse-GoodEnding-83
+  - Beat05_ClientHouse-GoodEnding-84
+  - Beat05_ClientHouse-GoodEnding-85
+  - Beat05_ClientHouse-GoodEnding-86
+  - Beat05_ClientHouse-GoodEnding-87
+  - Beat05_ClientHouse-GoodEnding-88
+  - Beat05_ClientHouse-GoodEnding-89
+  - Beat05_ClientHouse-GoodEnding-90
+  - Beat05_ClientHouse-GoodEnding-91
+  - Beat05_ClientHouse-GoodEnding-92
+  - Beat05_ClientHouse-GoodEnding-93
+  - Beat05_ClientHouse-GoodEnding-94
+  - Beat05_ClientHouse-GoodEnding-95
+  - Beat05_ClientHouse-GoodEnding-96
+  - Beat05_ClientHouse-GoodEnding-97
+  - Beat05_ClientHouse-GoodEnding-98
+  - Beat05_ClientHouse-GoodEnding-99
+  - Beat05_ClientHouse-GoodEnding-100
+  - Beat05_ClientHouse-GoodEnding-101
+  - Beat05_ClientHouse-GoodEnding-102
+  - Beat05_ClientHouse-GoodEnding-103
+  - Beat05_ClientHouse-GoodEnding-104
+  - Beat05_ClientHouse-GoodEnding-105
+  - Beat05_ClientHouse-GoodEnding-106
+  - Beat05_ClientHouse-GoodEnding-107
+  - Beat05_ClientHouse-GoodEnding-108
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []

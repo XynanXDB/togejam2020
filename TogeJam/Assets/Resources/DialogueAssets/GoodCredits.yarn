@@ -1,0 +1,81 @@
+title: Start
+tags: 
+colorID: 0
+position: 865,-668
+---
+<<SetSpeaker MC Speak>>
+Hey, um, Pat
+Let's go get some food.
+<<SetSpeaker Dog Think>>
+Yeah, sure.
+<<SetSpeaker MC Speak>>
+Are you okay?
+<<SetSpeaker Dog Think>>
+Yeah.
+<<SetSpeaker MC Speak>>
+Hungry?
+<<SetSpeaker Dog Think>>
+. . .
+Yeah.
+<<SetSpeaker MC Speak>>
+. . .
+We'll be okay buddy.
+Your ex-master paid me off fairly well after all.
+Should be more than enough for a week.
+<<SetSpeaker Dog Think>>
+A week huh?
+. . .
+Is that how long you'll keep me for?
+<<SetSpeaker MC Speak>>
+. . .
+No.
+I think you're assuming way too much of what I'd do.
+<<SetSpeaker Dog Think>>
+. . .
+<<SetSpeaker MC Speak>>
+. . .
+And your assumptions are wrong.
+I'm not like your idiot ex-master.
+I wouldn't let you go, just 'cause.
+Because I know what it's like to be in your shoes.
+<<SetSpeaker Dog Think>>
+I don't wear shoes.
+<<SetSpeaker MC Speak>>
+Keep quiest, I'm being nice.
+<<SetSpeaker Dog Think>>
+That isn't going to happen a lot, is it?
+<<SetSpeaker MC Speak>>
+Well that depends on how good of a 'friend' you are.
+<<SetSpeaker Dog Think>>
+. . .
+Thanks, uh. . .
+You never told me your name.
+<<SetSpeaker MC Speak>>
+. . .
+My name's Nello.
+<<SetSpeaker Dog Think>>
+Thanks Nello.
+<<SetSpeaker MC Speak>>
+Whatever.
+Wanna go get some food?
+I have a lot of buy considering you're coming home with me.
+<<SetSpeaker Dog Think>>
+Yeah, I-
+. . .
+Actually. . .
+Can we just sit here for a bit?
+<<SetSpeaker MC Speak>>
+. . .
+Sure thing buddy.
+<<SetSpeaker Dog Speak>>
+. . .
+<<SetSpeaker Dog Think>>
+You should pet me, by the way.
+<<SetSpeaker MC Speak>>
+I can?
+<<SetSpeaker Dog Think>>
+Well, we're going to be friends, right?
+<<SetSpeaker MC Speak>>
+Well then.
+Don't mind if I do.
+===

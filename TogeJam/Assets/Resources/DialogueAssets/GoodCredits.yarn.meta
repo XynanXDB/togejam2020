@@ -1,0 +1,66 @@
+fileFormatVersion: 2
+guid: 919b0db75fdbdc54aa2cf32040d259d2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
+  baseLanguageID: 
+  stringIDs:
+  - GoodCredits-Start-0
+  - GoodCredits-Start-1
+  - GoodCredits-Start-2
+  - GoodCredits-Start-3
+  - GoodCredits-Start-4
+  - GoodCredits-Start-5
+  - GoodCredits-Start-6
+  - GoodCredits-Start-7
+  - GoodCredits-Start-8
+  - GoodCredits-Start-9
+  - GoodCredits-Start-10
+  - GoodCredits-Start-11
+  - GoodCredits-Start-12
+  - GoodCredits-Start-13
+  - GoodCredits-Start-14
+  - GoodCredits-Start-15
+  - GoodCredits-Start-16
+  - GoodCredits-Start-17
+  - GoodCredits-Start-18
+  - GoodCredits-Start-19
+  - GoodCredits-Start-20
+  - GoodCredits-Start-21
+  - GoodCredits-Start-22
+  - GoodCredits-Start-23
+  - GoodCredits-Start-24
+  - GoodCredits-Start-25
+  - GoodCredits-Start-26
+  - GoodCredits-Start-27
+  - GoodCredits-Start-28
+  - GoodCredits-Start-29
+  - GoodCredits-Start-30
+  - GoodCredits-Start-31
+  - GoodCredits-Start-32
+  - GoodCredits-Start-33
+  - GoodCredits-Start-34
+  - GoodCredits-Start-35
+  - GoodCredits-Start-36
+  - GoodCredits-Start-37
+  - GoodCredits-Start-38
+  - GoodCredits-Start-39
+  - GoodCredits-Start-40
+  - GoodCredits-Start-41
+  - GoodCredits-Start-42
+  - GoodCredits-Start-43
+  - GoodCredits-Start-44
+  - GoodCredits-Start-45
+  - GoodCredits-Start-46
+  - GoodCredits-Start-47
+  - GoodCredits-Start-48
+  compilationStatus: 1
+  isSuccesfullyCompiled: 1
+  compilationErrorMessage: 
+  baseLanguage: {instanceID: 0}
+  localizations: []
