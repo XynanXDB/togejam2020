@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: House_building_A03_shd
-    second: {fileID: 2100000, guid: 2eb5434efc5abbd4a9429271668a2baa, type: 2}
+    second: {fileID: 2100000, guid: 3ee1a08287070c34f946547ca822a8ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -23,7 +23,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: House_building_B02_shd
-    second: {fileID: 2100000, guid: 26914fcf7ed8b794988d2309ee7fccad, type: 2}
+    second: {fileID: 2100000, guid: b44c1237a59857f44a9f3a9b5b2027f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: House_building_C_shd
+    second: {fileID: 2100000, guid: 8ee55ce1142fcc843b0c8a910b0705af, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -34,6 +39,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: House_trees_shd
     second: {fileID: 2100000, guid: 4107c521b0cff3b4788333afef7cf333, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sky_shd
+    second: {fileID: 2100000, guid: 03642143be5a42b4880cd4e87c729e13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: backDrop_shd
+    second: {fileID: 2100000, guid: 03642143be5a42b4880cd4e87c729e13, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
