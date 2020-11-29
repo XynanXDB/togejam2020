@@ -1,0 +1,31 @@
+{
+    "name": "Editor",
+    "references": [
+        "GUID:da9fdce8fc2b15f419feb2a4b837e135"
+    ],
+    "includePlatforms": [
+        "Android",
+        "CloudRendering",
+        "iOS",
+        "LinuxStandalone64",
+        "Lumin",
+        "macOSStandalone",
+        "PS4",
+        "Stadia",
+        "Switch",
+        "tvOS",
+        "WSA",
+        "WebGL",
+        "WindowsStandalone32",
+        "WindowsStandalone64",
+        "XboxOne"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

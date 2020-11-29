@@ -42,5 +42,5 @@ Alright let's go uhh... Pat.
 <<PlayMusic WTD>>
 <<SetAnimation MC.Walk Dog.Walk>>
 <<wait 5>>
-<<PlayScene Beat1.Street>>
+<<Play Beat1.Street>>
 ===

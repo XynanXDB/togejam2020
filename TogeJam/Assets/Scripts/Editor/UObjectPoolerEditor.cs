@@ -5,6 +5,7 @@ using UnityEditor;
 
 namespace Game.Utility
 {
+#if UNITY_EDITOR
     [CustomEditor(typeof(UObjectPooler))]
     public class UObjectPoolerEditor : Editor
     {
@@ -20,4 +21,5 @@ namespace Game.Utility
             }
         }
     }
+#endif
 }
