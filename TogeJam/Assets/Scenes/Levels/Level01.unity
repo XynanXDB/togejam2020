@@ -2498,6 +2498,10 @@ PrefabInstance:
       propertyPath: DialogueDispatcher
       value: 
       objectReference: {fileID: 1287231265}
+    - target: {fileID: -1091845388076163808, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: Doorbell
+      value: 
+      objectReference: {fileID: 8300000, guid: 7bae831288b50a84eb7c2cdbd5e0dcea, type: 3}
     - target: {fileID: 37010105808456926, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2894,7 +2898,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1318718500}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 569c53d3e53773841b478fdc117539c6, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: c61a24097283fc5428f93a07d80c3b4e, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -2922,6 +2926,10 @@ PlayableDirector:
     value: {fileID: 1236879081}
   - key: {fileID: 3993212544919226321, guid: f1f9000b831858540922d3e645b6443b, type: 2}
     value: {fileID: 314484214}
+  - key: {fileID: -6251749695691823457, guid: f1f9000b831858540922d3e645b6443b, type: 2}
+    value: {fileID: 1191101919}
+  - key: {fileID: -1814818454998159571, guid: f1f9000b831858540922d3e645b6443b, type: 2}
+    value: {fileID: 1236879081}
   m_ExposedReferences:
     m_References:
     - 8b6b7d56e5c24ab43a3e2a85c5207611: {fileID: 0}

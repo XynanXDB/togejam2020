@@ -82,6 +82,7 @@ namespace Game.Core
         public OneParamSignature<YarnCommandPacket> OnReceiveSetSpeaker = null;
         public VoidSignature OnCustomDialogueEnd = null;
         private int TwoToStartBeat4Park = 0;
+        [SerializeField] protected AudioClip Doorbell;//Should make a database for this
 
         [Header("Debug")]
         [SerializeField] protected UPlayerController Player;
@@ -101,6 +102,7 @@ namespace Game.Core
             DialogueRunner.AddCommandHandler("StopStreetLoop", StopStreetLoop);
             DialogueRunner.AddCommandHandler("PlayScene", PlayCinematic);
             DialogueRunner.AddCommandHandler("IncrementStartBeat4Park", IncrementStartBeat4Park);
+            DialogueRunner.AddCommandHandler("PlaySound", PlaySound);
             
             DialogueUI.onDialogueEnd.AddListener(OnDialogueEnd);
             
@@ -113,6 +115,12 @@ namespace Game.Core
                 UDialogueBubble B = GO.GetComponent<UDialogueBubble>();
                 OnReceiveSetSpeaker += B.OnSetSpeaker;
             });
+        }
+
+        void PlaySound(string[] Data)
+        {
+            if (Data[0] == "Doorbell")
+                UMasterAudioManager.MasterAudioManager.PlaySFX(Doorbell);
         }
 
         void StopStreetLoop(string[] Data)

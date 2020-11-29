@@ -23,7 +23,7 @@ So you'd see me again?
 <<SetSpeaker MC Speak>>
 I think I'd be more interested in the money.
 <<SetSpeaker Dog Think>>
-Well I  hope I can see you again!
+Well I hope I can see you again!
 Maybe I can help with your grumpiness problem.
 <<SetSpeaker MC Speak>>
 Ha, doubt it.
@@ -32,7 +32,7 @@ To be honest, when all's said and done. . .
 The mutt ain't too bad.
 <<SetSpeaker MC Speak>>
 Time to hand your ass over now.
-//Doorbell SFX
+<<PlaySound Doorbell>>
 Hope your master gets some time to spend with you.
 <<SetSpeaker Dog Think>>
 Thanks Strawberry!
@@ -46,6 +46,8 @@ Thanks Pat.
 . . .
 <<SetSpeaker Dog Speak>>
 . . .
+<<OffBubble Dog>>
+<<wait 5>>
 <<SetSpeaker MC Speak>>
 Your master's taking a while.
 <<SetSpeaker Dog Speak>>
@@ -55,7 +57,7 @@ Did I come back at a bad time?
 Can you use your dog nose and tell if your master is taking a shit or something?
 <<SetSpeaker Dog Speak>>
 . . .
-<<SetSpeaker Dog THINK>>
+<<SetSpeaker Dog Think>>
 I don't think he's home.
 <<SetSpeaker MC Speak>>
 What? Did he go out to the store or something?
