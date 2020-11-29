@@ -123,6 +123,8 @@ namespace Game.Core
                 InitiateDialogue(Data, new List<ITalkable>(){Player, Dog}, "Funnel");
             else if (Data == "Beat2.Street")
                 InitiateDialogue(Data, new List<ITalkable>(){Player, Dog}, "FunnelB");
+            else
+                InitiateDialogue(Data, new List<ITalkable>(){Player, Dog});
         }
 
         void TurnDog(string[] Data)
