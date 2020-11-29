@@ -33,5 +33,5 @@ MonoBehaviour:
     YarnAsset: {fileID: 2480198943629176163, guid: e2cf3eea009b3724894b46c645e74c89, type: 3}
   - Key: Beat5.ClientHouse
     YarnAsset: {fileID: 2480198943629176163, guid: 0ce84c760ba6132448cfb9c8a4530fc3, type: 3}
-  - Key: Beat4_Park
+  - Key: Beat4.Park
     YarnAsset: {fileID: 2480198943629176163, guid: ee044e83d9e0c2a4ba87ec327f43683f, type: 3}
