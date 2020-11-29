@@ -12,59 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13f98f575ca7e7641a2b829b198d88c0, type: 3}
   m_Name: DialogueDB
   m_EditorClassIdentifier: 
-  DialogueDictionary:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 1
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues:
-    - Billy
-    - Starting
-    - MC.ReachClientHouse
-    - MC.GotDog
-    - Beat1.Street
-    - Beat2.Street
-    - Beat3.Street
-    - Beat4.Street
-    - Beat4.Park
-    - Beat5.ClientHouse
-    _keys:
-    - Billy
-    - Starting
-    - MC.ReachClientHouse
-    - MC.GotDog
-    - Beat1.Street
-    - Beat2.Street
-    - Beat3.Street
-    - Beat4.Street
-    - Beat4.Park
-    - Beat5.ClientHouse
-    _values:
-    - {fileID: 2480198943629176163, guid: 345133e4096e6c4478779349c6fc39ab, type: 3}
-    - {fileID: 2480198943629176163, guid: c169b91c6469e544097660757a7d1d3d, type: 3}
-    - {fileID: 2480198943629176163, guid: e8d4772a40c50414fa143122e595c411, type: 3}
-    - {fileID: 2480198943629176163, guid: 938ed2dccb2990646b302cd8bc35eb3f, type: 3}
-    - {fileID: 2480198943629176163, guid: a5d51cbde7568c940b5ef8e41eb9e878, type: 3}
-    - {fileID: 2480198943629176163, guid: 815988c13f00ed24394a9c649eec52c1, type: 3}
-    - {fileID: 2480198943629176163, guid: c36723af9ba9b1045b2b528687d4110e, type: 3}
-    - {fileID: 2480198943629176163, guid: e2cf3eea009b3724894b46c645e74c89, type: 3}
-    - {fileID: 2480198943629176163, guid: ee044e83d9e0c2a4ba87ec327f43683f, type: 3}
-    - {fileID: 2480198943629176163, guid: 0ce84c760ba6132448cfb9c8a4530fc3, type: 3}
+  DialogueDB:
+  - Key: Billy
+    YarnAsset: {fileID: 2480198943629176163, guid: 345133e4096e6c4478779349c6fc39ab, type: 3}
+  - Key: Starting
+    YarnAsset: {fileID: 2480198943629176163, guid: c169b91c6469e544097660757a7d1d3d, type: 3}
+  - Key: GoodCredits
+    YarnAsset: {fileID: 2480198943629176163, guid: 919b0db75fdbdc54aa2cf32040d259d2, type: 3}
+  - Key: MC.ReachClientHouse
+    YarnAsset: {fileID: 2480198943629176163, guid: e8d4772a40c50414fa143122e595c411, type: 3}
+  - Key: MC.GotDog
+    YarnAsset: {fileID: 2480198943629176163, guid: 938ed2dccb2990646b302cd8bc35eb3f, type: 3}
+  - Key: Beat1.Street
+    YarnAsset: {fileID: 2480198943629176163, guid: a5d51cbde7568c940b5ef8e41eb9e878, type: 3}
+  - Key: Beat2.Street
+    YarnAsset: {fileID: 2480198943629176163, guid: 815988c13f00ed24394a9c649eec52c1, type: 3}
+  - Key: Beat3.Street
+    YarnAsset: {fileID: 2480198943629176163, guid: c36723af9ba9b1045b2b528687d4110e, type: 3}
+  - Key: Beat4.Street
+    YarnAsset: {fileID: 2480198943629176163, guid: e2cf3eea009b3724894b46c645e74c89, type: 3}
+  - Key: Beat5.ClientHouse
+    YarnAsset: {fileID: 2480198943629176163, guid: 0ce84c760ba6132448cfb9c8a4530fc3, type: 3}

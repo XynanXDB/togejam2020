@@ -1,25 +1,7 @@
-title: Suzie.Start
+title: Start
 tags: 
 colorID: 0
 position: 850,46
 ---
 Suzie: Hi Jimmy!!
-Jimmy: Oh wow, you seem excited today!
-Suzie: YESS!!! Want to know why??
-[[ Not particularly |Suzie.NotInterested]]
-[[ YESS!! Tell Me!! |Suzie.Interested]]
-===
-title: Suzie.NotInterested
-tags: 
-colorID: 0
-position: 1045,339
----
-Suzie: Test Not Interested
-===
-title: Suzie.Interested
-tags: 
-colorID: 0
-position: 703,339
----
-Suzie: Test Interested
 ===

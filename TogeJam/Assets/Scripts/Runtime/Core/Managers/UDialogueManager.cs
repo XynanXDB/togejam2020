@@ -92,7 +92,7 @@ namespace Game.Core
         
         void Awake()
         {
-            //Time.timeScale = 3.0f;
+            Time.timeScale = 3.0f;
             DontDestroyOnLoad(this);
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
             DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
@@ -137,8 +137,6 @@ namespace Game.Core
 
         void PlayCinematic(string[] Data)
         {
-            Debug.Log("PlayScene" + " " + Data[0]);
-
             if (Data[0] == "Beat5.ClientHouse")
             {
                 UPlayableDirector.PlayableDirector.OnStop = ()=>
@@ -146,6 +144,15 @@ namespace Game.Core
                     InitiateDialogue("Beat5.ClientHouse", new List<ITalkable>(){Player, Dog});
                 };
                 UPlayableDirector.PlayableDirector.PlayCinematic("Beat5");
+            }
+            else if (Data[0] == "NeutralCredits")
+            {
+                UPlayableDirector.PlayableDirector.PlayCinematic(Data[0]);
+                Player.SetAnimation("Stand");
+            }
+            else if (Data [0] == "GoodCredits")
+            {
+                UPlayableDirector.PlayableDirector.PlayCinematic(Data[0]);
             }
         }
 

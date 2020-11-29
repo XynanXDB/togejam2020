@@ -155,12 +155,14 @@ He's got no choice anyways.
 . . .
 
 //Ending Conditions
+<<set $KarmaPoint to 2>>
 <<if $KarmaPoint >= 2>> 
 [[GoodEnding]]
 <<endif>>
 
 << if $KarmaPoint < 2>>
 <<PlayScene NeutralCredits>>
+<<stop>>
 <<endif>>
 ===
 title: GoodEnding
@@ -217,7 +219,6 @@ No one knows that better than me I guess.
 10 years is a bit too long when you're dealing with it alone.
 <<SetAnimation MC.Neutral>>
 Let's see if we can do a few months together.
-
 //Ending Conditions
-<<PlayScene GoodCredits>>
+<<Play GoodCredits>>
 ===

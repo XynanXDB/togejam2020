@@ -41,5 +41,10 @@ namespace Game.Core
         {
            DialogueManager.InitiateDialogue("MC.GotDog", new List<ITalkable>(){Player, Dog});
         }
+
+        public void GoodEnding()
+        {
+           DialogueManager.InitiateDialogue("GoodEnding", new List<ITalkable>(){Player, Dog});
+        }
     }
 }

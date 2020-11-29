@@ -1,23 +1,23 @@
 ﻿using UnityEngine;
 using UnityEngine.Playables;
-using RotaryHeart.Lib.SerializableDictionary;
-
+using System.Collections.Generic;
 namespace Game.Core
 {
     [System.Serializable]
-    public class PlayableDictionary : SerializableDictionaryBase<string, PlayableAsset>
-    {}
-
+    public struct PlayableDBStruct
+    {
+        public string Key;
+        public PlayableAsset PlayableAsset;
+    }
+    
     [CreateAssetMenu(fileName = "PlayableDB", menuName = "ScriptableObjects/Create Playable DB", order = 1)]
     public class UPlayableDataBase : ScriptableObject
     {
-        [SerializeField] PlayableDictionary PlayableDictionary = null;
+        [SerializeField] List<PlayableDBStruct> PlayableDB;
 
         public PlayableAsset GetPlayableAssetByKey(string Key)
         {
-            PlayableAsset PlayableAsset = null;
-            PlayableDictionary.TryGetValue(Key, out PlayableAsset);
-            
+            PlayableAsset PlayableAsset = PlayableDB.Find(Item => Item.Key == Key).PlayableAsset;     
             return PlayableAsset;
         }
     }

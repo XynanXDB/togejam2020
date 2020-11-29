@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7529412, g: 0.4923056, b: 0.4, a: 0}
+  m_Color: {r: 0.7529412, g: 0.4923056, b: 0.4, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -368,6 +368,9 @@ MonoBehaviour:
   DialogueUI: {fileID: 952188007710854665}
   OptionGroup: {fileID: 5605202250671149720}
   TransientDialogueBox: {fileID: 1815799168264542185}
+  StreetLoopManager: {fileID: 0}
+  DialogueDispatcher: {fileID: 0}
+  Doorbell: {fileID: 0}
   Player: {fileID: 0}
 --- !u!114 &8483065915076613035
 MonoBehaviour:
@@ -947,7 +950,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 500.72}
+  m_SizeDelta: {x: 350, y: 467.3}
   m_Pivot: {x: 0, y: 1}
 --- !u!223 &6104111160171330495
 Canvas:
@@ -1083,7 +1086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6118000930961979441, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -173.91
+      value: -158.6
       objectReference: {fileID: 0}
     - target: {fileID: 6118000930961979441, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1361,7 +1364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6118000930961979441, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 173.91
+      value: 158.6
       objectReference: {fileID: 0}
     - target: {fileID: 6118000930961979441, guid: 41674c7dee28d15418080b4803b8fa9d, type: 3}
       propertyPath: m_SizeDelta.x

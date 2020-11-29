@@ -11,7 +11,17 @@ namespace Game.Core
 {
     public class UMasterAudioManager : MonoBehaviour
     {
-        public static UMasterAudioManager MasterAudioManager { get; internal set; }
+        internal static UMasterAudioManager _MasterAudioManager;
+        public static UMasterAudioManager MasterAudioManager 
+        { 
+            get
+            {
+                if (_MasterAudioManager == null)
+                    _MasterAudioManager = FindObjectOfType<UMasterAudioManager>();
+
+                return _MasterAudioManager;
+            }
+        }
         public AudioSource BGMAudioSource { get; private set; }
         public AudioSource SFXAudioSource { get; private set; }
         [SerializeField] protected AudioMixer MasterMixer;

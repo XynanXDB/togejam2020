@@ -14,7 +14,7 @@ namespace Game.Systems
 
             GameObject obj = GameObject.FindWithTag("AudioManager");
             if (obj == null)
-                UMasterAudioManager.MasterAudioManager = CreateManager("AudioManager").GetComponent<UMasterAudioManager>();
+                UMasterAudioManager._MasterAudioManager = CreateManager("AudioManager").GetComponent<UMasterAudioManager>();
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

@@ -12,41 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b3c5997a1a11148bca547b2845ded9, type: 3}
   m_Name: PlayableDB
   m_EditorClassIdentifier: 
-  PlayableDictionary:
-    reorderableList:
-      canAdd: 1
-      canRemove: 1
-      draggable: 1
-      expandable: 1
-      multipleSelection: 1
-      isExpanded: 1
-      label:
-        m_Text: Keys
-        m_Image: {fileID: 0}
-        m_Tooltip: 
-      headerHeight: 18
-      footerHeight: 13
-      slideEasing: 0.15
-      verticalSpacing: 2
-      showDefaultBackground: 1
-      elementDisplayType: 0
-      elementNameProperty: 
-      elementNameOverride: 
-      elementIcon: {fileID: 0}
-    reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues:
-    - Beat1_Start
-    - Beat1_ReachClientHouse
-    - Beat1_GetDog
-    - Beat5
-    _keys:
-    - Beat1_Start
-    - Beat1_ReachClientHouse
-    - Beat1_GetDog
-    - Beat5
-    _values:
-    - {fileID: 11400000, guid: 569c53d3e53773841b478fdc117539c6, type: 2}
-    - {fileID: 11400000, guid: 3260df429400d4d40aac31ad4062e020, type: 2}
-    - {fileID: 11400000, guid: c61a24097283fc5428f93a07d80c3b4e, type: 2}
-    - {fileID: 11400000, guid: f1f9000b831858540922d3e645b6443b, type: 2}
+  PlayableDB:
+  - Key: Beat1_Start
+    PlayableAsset: {fileID: 11400000, guid: 569c53d3e53773841b478fdc117539c6, type: 2}
+  - Key: Beat1_ReachClientHouse
+    PlayableAsset: {fileID: 11400000, guid: 3260df429400d4d40aac31ad4062e020, type: 2}
+  - Key: Beat1_GetDog
+    PlayableAsset: {fileID: 11400000, guid: c61a24097283fc5428f93a07d80c3b4e, type: 2}
+  - Key: Beat5
+    PlayableAsset: {fileID: 11400000, guid: f1f9000b831858540922d3e645b6443b, type: 2}
+  - Key: GoodEnding
+    PlayableAsset: {fileID: 11400000, guid: 27883951467109f4ea4e4dd8531abefa, type: 2}
+  - Key: NeutralEnding
+    PlayableAsset: {fileID: 11400000, guid: faebdbb5cbcaa2f4d951de728f9d27b7, type: 2}

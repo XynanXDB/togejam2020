@@ -1,17 +1,12 @@
 ﻿using Yarn.Unity;
 using TMPro;
 using UnityEngine;
-using RotaryHeart.Lib.SerializableDictionary;
 using System;
 using System.Collections;
 using UnityEngine.UI;
 
 namespace Game.Core
 {
-    [System.Serializable]
-    public class DialogueBubbleDictionary : SerializableDictionaryBase<string, string>
-    {}
-
     public class UDialogueBubble : MonoBehaviour
     {
         private DialogueUI DialogueUI;
@@ -25,7 +20,6 @@ namespace Game.Core
         [SerializeField] protected Animator BGAnimate;
         [SerializeField] protected float PopupSpeed = 0.05f;
         [SerializeField] protected UDialogueAdvancer Advancer;
-        [SerializeField] protected DialogueBubbleDictionary DialogueBubbleDictionary;
         public string GetSpeakerName { get { return SpeakerName; }}
 
         void Update()
@@ -138,10 +132,10 @@ namespace Game.Core
 
             string Clip = null;
 
-            if (DialogueBubbleDictionary.TryGetValue(CacheYarnPacket.Action, out Clip))
-                BGAnimate.Play(Clip);
-            else
-                Debug.Log(CacheYarnPacket.Action + " Missing Clip");
+            // if (DialogueBubbleDictionary.TryGetValue(CacheYarnPacket.Action, out Clip))
+            //     BGAnimate.Play(Clip);
+            // else
+            //     Debug.Log(CacheYarnPacket.Action + " Missing Clip");
 
         }
 

@@ -130,43 +130,14 @@ MonoBehaviour:
   EyeAnimController:
     MeshRenderer: {fileID: 3700587944826807939}
     EyeMatchup:
-      reorderableList:
-        canAdd: 1
-        canRemove: 1
-        draggable: 1
-        expandable: 1
-        multipleSelection: 1
-        isExpanded: 1
-        label:
-          m_Text: Keys
-          m_Image: {fileID: 0}
-          m_Tooltip: 
-        headerHeight: 18
-        footerHeight: 13
-        slideEasing: 0.15
-        verticalSpacing: 2
-        showDefaultBackground: 1
-        elementDisplayType: 0
-        elementNameProperty: 
-        elementNameOverride: 
-        elementIcon: {fileID: 0}
-      reqReferences: {fileID: 0}
-      isExpanded: 1
-      _keyValues:
-      - Neutral
-      - Closed
-      - LookDown
-      - Squint
-      _keys:
-      - Neutral
-      - Closed
-      - LookDown
-      - Squint
-      _values:
-      - {fileID: 2100000, guid: 5cab177e45762a74482a4485ca312b75, type: 2}
-      - {fileID: 2100000, guid: f3fee716de91d8a44b6bbc035d8df45e, type: 2}
-      - {fileID: 2100000, guid: 93af874ec5de53e43a4853e57e4dfacb, type: 2}
-      - {fileID: 2100000, guid: 891a41a217076c040834a21d574097a0, type: 2}
+    - Key: Neutral
+      MaterialAsset: {fileID: 2100000, guid: 5cab177e45762a74482a4485ca312b75, type: 2}
+    - Key: Closed
+      MaterialAsset: {fileID: 2100000, guid: f3fee716de91d8a44b6bbc035d8df45e, type: 2}
+    - Key: LookDown
+      MaterialAsset: {fileID: 2100000, guid: 93af874ec5de53e43a4853e57e4dfacb, type: 2}
+    - Key: Squint
+      MaterialAsset: {fileID: 2100000, guid: 891a41a217076c040834a21d574097a0, type: 2}
   Dog: {fileID: 0}
   MovementSpeed: 5
 --- !u!195 &8254455883217261479

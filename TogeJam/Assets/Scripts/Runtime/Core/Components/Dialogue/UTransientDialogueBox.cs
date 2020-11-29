@@ -25,6 +25,7 @@ namespace Game.Core
         void OnEnable()
         {
            BoxAnimate.Play("FadeIn");
+           BoxAnimate.Play("Loop", 1);
         }
 
         void CleanUp()

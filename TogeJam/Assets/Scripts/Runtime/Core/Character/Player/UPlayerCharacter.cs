@@ -4,16 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using RotaryHeart.Lib.SerializableDictionary;
 
 namespace Game.Core
 {
     public class UPlayerCharacter : MonoBehaviour
     {
-        [System.Serializable]
-        protected class EyeAnimMatchup : SerializableDictionaryBase<string, Material>
-        {}
-
         protected enum EMovementType
         {
             Right,
@@ -22,17 +17,24 @@ namespace Game.Core
         }
 
         [System.Serializable]
+        protected struct EyeAnimMatchup
+        {
+            public string Key;
+            public Material MaterialAsset;
+        }
+
+        [System.Serializable]
         protected struct FEyeAnimController
         {
             public SkinnedMeshRenderer MeshRenderer;
-            public EyeAnimMatchup EyeMatchup;
+           public List<EyeAnimMatchup> EyeMatchup;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
             public bool TrySetEyeAnim(string Animation)
             {
-                Material FoundMaterial = null;
-                bool RetVal = EyeMatchup.TryGetValue(Animation, out FoundMaterial);
+                Material FoundMaterial = EyeMatchup.Find( Item => Item.Key == Animation).MaterialAsset;
+                bool RetVal  = (FoundMaterial != null);
 
                 if (RetVal)
                     MeshRenderer.material = FoundMaterial;
