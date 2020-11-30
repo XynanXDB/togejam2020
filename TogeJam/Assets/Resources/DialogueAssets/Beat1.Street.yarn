@@ -48,7 +48,7 @@ Yes, I can. Again. What's wrong with my outfit?
 You're awfully persistent about my outfit comment.
 <<SetAnimation MC.Squint>>
 <<SetSpeaker MC Speak>>
-Yeah well, it's not everyday you get shit-talked by a dog, is it.
+Yeah well, it's not everyday you get shit-talked by a dog, is it?
 <<SetSpeaker Dog Think>>
 ...
 I suppose not.

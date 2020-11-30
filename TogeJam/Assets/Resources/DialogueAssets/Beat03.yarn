@@ -135,7 +135,7 @@ I'm just gladly repaying him in kind.
 . . .
 <<SetAnimation MC.Neutral>>
 I see.
-At least see where you're coming from. Sorry if I sounded kinda mean.
+At least I see where you're coming from. Sorry if I sounded kinda mean.
 <<SetSpeaker Dog Think>>
 It's ok!
 <<SetAnimation MC.Stand Dog.Shocked>>
