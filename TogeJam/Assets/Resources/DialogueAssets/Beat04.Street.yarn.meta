@@ -8,7 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-MY
   stringIDs:
   - Beat04_Street-Start-0
   - Beat04_Street-Start-1
@@ -51,7 +51,6 @@ ScriptedImporter:
   - Beat04_Street-Start-38
   - Beat04_Street-Start-39
   - Beat04_Street-Start-40
-  - Beat04_Street-Start-41
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
