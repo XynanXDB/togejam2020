@@ -165,6 +165,10 @@ namespace Game.Core
             }
             else if (Data[0] == "NeutralCredits")
             {
+                UPlayableDirector.PlayableDirector.OnStop = () =>
+                {
+                    Credits.SetActive(true);
+                };
                 UPlayableDirector.PlayableDirector.PlayCinematic(Data[0]);
                 Player.SetAnimation("Stand");
             }

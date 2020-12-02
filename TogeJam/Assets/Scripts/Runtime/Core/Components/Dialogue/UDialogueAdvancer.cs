@@ -7,7 +7,6 @@ namespace Game.Core
 {
     public class UDialogueAdvancer : MonoBehaviour
     {
-        [SerializeField] protected Button AdvanceButton;
         [SerializeField] protected Animator Animator;
         [SerializeField] protected Transform ParentTransform;
         static readonly string Start = "Start";
