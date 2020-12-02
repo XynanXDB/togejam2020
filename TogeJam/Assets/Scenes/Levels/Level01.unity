@@ -218,7 +218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &40386976
 RectTransform:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8352942, g: 0.5372549, b: 0.43137258, a: 0}
+  m_Color: {r: 0.8352942, g: 0.5372549, b: 0.43137258, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -823,7 +823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &314484211
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2638,6 +2638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParkBlock: {fileID: 625696223}
+  DefaultAfterBlock: {fileID: 200815348}
   bParkPlaced: 0
 --- !u!1 &1216007724
 GameObject:
@@ -2998,16 +2999,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5537379099618656422, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_text
-      value: 
+      value: asdasdadas
       objectReference: {fileID: 0}
     - target: {fileID: 5537379099618656422, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4294967295
+      value: 16777215
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537379099618656422, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5605202250671149720, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: TargetRect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 147456721}
     - target: {fileID: 6388637411709219812, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -3149,9 +3154,9 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
-  far clip plane: 10000
-  field of view: 24
+  near clip plane: 0.1
+  far clip plane: 1000
+  field of view: 22
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -3176,8 +3181,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296854546}
-  m_LocalRotation: {x: -0.02482483, y: 0, z: 0, w: 0.99969184}
-  m_LocalPosition: {x: 6, y: 1.8, z: -28.75}
+  m_LocalRotation: {x: 0.0025307287, y: 0, z: 0, w: 0.99999684}
+  m_LocalPosition: {x: -62.89, y: 2.160829, z: -24.69001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3293,7 +3298,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1318718500}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 569c53d3e53773841b478fdc117539c6, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: f1f9000b831858540922d3e645b6443b, type: 2}
   m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1

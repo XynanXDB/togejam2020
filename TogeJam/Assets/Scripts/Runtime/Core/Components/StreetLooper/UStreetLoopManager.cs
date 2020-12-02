@@ -9,6 +9,7 @@ public class UStreetLoopManager : MonoBehaviour
     private UStreetBlock PastBlock;
     private UStreetBlock NextBlock;
     [SerializeField] protected UStreetBlock ParkBlock;
+    [SerializeField] protected UStreetBlock DefaultAfterBlock;
     private bool bLoopStreet = true;
     public bool bParkPlaced = false;
 
@@ -21,6 +22,12 @@ public class UStreetLoopManager : MonoBehaviour
     {        
         if (PastBlock == null)
         {
+            if (!bLoopStreet)
+            {
+                ParkBlock.TriggerLoop(DefaultAfterBlock);
+                bParkPlaced = true;
+                return;
+            }
             PastBlock = StreetBlock;
             return;
         }

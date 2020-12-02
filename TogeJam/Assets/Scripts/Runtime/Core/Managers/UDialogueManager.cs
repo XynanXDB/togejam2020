@@ -159,7 +159,7 @@ namespace Game.Core
             {
                 UPlayableDirector.PlayableDirector.OnStop = ()=>
                 {
-                    InitiateDialogue("Beat5.ClientHouse", new List<ITalkable>(){Player, Dog});
+                    PlayYarn(new string[1]{"Beat5.ClientHouse"});
                 };
                 UPlayableDirector.PlayableDirector.PlayCinematic("Beat5");
             }

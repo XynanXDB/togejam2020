@@ -228,6 +228,5 @@ Time to head back to your master.
 Sure.
 <<SetSpeaker MC Speak>>
 . . .
-<<wait 1>>
 <<PlayScene Beat5.ClientHouse>>
 ===
