@@ -1,10 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-//#if UNITY_EDITOR
-using UnityEditor;
-//#endif
-
 namespace Game.Utility
 {
     public class UObjectPooler : MonoBehaviour
@@ -16,13 +12,12 @@ namespace Game.Utility
 
 ///////////////////////////////////////////////////////////////////////
 
-//#if UNITY_EDITOR
         void ClearPool()
         {
             foreach(Transform T in PoolHolder)
                 GameObject.DestroyImmediate(T.gameObject);
         }
-
+        
         public virtual void ReinitPool()
         {
             ClearPool();
@@ -36,7 +31,6 @@ namespace Game.Utility
 
             Debug.Log(ObjectPrefab.name + "-PoolCount: " + PoolHolder.childCount);
         }
-//#endif
 
         public virtual GameObject GetTopObject() 
         {

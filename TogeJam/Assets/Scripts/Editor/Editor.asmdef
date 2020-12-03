@@ -3,7 +3,8 @@
     "references": [
         "GUID:da9fdce8fc2b15f419feb2a4b837e135"
     ],
-    "includePlatforms": [
+    "includePlatforms": [],
+    "excludePlatforms": [
         "Android",
         "CloudRendering",
         "iOS",
@@ -20,7 +21,6 @@
         "WindowsStandalone64",
         "XboxOne"
     ],
-    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
