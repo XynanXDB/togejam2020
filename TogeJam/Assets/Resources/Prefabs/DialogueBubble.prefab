@@ -53,7 +53,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a91cf5ba99f69b43a28f00222ff9c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AdvanceButton: {fileID: 6864716317896102454}
   Animator: {fileID: 3959857573860007131}
   ParentTransform: {fileID: 272959853795372517}
 --- !u!222 &8203982034082971163
@@ -252,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.75294125, g: 0.49411768, b: 0.40000004, a: 1}
+  m_Color: {r: 0.9716981, g: 0.6903881, b: 0.33459416, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

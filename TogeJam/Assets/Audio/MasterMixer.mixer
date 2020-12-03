@@ -33,6 +33,20 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-2620852829505933576
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 6225540d715af954282a10cedc960d7c
+  m_EffectName: Attenuation
+  m_MixLevel: e5eac13ab9d78584ab2cb213ba3438e0
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -54,6 +68,7 @@ AudioMixerController:
     - 62fa167842aeea644afa59d3e29145f6
     - 6bd8c6c4fe7d99f4f90aa67cf8de788b
     - c1bd6ff3fc0977349a497ab829af620b
+    - b322ec7e15a77fa4abba970154627efc
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -69,6 +84,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 8220663446347804531}
   - {fileID: -5155487877626960070}
+  - {fileID: 816829817450164374}
   m_Volume: 7a7a70c2c20226d4ca0a3e3082fb80b2
   m_Pitch: d9e57ebdd106eb54890663e050307dfd
   m_Send: 00000000000000000000000000000000
@@ -104,7 +120,27 @@ AudioMixerSnapshotController:
   m_FloatValues:
     945772e246d30474399229eace446d1f: -10.867776
     034833a6d3371754193ebac26211c42d: -15.421314
+    f4511c6784287bb4a970f66f02bbcdf7: -13.0627575
   m_TransitionOverrides: {}
+--- !u!243 &816829817450164374
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ambience
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: b322ec7e15a77fa4abba970154627efc
+  m_Children: []
+  m_Volume: f4511c6784287bb4a970f66f02bbcdf7
+  m_Pitch: 90e263112f45c674f9fab1c9bd7141bb
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2620852829505933576}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!244 &4387515602861604891
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
