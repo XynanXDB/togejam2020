@@ -3166,6 +3166,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 527073885824388618, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.r
+      value: 0.56514776
+      objectReference: {fileID: 0}
+    - target: {fileID: 527073885824388618, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5976852
+      objectReference: {fileID: 0}
+    - target: {fileID: 527073885824388618, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9433962
+      objectReference: {fileID: 0}
     - target: {fileID: 952188007710854665, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: textSpeed
       value: 0.0001
@@ -3245,6 +3257,18 @@ PrefabInstance:
     - target: {fileID: 1697036908544178275, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024886882912575201, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.r
+      value: 0.56514776
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024886882912575201, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5976852
+      objectReference: {fileID: 0}
+    - target: {fileID: 3024886882912575201, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9433962
       objectReference: {fileID: 0}
     - target: {fileID: 3054241589747333646, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3378,6 +3402,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7412757195005908326, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.r
+      value: 0.56514776
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412757195005908326, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5976852
+      objectReference: {fileID: 0}
+    - target: {fileID: 7412757195005908326, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9433962
+      objectReference: {fileID: 0}
     - target: {fileID: 8483065915076613035, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: Player
       value: 
@@ -3388,7 +3424,19 @@ PrefabInstance:
       objectReference: {fileID: 1022343931}
     - target: {fileID: 8549158943470264814, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549158943470264814, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549158943470264814, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.g
+      value: 0.64887494
+      objectReference: {fileID: 0}
+    - target: {fileID: 8549158943470264814, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2863564
       objectReference: {fileID: 0}
     - target: {fileID: 8582076798310496793, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_IsActive
@@ -4742,7 +4790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.6903881, b: 0.33459416, a: 1}
+  m_Color: {r: 0.9339623, g: 0.64887494, b: 0.2863564, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4971,7 +5019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.6903881, b: 0.33459416, a: 1}
+  m_Color: {r: 0.9339623, g: 0.64887494, b: 0.2863564, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
