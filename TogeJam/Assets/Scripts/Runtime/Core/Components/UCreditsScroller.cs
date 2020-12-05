@@ -12,7 +12,7 @@ namespace Game.Core
 
         void OnEnable()
         {
-            Rect.localPosition = new Vector3(0.0f, -Screen.height, 0.0f);
+            Rect.localPosition = new Vector3(0.0f, -Rect.rect.height * 1.1f, 0.0f);
         }
 
         void Update()
