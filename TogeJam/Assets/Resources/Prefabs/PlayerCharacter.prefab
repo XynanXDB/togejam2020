@@ -139,8 +139,7 @@ MonoBehaviour:
     - Key: Squint
       MaterialAsset: {fileID: 2100000, guid: 891a41a217076c040834a21d574097a0, type: 2}
   Dog: {fileID: 0}
-  MovementSpeed: 5
-  SpeechTransform: {fileID: 8254455883809904240}
+  MovementSpeed: 0.75
 --- !u!195 &8254455883217261479
 NavMeshAgent:
   m_ObjectHideFlags: 0
