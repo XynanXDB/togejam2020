@@ -45,7 +45,8 @@ namespace Game.Core
 
             UPlayableDirector.PlayableDirector.OnStop = () =>
                 {
-                    Credits.SetActive(true);
+                    if (Credits != null)
+                        Credits.SetActive(true);
                 };
             UPlayableDirector.PlayableDirector.PlayCinematic("NeutralCredits");
         }

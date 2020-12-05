@@ -15,6 +15,12 @@ namespace Game.Utility
 
         public static bool RaycastBeneathMouseCursor(Camera ViewingCamera, out RaycastHit Hit)
         {
+            if (ViewingCamera == null)
+            {
+                Hit = default(RaycastHit);
+                return false;
+            }
+
             Vector3 NearPlane = GetMousePosition3D() + Vector3.forward * ViewingCamera.nearClipPlane;
             Vector3 FarPlane = GetMousePosition3D() + Vector3.forward * ViewingCamera.farClipPlane;
 
