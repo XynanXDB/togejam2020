@@ -2976,7 +2976,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 40386980}
         m_TargetAssemblyTypeName: Game.Core.UCredits, Runtime
-        m_MethodName: OnClickReturnToMainMenu
+        m_MethodName: OnClickQuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
