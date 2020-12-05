@@ -2043,7 +2043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &895848922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3210,6 +3210,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 287475015694355233, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5cf731a5bc2e6f24a9aa4ccd97c44888, type: 2}
+    - target: {fileID: 287475015694355233, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 344768315451878117, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -3410,6 +3418,14 @@ PrefabInstance:
       propertyPath: m_fontColor.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5537379099618656422, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5cf731a5bc2e6f24a9aa4ccd97c44888, type: 2}
+    - target: {fileID: 5537379099618656422, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5605202250671149720, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: TargetRect
       value: 
@@ -3444,6 +3460,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7038746176353313898, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093939672815882317, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5cf731a5bc2e6f24a9aa4ccd97c44888, type: 2}
+    - target: {fileID: 7093939672815882317, guid: 82dafab1c986115408099f4bd555f696, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7297856113384321417, guid: 82dafab1c986115408099f4bd555f696, type: 3}
@@ -4054,7 +4078,7 @@ PrefabInstance:
       objectReference: {fileID: 1022343931}
     - target: {fileID: 8254455883217261475, guid: 5636d7ef2263f6d4d96763de658a62ff, type: 3}
       propertyPath: MovementSpeed
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8254455883217261478, guid: 5636d7ef2263f6d4d96763de658a62ff, type: 3}
       propertyPath: MainCam

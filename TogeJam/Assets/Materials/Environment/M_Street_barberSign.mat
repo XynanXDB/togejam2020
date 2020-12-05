@@ -87,7 +87,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Vector2_5D4D872D: {r: 0, g: -0.5, b: 0, a: 0}
+    - Vector2_5D4D872D: {r: 0, g: -0.25, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0.7176471, g: 0.5603967, b: 0.51885885, a: 1}
