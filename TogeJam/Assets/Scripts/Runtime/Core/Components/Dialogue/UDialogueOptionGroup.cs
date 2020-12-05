@@ -9,14 +9,12 @@ namespace Game.Core
         [SerializeField] protected RectTransform SelfRect;
         [SerializeField] protected RectTransform TargetRect;
         [SerializeField] protected Animator OptionsGroupAnimator;
-        [SerializeField] protected GameObject FirstSelectObject;
-
+        
         void OnEnable()
         {
             OptionsGroupAnimator.Play("Start");
 
             UGameInstance.GameInstance.ForceFocusGameObject(null);
-            EventSystem.current.SetSelectedGameObject(FirstSelectObject);
         }
 
         void Update()

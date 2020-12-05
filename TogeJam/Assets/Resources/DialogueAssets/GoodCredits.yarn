@@ -80,6 +80,7 @@ Well, we're going to be friends, right?
 Well then.
 Don't mind if I do.
 <<SetAnimation MC.GoodCredits Dog.GoodCredits>>
+<<OffBubble MC>>
 <<wait 2>>
 <<ShowCredits>>
 ===

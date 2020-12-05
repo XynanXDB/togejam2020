@@ -1510,6 +1510,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1622415543}
+  - {fileID: 834952239}
+  - {fileID: 1526215367}
   m_Father: {fileID: 1467335433}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1944,6 +1946,36 @@ MonoBehaviour:
   TriggerBox: {fileID: 721651206}
   OwnerBlock: {fileID: 200815348}
   LoopManager: {fileID: 1209230739}
+--- !u!1 &834952238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 834952239}
+  m_Layer: 0
+  m_Name: Beat5_MCTPTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &834952239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834952238}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -4.970001, y: 0.982, z: -12.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 388535724}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841660678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,7 +2028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &895848922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3341,7 +3373,7 @@ PrefabInstance:
     - target: {fileID: 5605202250671149720, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: TargetRect
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 177144400}
     - target: {fileID: 6388637411709219812, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -3422,22 +3454,6 @@ PrefabInstance:
       propertyPath: Dog
       value: 
       objectReference: {fileID: 1022343931}
-    - target: {fileID: 8549158943470264814, guid: 82dafab1c986115408099f4bd555f696, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8549158943470264814, guid: 82dafab1c986115408099f4bd555f696, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 8549158943470264814, guid: 82dafab1c986115408099f4bd555f696, type: 3}
-      propertyPath: m_Color.g
-      value: 0.64887494
-      objectReference: {fileID: 0}
-    - target: {fileID: 8549158943470264814, guid: 82dafab1c986115408099f4bd555f696, type: 3}
-      propertyPath: m_Color.b
-      value: 0.2863564
-      objectReference: {fileID: 0}
     - target: {fileID: 8582076798310496793, guid: 82dafab1c986115408099f4bd555f696, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3679,10 +3695,6 @@ PlayableDirector:
     value: {fileID: 1236879081}
   - key: {fileID: 3993212544919226321, guid: f1f9000b831858540922d3e645b6443b, type: 2}
     value: {fileID: 314484214}
-  - key: {fileID: -6251749695691823457, guid: f1f9000b831858540922d3e645b6443b, type: 2}
-    value: {fileID: 1191101919}
-  - key: {fileID: -1814818454998159571, guid: f1f9000b831858540922d3e645b6443b, type: 2}
-    value: {fileID: 1236879081}
   - key: {fileID: -726257246176840404, guid: faebdbb5cbcaa2f4d951de728f9d27b7, type: 2}
     value: {fileID: 1216007727}
   - key: {fileID: -952844704887360879, guid: faebdbb5cbcaa2f4d951de728f9d27b7, type: 2}
@@ -3694,6 +3706,8 @@ PlayableDirector:
   - key: {fileID: -952844704887360879, guid: 27883951467109f4ea4e4dd8531abefa, type: 2}
     value: {fileID: 314484214}
   - key: {fileID: -8098857175261728412, guid: 27883951467109f4ea4e4dd8531abefa, type: 2}
+    value: {fileID: 1318718504}
+  - key: {fileID: 2730290507863512898, guid: f1f9000b831858540922d3e645b6443b, type: 2}
     value: {fileID: 1318718504}
   m_ExposedReferences:
     m_References:
@@ -3745,6 +3759,7 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: df69c9e5122ffcb41b9f33585435d919, type: 2}
     - {fileID: 11400000, guid: e00591d3b8b501441bbca0b7c65f4750, type: 2}
+    - {fileID: 11400000, guid: 356df5a8dd1b3ac449a0c8a66caf3370, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -3793,6 +3808,32 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1191101918}
+          m_TargetAssemblyTypeName: Game.Core.UController, Runtime
+          m_MethodName: Teleport
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 834952239}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1022343931}
+          m_TargetAssemblyTypeName: Game.Core.UController, Runtime
+          m_MethodName: Teleport
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1526215367}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3979,6 +4020,10 @@ PrefabInstance:
       propertyPath: MainCam
       value: 
       objectReference: {fileID: 1296854548}
+    - target: {fileID: 8254455883217261478, guid: 5636d7ef2263f6d4d96763de658a62ff, type: 3}
+      propertyPath: Test
+      value: 
+      objectReference: {fileID: 834952239}
     - target: {fileID: 8254455883217261479, guid: 5636d7ef2263f6d4d96763de658a62ff, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -3990,6 +4035,36 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8963429154429690678, guid: 5636d7ef2263f6d4d96763de658a62ff, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5636d7ef2263f6d4d96763de658a62ff, type: 3}
+--- !u!1 &1526215366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526215367}
+  m_Layer: 0
+  m_Name: Beat5_DogTPTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1526215367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526215366}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -3.7440033, y: -0.030000001, z: -12.810002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 388535724}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1001 &1534508234
 PrefabInstance:
   m_ObjectHideFlags: 0
