@@ -204,7 +204,7 @@ namespace Game.Core
 
         void Start() //TODO Use GameMode to control this
         {
-            UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_Start");
+            //UPlayableDirector.PlayableDirector.PlayCinematic("Beat1_Start");
         }
 
         void OffBubble(string[] Data)
