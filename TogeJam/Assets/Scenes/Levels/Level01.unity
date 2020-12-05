@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 40386976}
   - component: {fileID: 40386978}
   - component: {fileID: 40386977}
+  - component: {fileID: 40386979}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -236,8 +237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 624.7, y: 97.7}
-  m_SizeDelta: {x: 325.92874, y: 1096.6978}
+  m_AnchoredPosition: {x: 624.7, y: 0}
+  m_SizeDelta: {x: 325.92874, y: 1147.89}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &40386977
 MonoBehaviour:
@@ -277,6 +278,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40386975}
   m_CullTransparentMesh: 0
+--- !u!114 &40386979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40386975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 90, z: 0, w: 90}
+  m_Softness: {x: 0, y: 286}
 --- !u!4 &51777465 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8254455883020690690, guid: 5636d7ef2263f6d4d96763de658a62ff, type: 3}
@@ -1564,7 +1579,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -721.63, y: 1.8}
-  m_SizeDelta: {x: 832, y: 468}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500149595
 MonoBehaviour:
@@ -2121,6 +2136,7 @@ GameObject:
   - component: {fileID: 938188011}
   - component: {fileID: 938188013}
   - component: {fileID: 938188012}
+  - component: {fileID: 938188014}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2142,10 +2158,10 @@ RectTransform:
   m_Father: {fileID: 308808346}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1198.1}
+  m_SizeDelta: {x: 290, y: 1074}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938188012
 MonoBehaviour:
@@ -2167,28 +2183,29 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<b>Credits</b>
+  m_text: '<b><size=26>Credits<size=16></b>
+
 
     <b><i>Art Director</i></b>
 
-    Kenny Chow
+    Kenny
+    Chow
 
 
     <b><i>Writers</i></b>
 
-    Kenny
-    Chow
+    Kenny Chow
 
     Raymund Belavandran
 
 
     <b><i>Programmer</i></b>
 
-    Xynan Lee
+    Xynan
+    Lee
 
 
-    <b><i>Tech
-    Artist</i></b>
+    <b><i>Tech Artist</i></b>
 
     Kenny Chow
 
@@ -2252,7 +2269,15 @@ MonoBehaviour:
 
     Presston Chua
 
-    Jacob Lim'
+    Jacob Lim
+
+
+
+
+    <size=26>Thanks
+    for Playing<size=16>
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6bb84809be79e504a9447fbec9878ec9, type: 2}
   m_sharedMaterial: {fileID: 4672589423036958971, guid: 6bb84809be79e504a9447fbec9878ec9, type: 2}
@@ -2279,8 +2304,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2329,6 +2354,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938188010}
   m_CullTransparentMesh: 0
+--- !u!114 &938188014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938188010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496f3703823a43d4bb2a567419f8ba51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rect: {fileID: 938188011}
+  EndVector: {x: 0, y: 1200, z: 0}
+  ScrollSpeed: 0.01
 --- !u!1 &974023259
 GameObject:
   m_ObjectHideFlags: 0
