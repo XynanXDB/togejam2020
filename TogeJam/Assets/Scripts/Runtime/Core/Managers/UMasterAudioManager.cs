@@ -24,6 +24,8 @@ namespace Game.Core
         }
         public AudioSource BGMAudioSource { get; private set; }
         public AudioSource SFXAudioSource { get; private set; }
+        public AudioSource AmbienceAudioSource { get; private set; }
+
         [SerializeField] protected AudioMixer MasterMixer;
 
         public static readonly string MasterVolumeName = "MasterVolume";
@@ -35,8 +37,15 @@ namespace Game.Core
         private void Awake()
         {
             DontDestroyOnLoad(this);
+
+            if (_MasterAudioManager == null)
+                _MasterAudioManager = this;
+            else
+                Destroy(gameObject);
+            
             BGMAudioSource = transform.Find("BGMAudioManager").GetComponent<AudioSource>();
             SFXAudioSource = transform.Find("SFXAudioManager").GetComponent<AudioSource>();
+            AmbienceAudioSource = transform.Find("BGMAmbienceManager").GetComponent<AudioSource>();
         }
 
         public void SetMusicVolume (float InMusicVolume) => MasterMixer.SetFloat(SFXVolumeName, InMusicVolume);
@@ -52,6 +61,13 @@ namespace Game.Core
         {
             SFXAudioSource.clip = Clip;
             SFXAudioSource.Play();
+        }
+
+        public void StopAllAudio()
+        {
+            AmbienceAudioSource.Stop();
+            BGMAudioSource.Stop();
+            SFXAudioSource.Stop();
         }
     }
 }

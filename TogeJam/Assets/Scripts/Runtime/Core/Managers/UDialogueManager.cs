@@ -62,8 +62,6 @@ namespace Game.Core
             {
                 if (_DialogueManager == null)
                     _DialogueManager = FindObjectOfType<UDialogueManager>();
-                else
-                    _DialogueManager = GenericHelpers.CreateManager("DialogueManager").GetComponent<UDialogueManager>();
                 
                 return _DialogueManager;
             }
@@ -96,6 +94,12 @@ namespace Game.Core
         void Awake()
         {
             DontDestroyOnLoad(this);
+            
+            if (_DialogueManager == null)
+                _DialogueManager = this;
+            else
+                Destroy(gameObject);
+            
             DialogueRunner.AddCommandHandler("SetSpeaker", SetSpeaker);
             DialogueRunner.AddCommandHandler("SetAnimation", SetAnimation);
             DialogueRunner.AddCommandHandler("OffBubble", OffBubble);
