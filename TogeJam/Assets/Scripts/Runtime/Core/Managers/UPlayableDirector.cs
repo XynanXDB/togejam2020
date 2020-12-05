@@ -27,6 +27,12 @@ namespace Game.Core
 
         void Awake() => Director.stopped += OnPlayableStop;
         void OnDestroy() => Director.stopped -= OnPlayableStop;
+
+        void Start()
+        {
+            PlayCinematic("MainMenu");
+        }
+
         void OnPlayableStop(PlayableDirector InDirector)
         {
             OnStop?.Invoke();
