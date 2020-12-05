@@ -153,6 +153,7 @@ He'll learn like I did.
 He's got no choice anyways.
 <<SetSpeaker MC Speak>>
 . . .
+<<wait 5>>
 
 //Ending Conditions
 <<if $KarmaPoint >= 2>> 
