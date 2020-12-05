@@ -4,7 +4,7 @@ colorID: 0
 position: 273,191
 ---
 <<SetSpeaker Dog Think>>
-I hope master is doing alright. . .
+I hope my master is doing alright. . .
 He's always rushing around, maybe something is on his mind. . .
 And now he's letting this weird person take me out.
 <<SetAnimation MC.Squint>>
