@@ -2,31 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 namespace Game.Core
 {
     public class UCredits : MonoBehaviour
     {
-        [SerializeField] protected Button ReturnToMainMenu;
+        [SerializeField] protected Button QuitGame;
 
         void OnEnable()
         {
-            ReturnToMainMenu.gameObject.SetActive(false);
+            QuitGame.gameObject.SetActive(false);
             StartCoroutine(WaitandShowRTMButton());
         }
 
-        public void OnClickReturnToMainMenu()
+        public void OnClickQuitGame()
         {
             UGameInstance.GameInstance.ForceFocusGameObject(null);
-            SceneManager.LoadScene("Level01", LoadSceneMode.Single);
+            Application.Quit();
         }
 
         IEnumerator WaitandShowRTMButton()
         {
             yield return new WaitForSeconds(5.0f);
-            ReturnToMainMenu.gameObject.SetActive(true);
-            UGameInstance.GameInstance.ForceFocusGameObject(ReturnToMainMenu.gameObject);
+            QuitGame.gameObject.SetActive(true);
+            UGameInstance.GameInstance.ForceFocusGameObject(QuitGame.gameObject);
         }
     }
 }
