@@ -176,7 +176,7 @@ position: 853,-697
 <<SetAnimation MC.Neutral>>
 But I do.
 <<SetSpeaker MC Speak>>
-<<SetAnimation MC.LookDown>>
+//<<SetAnimation MC.LookDown>>
 Alright.
 Let's go Pat.
 <<SetSpeaker Dog Think>>

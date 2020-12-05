@@ -10,28 +10,28 @@ namespace Game.Core
         [SerializeField] protected FSpeakerInfo SpeakerInfo;
         [HideInInspector] public GameObject Interactor;
         [SerializeField] protected Animator DogAnimate;
-        private int bTurnDog = 0;
+        //private int bTurnDog = 0;
 
 ///////////////////////////////////////////////////////////////////////////////
 
-        void Update()
-        {
-            if (bTurnDog == 1)
-            {
-                Quaternion currentRotation = transform.rotation;
-                transform.rotation = Quaternion.RotateTowards(currentRotation, Quaternion.Euler(0.0f, 90.0f, 0.0f), 85.0f * Time.deltaTime);
+        // void Update()
+        // {
+        //     // if (bTurnDog == 1)
+        //     // {
+        //     //     Quaternion currentRotation = transform.rotation;
+        //     //     transform.rotation = Quaternion.RotateTowards(currentRotation, Quaternion.Euler(0.0f, 90.0f, 0.0f), 85.0f * Time.deltaTime);
 
-                if (Quaternion.Dot(currentRotation, Quaternion.Euler(0.0f, 90.0f, 0.0f)) >= 1.0f)
-                    bTurnDog = 0;
-            } else if (bTurnDog == 2)
-            {
-                Quaternion currentRotation = transform.rotation;
-                transform.rotation = Quaternion.RotateTowards(currentRotation, Quaternion.Euler(0.0f, -90.0f, 0.0f), 95.0f * Time.deltaTime);
+        //     //     if (Quaternion.Dot(currentRotation, Quaternion.Euler(0.0f, 90.0f, 0.0f)) >= 1.0f)
+        //     //         bTurnDog = 0;
+        //     // } else if (bTurnDog == 2)
+        //     // {
+        //     //     Quaternion currentRotation = transform.rotation;
+        //     //     transform.rotation = Quaternion.RotateTowards(currentRotation, Quaternion.Euler(0.0f, -90.0f, 0.0f), 95.0f * Time.deltaTime);
 
-                if (Quaternion.Dot(currentRotation, Quaternion.Euler(0.0f, -90.0f, 0.0f)) >= 1.0f)
-                    bTurnDog = 0;
-            }
-        }
+        //     //     if (Quaternion.Dot(currentRotation, Quaternion.Euler(0.0f, -90.0f, 0.0f)) >= 1.0f)
+        //     //         bTurnDog = 0;
+        //     // }
+        // }
 
         public void StartGoodCredits()
         {
@@ -74,9 +74,9 @@ namespace Game.Core
         public void SendNativeCommand(string Data)
         {
             if (Data == "TurnDog.Right")
-                bTurnDog = 1;
+                transform.rotation = Quaternion.Euler(0.0f, 90.0f, 0.0f);
             else if (Data == "TurnDog.Left")
-                bTurnDog = 2;
+                transform.rotation = Quaternion.Euler(0.0f, -90.0f, 0.0f);
         }
     }
 }

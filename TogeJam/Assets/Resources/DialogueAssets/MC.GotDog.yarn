@@ -8,39 +8,40 @@ position: 776,-451
 Well, the guy seemed nice enough.
 Although I think it would have been nice to have been invited in.
 He just basically strode out and just passed me the dog outside.
-And the dog...
+And the dog. . .
 <<SetSpeaker Dog Speak>>
 <<SetAnimation Dog.Stand>>
-...
+. . .
 <<SetSpeaker MC Speak>> 
-...
+. . .
 <<SetSpeaker Dog Speak>>
-...
+. . .
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Squint>>
-...
+. . .
 <<SetSpeaker MC Think>>
-The gig listing didn't mention he was a Dobermann...
+The gig listing didn't mention he was a Dobermann. . .
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.Closed>>
-Sigh...
+Sigh. . .
 <<SetSpeaker MC Think>>
 Let's just get this over and done with, hopefully without incident.
 <<SetSpeaker Dog Speak>>
 <<SetAnimation Dog.Stand>>
-...
+. . .
 <<SetSpeaker MC Speak>>
 <<SetAnimation MC.LookDown>>
-Alright let's go uhh... Pat.
+Alright let's go uhh. . . Pat.
 <<SetSpeaker Dog Speak>>
 <<SetAnimation MC.Neutral>>
-...
+. . .
 <<OffBubble Dog>>
 <<SetAnimation Dog.Stand>>
+<<wait 1>>
 <<TurnDog Right>>
-<<wait 2>>
-<<PlayMusic WTD>>
+<<wait 1>>
 <<SetAnimation MC.Walk Dog.Walk>>
+<<PlayMusic WTD>>
 <<wait 5>>
 <<Play Beat1.Street>>
 ===

@@ -4,6 +4,7 @@ colorID: 0
 position: 404,-658
 ---
 <<SetAnimation MC.Idle>>
+<<wait 0.5>>
 <<TurnDog Left>>
 <<SetSpeaker MC Speak>>
 Here we are, the park.
