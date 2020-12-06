@@ -2327,7 +2327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -45.499878, y: -25.59082}
+  m_AnchoredPosition: {x: -45.5, y: -25.59082}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &314484212
@@ -5684,7 +5684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &895848922
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5925,16 +5925,18 @@ MonoBehaviour:
     Lu Kah
     How
 
+    Tracy Chung
+
 
     <b><i>Texturing</i></b>
 
     Kenny Chow
 
-    Lu Kah How
+    Lu Kah
+    How
 
 
-    <b><i>Game
-    Designer</i></b>
+    <b><i>Game Designer</i></b>
 
     Raymund Belavandran
 
@@ -5962,10 +5964,8 @@ MonoBehaviour:
 
     Joyce Chan
 
-    Tracy
-    Chung
-
-    Tan Kuan Sian
+    Tan
+    Kuan Sian
 
     Ng Chek Sin
 
@@ -7903,11 +7903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50.58
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_SizeDelta.x
@@ -7923,7 +7923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7931,7 +7931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_Pivot.x
@@ -11367,7 +11367,7 @@ Transform:
   - {fileID: 1459424634}
   - {fileID: 183631557}
   m_Father: {fileID: 1534508235}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1679109537
 PrefabInstance:
@@ -12376,7 +12376,7 @@ Transform:
   - {fileID: 1361950830}
   - {fileID: 1565291783}
   m_Father: {fileID: 1534508235}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817702925
 GameObject:
@@ -14556,11 +14556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_SizeDelta.y
@@ -14572,7 +14572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -14580,7 +14580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5323271137018435783, guid: 4a102c5f31f24a94080d1d9316c2999c, type: 3}
       propertyPath: m_Pivot.x
