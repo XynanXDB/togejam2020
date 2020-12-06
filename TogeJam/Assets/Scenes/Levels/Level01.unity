@@ -8230,15 +8230,15 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -1.0615339
-          outSlope: -1.0615339
+          inSlope: -2.5231857
+          outSlope: -2.5231857
           tangentMode: 34
           weightedMode: 0
           inWeight: 0
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.28196222
-          value: 0.7006875
+          time: 0.14004785
+          value: 0.64663327
           inSlope: -2.1971872
           outSlope: -2.1971872
           tangentMode: 0
@@ -8246,7 +8246,7 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.39637053
+          time: 0.2
           value: 0.0054793656
           inSlope: 0
           outSlope: 0
@@ -17976,15 +17976,15 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 1
-          inSlope: -1.0615339
-          outSlope: -1.0615339
+          inSlope: -2.5231857
+          outSlope: -2.5231857
           tangentMode: 34
           weightedMode: 0
           inWeight: 0
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.28196222
-          value: 0.7006875
+          time: 0.14004785
+          value: 0.64663327
           inSlope: -2.1971872
           outSlope: -2.1971872
           tangentMode: 0
@@ -17992,7 +17992,7 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.39637053
+          time: 0.2
           value: 0.0054793656
           inSlope: 0
           outSlope: 0
