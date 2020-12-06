@@ -372,7 +372,7 @@ MonoBehaviour:
   DialogueDispatcher: {fileID: 0}
   Doorbell: {fileID: 8300000, guid: 7bae831288b50a84eb7c2cdbd5e0dcea, type: 3}
   SS_Main: {fileID: 8300000, guid: 2803f2c4e932e624f91b5a15143feb81, type: 3}
-  WalkTheDog: {fileID: 8300000, guid: 1e1c27c1c7a1ea7429d18d7f41801b62, type: 3}
+  WalkTheDog: {fileID: 8300000, guid: 811b0bf5dc5fa364e9cf963530983908, type: 3}
   Credits: {fileID: 0}
   Player: {fileID: 0}
 --- !u!114 &8483065915076613035
